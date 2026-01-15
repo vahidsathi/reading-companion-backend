@@ -1,0 +1,4 @@
+cd C:\Users\sathiv\Downloads\python projects\reading_app
+
+C:\Users\sathiv\Downloads\python projects\reading_app>uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+

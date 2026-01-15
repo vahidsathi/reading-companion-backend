@@ -1,0 +1,4502 @@
+[
+  {
+    "passage_code": "G5-001",
+    "prompt": "Why do young athletes practice in the gym?",
+    "choice_a": "To watch TV",
+    "choice_b": "To sleep",
+    "choice_c": "To become stronger and better at their sports",
+    "choice_d": "To eat snacks",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-001",
+    "prompt": "What happens to muscles when athletes exercise regularly?",
+    "choice_a": "They get smaller",
+    "choice_b": "They disappear",
+    "choice_c": "They turn blue",
+    "choice_d": "They grow stronger",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-001",
+    "prompt": "What does endurance help athletes do?",
+    "choice_a": "Keep going without feeling too tired",
+    "choice_b": "Jump higher",
+    "choice_c": "Run faster",
+    "choice_d": "Play music",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-001",
+    "prompt": "How does practicing in the gym help prevent injuries?",
+    "choice_a": "By making muscles strong and joints flexible",
+    "choice_b": "By making athletes run slower",
+    "choice_c": "By making athletes tired",
+    "choice_d": "By making athletes jump less",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-001",
+    "prompt": "Which is a skill basketball players improve by working out in the gym?",
+    "choice_a": "Swimming",
+    "choice_b": "Singing",
+    "choice_c": "Shooting and dribbling",
+    "choice_d": "Reading",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-002",
+    "prompt": "What do bees collect from flowers?",
+    "choice_a": "Leaves",
+    "choice_b": "Water",
+    "choice_c": "Nectar",
+    "choice_d": "Seeds",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-002",
+    "prompt": "How do bees help plants grow?",
+    "choice_a": "By planting seeds",
+    "choice_b": "By watering the plants",
+    "choice_c": "By eating the leaves",
+    "choice_d": "By pollinating flowers",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-002",
+    "prompt": "What do bees do with the nectar they collect?",
+    "choice_a": "Store it in their stomachs",
+    "choice_b": "Drink it right away",
+    "choice_c": "Throw it away",
+    "choice_d": "Use it to build nests",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-002",
+    "prompt": "Why do bees make honey?",
+    "choice_a": "To eat for energy, especially in winter",
+    "choice_b": "To make the hive smell nice",
+    "choice_c": "To give to other animals",
+    "choice_d": "To feed the flowers",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-002",
+    "prompt": "What might happen if there were no bees?",
+    "choice_a": "Flowers would bloom more",
+    "choice_b": "Many plants would not grow",
+    "choice_c": "Plants would grow faster",
+    "choice_d": "Bees would make more honey",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-003",
+    "prompt": "What are snowflakes made of?",
+    "choice_a": "Dust particles",
+    "choice_b": "Tiny ice crystals",
+    "choice_c": "Clouds",
+    "choice_d": "Water drops",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-003",
+    "prompt": "What happens to water vapor when the temperature drops below freezing?",
+    "choice_a": "It disappears",
+    "choice_b": "It changes into ice",
+    "choice_c": "It turns into liquid water",
+    "choice_d": "It becomes steam",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-003",
+    "prompt": "What starts the formation of a snowflake crystal?",
+    "choice_a": "A snow cloud",
+    "choice_b": "A drop of rain",
+    "choice_c": "A small particle like dust",
+    "choice_d": "A warm breeze",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-003",
+    "prompt": "Why is each snowflake unique?",
+    "choice_a": "Because it grows in different conditions",
+    "choice_b": "Because they are made of water",
+    "choice_c": "Because they all have the same shape",
+    "choice_d": "Because they fall very fast",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-003",
+    "prompt": "What causes the different shapes of snowflakes?",
+    "choice_a": "Sunlight",
+    "choice_b": "Cloud color",
+    "choice_c": "Wind speed",
+    "choice_d": "Temperature and humidity",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-004",
+    "prompt": "What did Mia hold up at the beginning?",
+    "choice_a": "An old lamp",
+    "choice_b": "A book",
+    "choice_c": "A magic wand",
+    "choice_d": "A flashlight",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-004",
+    "prompt": "What did Jack think might be inside the lamp?",
+    "choice_a": "Water",
+    "choice_b": "Magic",
+    "choice_c": "Batteries",
+    "choice_d": "Dust",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-004",
+    "prompt": "What did Mia say to make the lamp glow?",
+    "choice_a": "'Cozy light, come to me!'",
+    "choice_b": "'Turn on!'",
+    "choice_c": "'Magic lamp, shine!'",
+    "choice_d": "'Light up now!'",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-004",
+    "prompt": "How did the light from the lamp make the room feel?",
+    "choice_a": "Dim and gloomy",
+    "choice_b": "Warm and safe",
+    "choice_c": "Bright and cold",
+    "choice_d": "Dark and scary",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-004",
+    "prompt": "Why did Mia and Jack like the lamp?",
+    "choice_a": "Because it was very bright",
+    "choice_b": "Because it made them feel cozy and comfortable",
+    "choice_c": "Because it played music",
+    "choice_d": "Because it was new and shiny",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-005",
+    "prompt": "Why did Mia's mom ask if they washed their hands?",
+    "choice_a": "Because they were hungry",
+    "choice_b": "Because it was raining",
+    "choice_c": "Because hands can have tiny germs",
+    "choice_d": "Because their hands were dirty",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-005",
+    "prompt": "What are germs?",
+    "choice_a": "Food",
+    "choice_b": "Tiny things that can make us sick",
+    "choice_c": "Big animals",
+    "choice_d": "Toys",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-005",
+    "prompt": "Where do germs live according to Mia?",
+    "choice_a": "Inside our shoes",
+    "choice_b": "In the sky",
+    "choice_c": "On things we touch like doorknobs and toys",
+    "choice_d": "On the moon",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-005",
+    "prompt": "How long should you wash your hands to get rid of germs?",
+    "choice_a": "10 minutes",
+    "choice_b": "1 minute",
+    "choice_c": "At least 20 seconds",
+    "choice_d": "5 seconds",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-005",
+    "prompt": "Why did Mia and Sam sing a song while washing their hands?",
+    "choice_a": "To scare away germs",
+    "choice_b": "To have fun playing outside",
+    "choice_c": "To call Mia's mom",
+    "choice_d": "To wash their hands long enough",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-006",
+    "prompt": "What size was Daisy the dragon?",
+    "choice_a": "As big as a house",
+    "choice_b": "No bigger than a kitten",
+    "choice_c": "No bigger than a mouse",
+    "choice_d": "As tall as a tree",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-006",
+    "prompt": "What did Daisy do when she heard loud noises?",
+    "choice_a": "She danced happily",
+    "choice_b": "She flew very high",
+    "choice_c": "She shouted loudly",
+    "choice_d": "Her wings trembled and she hid under a flower",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-006",
+    "prompt": "Why did Daisy avoid busy places?",
+    "choice_a": "Because she was hungry",
+    "choice_b": "Because she wanted to sleep",
+    "choice_c": "Because she liked to fly fast",
+    "choice_d": "Because she hated loud noises",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-006",
+    "prompt": "What helped Daisy stay calm during the storm?",
+    "choice_a": "Hiding under a rock",
+    "choice_b": "Flying away quickly",
+    "choice_c": "Shouting loudly",
+    "choice_d": "Humming a soft song her friend sang",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-006",
+    "prompt": "What did Daisy learn after the storm?",
+    "choice_a": "She should never leave her flower",
+    "choice_b": "She could find gentle ways to feel brave",
+    "choice_c": "Loud noises are fun",
+    "choice_d": "She should shout louder",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-007",
+    "prompt": "What do most mammals give birth to?",
+    "choice_a": "Seeds",
+    "choice_b": "Eggs",
+    "choice_c": "Larvae",
+    "choice_d": "Live babies",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-007",
+    "prompt": "What does the mother produce to feed her baby after birth?",
+    "choice_a": "Milk",
+    "choice_b": "Juice",
+    "choice_c": "Honey",
+    "choice_d": "Water",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-007",
+    "prompt": "Why do baby mammals need their mother's body heat?",
+    "choice_a": "To keep warm",
+    "choice_b": "To find food",
+    "choice_c": "To help them fly",
+    "choice_d": "To learn to swim",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-007",
+    "prompt": "What do mother mammals teach their babies?",
+    "choice_a": "How to build nests",
+    "choice_b": "How to find food and stay safe",
+    "choice_c": "How to fly",
+    "choice_d": "How to sing",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-007",
+    "prompt": "Why do mammals care for their babies?",
+    "choice_a": "So their species can grow and thrive",
+    "choice_b": "So the babies can lay eggs",
+    "choice_c": "So the babies can swim",
+    "choice_d": "So the babies can fly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-008",
+    "prompt": "What was missing at the beginning of the story?",
+    "choice_a": "Mia's hat",
+    "choice_b": "Mia's favorite mitten",
+    "choice_c": "Mia's shoes",
+    "choice_d": "Mia's backpack",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-008",
+    "prompt": "Where did Mia first look for her mitten?",
+    "choice_a": "Near the oak tree",
+    "choice_b": "Under her bed",
+    "choice_c": "In the kitchen",
+    "choice_d": "In the garden shed",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-008",
+    "prompt": "Who did Mia ask about the missing mitten?",
+    "choice_a": "Her mom",
+    "choice_b": "Her teacher",
+    "choice_c": "Her little brother",
+    "choice_d": "Her friend",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-008",
+    "prompt": "What did Mia find hanging inside the garden shed?",
+    "choice_a": "A squirrel",
+    "choice_b": "Her mitten",
+    "choice_c": "A snowball",
+    "choice_d": "A hat",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-008",
+    "prompt": "Why did Mia think a squirrel took her mitten?",
+    "choice_a": "Because there were tiny paw prints nearby",
+    "choice_b": "Because the mitten was in the laundry basket",
+    "choice_c": "Because her brother said so",
+    "choice_d": "Because she saw a squirrel with the mitten",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-009",
+    "prompt": "What did Emma keep in her notebook?",
+    "choice_a": "A toy",
+    "choice_b": "A book",
+    "choice_c": "A shiny silver star sticker",
+    "choice_d": "A pencil",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-009",
+    "prompt": "When did Emma notice the sticker was missing?",
+    "choice_a": "At bedtime",
+    "choice_b": "Before school started",
+    "choice_c": "During recess",
+    "choice_d": "After lunch",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-009",
+    "prompt": "Where did Emma remember peeling off the sticker?",
+    "choice_a": "On the playground",
+    "choice_b": "At her desk",
+    "choice_c": "In the cafeteria",
+    "choice_d": "Near the library",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-009",
+    "prompt": "Where did Emma find the missing sticker?",
+    "choice_a": "On the playground slide",
+    "choice_b": "On the edge of a bookshelf",
+    "choice_c": "Under her desk",
+    "choice_d": "In her backpack",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-009",
+    "prompt": "What did Emma learn from the mystery?",
+    "choice_a": "To play outside during recess",
+    "choice_b": "To never bring stickers to school",
+    "choice_c": "To keep stickers safely inside her notebook",
+    "choice_d": "To share stickers with friends",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-010",
+    "prompt": "Where did Mia go on a sunny afternoon?",
+    "choice_a": "The grocery store",
+    "choice_b": "The park",
+    "choice_c": "The town library",
+    "choice_d": "The school",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-010",
+    "prompt": "What was special about the book Mia found?",
+    "choice_a": "It was very colorful",
+    "choice_b": "It was a story about animals",
+    "choice_c": "It had riddles on every page",
+    "choice_d": "It was a cookbook",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-010",
+    "prompt": "What did the first riddle in the book describe?",
+    "choice_a": "The wind",
+    "choice_b": "A shadow",
+    "choice_c": "An echo",
+    "choice_d": "A ghost",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-010",
+    "prompt": "What happened when Mia solved a riddle?",
+    "choice_a": "A secret note appeared",
+    "choice_b": "She found a treasure",
+    "choice_c": "The lights went out",
+    "choice_d": "The book closed",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-010",
+    "prompt": "How did Mia feel after finishing the book?",
+    "choice_a": "Confused and sad",
+    "choice_b": "Bored and tired",
+    "choice_c": "Like a true riddle master",
+    "choice_d": "Angry and upset",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-011",
+    "prompt": "What did the writer dream of doing in soccer?",
+    "choice_a": "Playing basketball",
+    "choice_b": "Scoring a goal in a game",
+    "choice_c": "Watching a game",
+    "choice_d": "Being the coach",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-011",
+    "prompt": "What advice did the coach give the writer?",
+    "choice_a": "Score as many goals as possible",
+    "choice_b": "Only pass the ball",
+    "choice_c": "Stop practicing kicks",
+    "choice_d": "Start with a small goal",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-011",
+    "prompt": "What was the writer’s small goal during practice?",
+    "choice_a": "Kick the ball at the net three times",
+    "choice_b": "Score five goals every game",
+    "choice_c": "Pass the ball only once",
+    "choice_d": "Run faster than teammates",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-011",
+    "prompt": "What did the writer focus on during the next game?",
+    "choice_a": "Watching the goalie",
+    "choice_b": "Scoring many goals quickly",
+    "choice_c": "Passing the ball and moving into the right positions",
+    "choice_d": "Not playing at all",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-011",
+    "prompt": "What helped the writer score the first goal?",
+    "choice_a": "Setting a small goal and practicing",
+    "choice_b": "Ignoring the coach’s advice",
+    "choice_c": "Not practicing kicks",
+    "choice_d": "Running away from the ball",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-012",
+    "prompt": "What causes earthquakes?",
+    "choice_a": "Movements deep inside the Earth",
+    "choice_b": "Loud noises",
+    "choice_c": "Heavy rain",
+    "choice_d": "Strong winds",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-012",
+    "prompt": "What should you do first when you feel shaking?",
+    "choice_a": "Drop to your hands and knees",
+    "choice_b": "Stand still and wait",
+    "choice_c": "Run outside quickly",
+    "choice_d": "Call for help",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-012",
+    "prompt": "Why should you not run outside during an earthquake?",
+    "choice_a": "Because falling debris can hurt you",
+    "choice_b": "Because the shaking is only inside",
+    "choice_c": "Because you might get lost",
+    "choice_d": "Because it is too cold outside",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-012",
+    "prompt": "After the shaking stops, what should you check for?",
+    "choice_a": "If your phone battery is full",
+    "choice_b": "Injuries and hazards like broken glass",
+    "choice_c": "If the weather is nice",
+    "choice_d": "If your friends are outside",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-012",
+    "prompt": "Why should you use stairs instead of elevators after an earthquake?",
+    "choice_a": "Because stairs are safer during rain",
+    "choice_b": "Because stairs are faster",
+    "choice_c": "Because elevators might be damaged or lose power",
+    "choice_d": "Because elevators are crowded",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-013",
+    "prompt": "What does it mean to be a good loser in sports?",
+    "choice_a": "To stop playing sports",
+    "choice_b": "To always win the game",
+    "choice_c": "To get upset when you lose",
+    "choice_d": "To handle losing with kindness and respect",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-013",
+    "prompt": "What should you say to your opponent after losing a game?",
+    "choice_a": "Good game",
+    "choice_b": "You are bad",
+    "choice_c": "I am the best",
+    "choice_d": "I won't play again",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-013",
+    "prompt": "Why is losing part of sports?",
+    "choice_a": "Because games are easy to win",
+    "choice_b": "Because only winners have fun",
+    "choice_c": "Because everyone loses sometimes",
+    "choice_d": "Because losing means you are bad",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-013",
+    "prompt": "What can you do after losing to become better?",
+    "choice_a": "Ignore the loss",
+    "choice_b": "Practice more or try a new strategy",
+    "choice_c": "Blame your teammates",
+    "choice_d": "Stop playing the game",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-013",
+    "prompt": "Why do coaches and friends respect good sportsmanship?",
+    "choice_a": "Because it means you never lose",
+    "choice_b": "Because it shows you are the best player",
+    "choice_c": "Because it makes the game fun for everyone",
+    "choice_d": "Because it helps you win every time",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-014",
+    "prompt": "What is a small-sided scrimmage?",
+    "choice_a": "A game without any players",
+    "choice_b": "A game with fewer players on each team",
+    "choice_c": "A full game with many players",
+    "choice_d": "A game played only by coaches",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-014",
+    "prompt": "How many players might be on each team in a small-sided soccer scrimmage?",
+    "choice_a": "No players",
+    "choice_b": "3 or 4 players",
+    "choice_c": "11 players",
+    "choice_d": "20 players",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-014",
+    "prompt": "Why do small-sided scrimmages help players improve skills quickly?",
+    "choice_a": "Because there are no rules",
+    "choice_b": "Because players get more chances to practice",
+    "choice_c": "Because the game is longer",
+    "choice_d": "Because players sit and watch",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-014",
+    "prompt": "What do players learn besides skills in small-sided scrimmages?",
+    "choice_a": "How to play alone",
+    "choice_b": "How to be quiet",
+    "choice_c": "How to avoid running",
+    "choice_d": "How to work as a team",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-014",
+    "prompt": "Why do coaches like to use small-sided scrimmages during practice?",
+    "choice_a": "Because it keeps players active and makes learning fun",
+    "choice_b": "Because players don’t need to communicate",
+    "choice_c": "Because players get tired quickly",
+    "choice_d": "Because it uses a big field",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-015",
+    "prompt": "Who planned the fun music lesson?",
+    "choice_a": "The principal",
+    "choice_b": "A student",
+    "choice_c": "The janitor",
+    "choice_d": "Mrs. Lee",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-015",
+    "prompt": "Which instrument did the writer get to play?",
+    "choice_a": "Guitar",
+    "choice_b": "Flute",
+    "choice_c": "Tambourine",
+    "choice_d": "Piano",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-015",
+    "prompt": "What did the class do during the group song?",
+    "choice_a": "Watched a video",
+    "choice_b": "Sang and played instruments",
+    "choice_c": "Read a story",
+    "choice_d": "Drew pictures",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-015",
+    "prompt": "What was the first step in the lesson?",
+    "choice_a": "Listening to music",
+    "choice_b": "Introduction to instruments",
+    "choice_c": "Sharing and reflection",
+    "choice_d": "Playing instruments",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-015",
+    "prompt": "Why did the writer like the music lesson day?",
+    "choice_a": "They watched a movie",
+    "choice_b": "They played outside all day",
+    "choice_c": "They got to skip class",
+    "choice_d": "It helped them understand how music is made",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-016",
+    "prompt": "Where did Ripple live?",
+    "choice_a": "In a tree",
+    "choice_b": "In a river",
+    "choice_c": "On the ground",
+    "choice_d": "In a gray cloud",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-016",
+    "prompt": "What did Ripple want to become?",
+    "choice_a": "A snowflake",
+    "choice_b": "A flower",
+    "choice_c": "A cloud",
+    "choice_d": "A raindrop",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-016",
+    "prompt": "What happened to Ripple as he fell through the cold air?",
+    "choice_a": "He froze and became a snowflake",
+    "choice_b": "He disappeared",
+    "choice_c": "He turned into a cloud",
+    "choice_d": "He became a bird",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-016",
+    "prompt": "Why did Ripple feel happy at the end?",
+    "choice_a": "Because he was part of nature's cycle",
+    "choice_b": "Because he stayed a raindrop",
+    "choice_c": "Because he flew to the sun",
+    "choice_d": "Because he became a bird",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-016",
+    "prompt": "What can we guess about why snowflakes and raindrops are important?",
+    "choice_a": "They help clouds fly",
+    "choice_b": "They help water the earth and plants grow",
+    "choice_c": "They keep animals warm",
+    "choice_d": "They make the sky colorful",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-017",
+    "prompt": "What does Liam want to do with Mia?",
+    "choice_a": "Play soccer",
+    "choice_b": "Go swimming",
+    "choice_c": "Practice hula hooping",
+    "choice_d": "Do homework",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-017",
+    "prompt": "How long has Mia been trying to keep the hoop spinning?",
+    "choice_a": "One minute",
+    "choice_b": "Thirty seconds",
+    "choice_c": "Ten seconds",
+    "choice_d": "Five minutes",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-017",
+    "prompt": "What should Liam do with his feet when hula hooping?",
+    "choice_a": "Keep feet together",
+    "choice_b": "Keep feet shoulder-width apart",
+    "choice_c": "Cross his feet",
+    "choice_d": "Stand on one foot",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-017",
+    "prompt": "Why does Mia say Liam should bend his knees a little?",
+    "choice_a": "To jump higher",
+    "choice_b": "To stop the hoop",
+    "choice_c": "To spin faster",
+    "choice_d": "To help with balance",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-017",
+    "prompt": "What will help Liam keep the rhythm while hooping?",
+    "choice_a": "Looking at the ground",
+    "choice_b": "Spinning the hoop fast",
+    "choice_c": "Standing still",
+    "choice_d": "Counting together with Mia",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-018",
+    "prompt": "What was Max practicing at the park?",
+    "choice_a": "Basketball",
+    "choice_b": "Jump rope double-unders",
+    "choice_c": "Running",
+    "choice_d": "Soccer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-018",
+    "prompt": "What does Max say a double-under is?",
+    "choice_a": "The rope goes under your feet twice with one jump",
+    "choice_b": "Jumping twice in a row",
+    "choice_c": "Jumping without the rope",
+    "choice_d": "Swinging the rope slowly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-018",
+    "prompt": "What advice does Max give Sara to do double-unders?",
+    "choice_a": "Jump lower and swing the rope slowly",
+    "choice_b": "Stop jumping",
+    "choice_c": "Jump higher and swing the rope faster",
+    "choice_d": "Hold the rope still",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-018",
+    "prompt": "How did Sara feel when she finally did a double-under?",
+    "choice_a": "Tired and bored",
+    "choice_b": "Angry",
+    "choice_c": "Happy and excited",
+    "choice_d": "Sad",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-018",
+    "prompt": "What can we guess about Sara and Max from the story?",
+    "choice_a": "They enjoy trying new sports together",
+    "choice_b": "They only like jump rope",
+    "choice_c": "They never practice anything",
+    "choice_d": "They do not like playing outside",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-019",
+    "prompt": "What does defense mean in basketball?",
+    "choice_a": "Passing the ball quickly",
+    "choice_b": "Stopping the other team from scoring",
+    "choice_c": "Trying to score points",
+    "choice_d": "Running fast down the court",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-019",
+    "prompt": "Where should you stay to block your opponent?",
+    "choice_a": "Behind your opponent",
+    "choice_b": "Between your opponent and the basket",
+    "choice_c": "Far away from the basket",
+    "choice_d": "Next to the referee",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-019",
+    "prompt": "What should you watch to predict where the opponent will go?",
+    "choice_a": "The scoreboard",
+    "choice_b": "Their waist and feet",
+    "choice_c": "The coach",
+    "choice_d": "The basketball",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-019",
+    "prompt": "How should you stand when playing defense?",
+    "choice_a": "Sitting on the bench",
+    "choice_b": "With knees bent and ready to move",
+    "choice_c": "With arms crossed",
+    "choice_d": "Standing straight and still",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-019",
+    "prompt": "When should you try to steal the ball?",
+    "choice_a": "Only after scoring",
+    "choice_b": "Never",
+    "choice_c": "All the time",
+    "choice_d": "Only when you are sure you can get it",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-020",
+    "prompt": "What does borrowing something from a friend show?",
+    "choice_a": "That you trust each other",
+    "choice_b": "That you do not like your friend",
+    "choice_c": "That you are angry",
+    "choice_d": "That you want to keep it forever",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-020",
+    "prompt": "Why is it important to return borrowed items on time?",
+    "choice_a": "So you can keep them longer",
+    "choice_b": "So you can borrow more things",
+    "choice_c": "So your friend forgets about them",
+    "choice_d": "So your friend can use them again",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-020",
+    "prompt": "What might happen if you lose or break something you borrowed?",
+    "choice_a": "You will get a prize",
+    "choice_b": "Your friend will be happy",
+    "choice_c": "Your friend might feel disappointed",
+    "choice_d": "Nothing will change",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-020",
+    "prompt": "How does returning items in good condition affect your friendship?",
+    "choice_a": "It shows respect and responsibility",
+    "choice_b": "It causes problems",
+    "choice_c": "It makes your friend angry",
+    "choice_d": "It means you do not care",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-020",
+    "prompt": "What can happen if you keep borrowed items too long?",
+    "choice_a": "Your friend might feel upset or worried",
+    "choice_b": "Your friend will be happy to wait",
+    "choice_c": "Your friend will lend you more things",
+    "choice_d": "Your friend will forget about the item",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-021",
+    "prompt": "What does Milo love to do more than anything else?",
+    "choice_a": "Fly in the sky",
+    "choice_b": "Eat lots of food",
+    "choice_c": "Roar loudly and chase children",
+    "choice_d": "Make friends and take naps",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-021",
+    "prompt": "Where does Milo like to take his naps?",
+    "choice_a": "Inside a house",
+    "choice_b": "Under a big, shady tree",
+    "choice_c": "In a dark cave",
+    "choice_d": "On a mountain top",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-021",
+    "prompt": "How did Emma feel when she first saw Milo?",
+    "choice_a": "A bit scared",
+    "choice_b": "Very happy",
+    "choice_c": "Angry at Milo",
+    "choice_d": "Excited to play games",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-021",
+    "prompt": "What did Milo do to make Emma laugh?",
+    "choice_a": "He roared loudly",
+    "choice_b": "He yawned and stretched",
+    "choice_c": "He danced funny",
+    "choice_d": "He chased her",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-021",
+    "prompt": "What can we learn about Milo from the story?",
+    "choice_a": "He is scary and mean",
+    "choice_b": "He does not like friends",
+    "choice_c": "He is kind and loves naps",
+    "choice_d": "He never sleeps",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-022",
+    "prompt": "What did the players do when one kicked the ball far?",
+    "choice_a": "They ignored the ball",
+    "choice_b": "They stopped playing",
+    "choice_c": "Their teammates quickly ran to the bases",
+    "choice_d": "They went home",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-022",
+    "prompt": "How did the team trying to catch the ball get players out?",
+    "choice_a": "They kicked the ball far",
+    "choice_b": "They shouted instructions and threw the ball carefully",
+    "choice_c": "They did not pay attention",
+    "choice_d": "They ran away",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-022",
+    "prompt": "How long did the kickball game last?",
+    "choice_a": "About thirty minutes",
+    "choice_b": "Ten minutes",
+    "choice_c": "One hour",
+    "choice_d": "All day",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-022",
+    "prompt": "Why did both teams feel happy at the end?",
+    "choice_a": "Because they lost the game",
+    "choice_b": "Because they worked hard and helped each other",
+    "choice_c": "Because they did not play",
+    "choice_d": "Because they went home early",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-022",
+    "prompt": "What does the passage say about teamwork?",
+    "choice_a": "Teamwork is not important",
+    "choice_b": "Teamwork makes the game boring",
+    "choice_c": "Teamwork helps players enjoy sports more",
+    "choice_d": "Teamwork causes players to argue",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-023",
+    "prompt": "Where did Mia find the magic pencil?",
+    "choice_a": "In her school bag",
+    "choice_b": "In the park",
+    "choice_c": "In her grandmother's attic",
+    "choice_d": "On her desk",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-023",
+    "prompt": "What happened when Mia drew a star with the pencil?",
+    "choice_a": "The star turned into a real star in the sky",
+    "choice_b": "The star changed colors",
+    "choice_c": "The star popped off the page and stuck to her shirt",
+    "choice_d": "The star disappeared",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-023",
+    "prompt": "What did Mia draw on her notebook?",
+    "choice_a": "A blue butterfly",
+    "choice_b": "A yellow sun",
+    "choice_c": "A green tree",
+    "choice_d": "A red heart",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-023",
+    "prompt": "What did the blue butterfly do after Mia drew it?",
+    "choice_a": "It flew up and landed on her desk",
+    "choice_b": "It turned into a real butterfly",
+    "choice_c": "It disappeared",
+    "choice_d": "It stayed on the paper",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-023",
+    "prompt": "Why did Mia share the magic pencil with her friends?",
+    "choice_a": "Because it made drawing more fun",
+    "choice_b": "Because she didn't want it anymore",
+    "choice_c": "Because her grandmother told her to",
+    "choice_d": "Because it was broken",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-024",
+    "prompt": "What is the first step to play pretend doctor safely?",
+    "choice_a": "Gather your supplies",
+    "choice_b": "Talk kindly",
+    "choice_c": "Wash your hands",
+    "choice_d": "Find a quiet space",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-024",
+    "prompt": "What can you use as a tongue depressor in pretend doctor play?",
+    "choice_a": "A clean spoon",
+    "choice_b": "A flashlight",
+    "choice_c": "A pencil",
+    "choice_d": "A toy car",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-024",
+    "prompt": "Why should you find a clean, quiet space to play?",
+    "choice_a": "So you can make noise",
+    "choice_b": "So you can watch TV",
+    "choice_c": "So the area is safe and free from sharp objects",
+    "choice_d": "So you can run around",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-024",
+    "prompt": "What should you do before touching someone when playing doctor?",
+    "choice_a": "Ask for permission",
+    "choice_b": "Run away",
+    "choice_c": "Shout loudly",
+    "choice_d": "Close your eyes",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-024",
+    "prompt": "Why is it important to talk kindly to your pretend patient?",
+    "choice_a": "To make them leave",
+    "choice_b": "To make them scared",
+    "choice_c": "To make them feel safe and happy",
+    "choice_d": "To make noise",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-025",
+    "prompt": "What is special about the lunchroom table?",
+    "choice_a": "It is made of gold.",
+    "choice_b": "It has tiny toy dinosaurs underneath.",
+    "choice_c": "It is the biggest table in the lunchroom.",
+    "choice_d": "It is always empty.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-025",
+    "prompt": "What do students do on one side of the table?",
+    "choice_a": "They play video games.",
+    "choice_b": "They run around the lunchroom.",
+    "choice_c": "They sing songs loudly.",
+    "choice_d": "They sit quietly and eat sandwiches.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-025",
+    "prompt": "What happens on the other side of the table?",
+    "choice_a": "Kids read books.",
+    "choice_b": "Kids sleep quietly.",
+    "choice_c": "Kids laugh loudly and tell funny jokes.",
+    "choice_d": "Kids do their homework.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-025",
+    "prompt": "What do some kids believe about the toy dinosaurs?",
+    "choice_a": "They are invisible.",
+    "choice_b": "They can fly around the lunchroom.",
+    "choice_c": "They are made of chocolate.",
+    "choice_d": "They help bring good luck during tests.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-025",
+    "prompt": "Why might lunchtime at this table feel like an adventure?",
+    "choice_a": "Because kids eat faster here.",
+    "choice_b": "Because it is calm, noisy, and has magical surprises.",
+    "choice_c": "Because the table is very cold.",
+    "choice_d": "Because no one talks at this table.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-026",
+    "prompt": "What did Emma decide to make for her friend Mia?",
+    "choice_a": "A necklace",
+    "choice_b": "A card",
+    "choice_c": "A friendship bracelet",
+    "choice_d": "A drawing",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-026",
+    "prompt": "Which colors of thread did Emma use?",
+    "choice_a": "Pink, purple, orange, and black",
+    "choice_b": "Red, white, blue, and black",
+    "choice_c": "White, brown, gray, and blue",
+    "choice_d": "Red, blue, yellow, and green",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-026",
+    "prompt": "Why did Emma want to make the bracelet for Mia?",
+    "choice_a": "Because Mia invited her to a party",
+    "choice_b": "Because Mia gave her a gift",
+    "choice_c": "Because Mia was moving away",
+    "choice_d": "Because Mia helped her find her notebook",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-026",
+    "prompt": "What did Emma do after finishing the bracelet?",
+    "choice_a": "She gave it to her teacher",
+    "choice_b": "She tied the last knot and trimmed extra threads",
+    "choice_c": "She put it in a box",
+    "choice_d": "She painted the bracelet",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-026",
+    "prompt": "What can we guess about Emma and Mia's friendship after giving the bracelet?",
+    "choice_a": "They forgot about the bracelet",
+    "choice_b": "Their friendship became stronger",
+    "choice_c": "They stopped talking",
+    "choice_d": "They argued about the bracelet",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-027",
+    "prompt": "Where did Dolly the dolphin live?",
+    "choice_a": "On a mountain",
+    "choice_b": "In a forest",
+    "choice_c": "In a desert",
+    "choice_d": "In the warm, blue ocean",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-027",
+    "prompt": "What game were the turtles playing when they arrived?",
+    "choice_a": "Jumping Waves",
+    "choice_b": "Tag",
+    "choice_c": "Hide and Seek",
+    "choice_d": "Shell Shuffle",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-027",
+    "prompt": "How did Dolly learn to push the shells better?",
+    "choice_a": "By kicking the shells with her feet",
+    "choice_b": "By using her nose to push them",
+    "choice_c": "By using her fins to catch them",
+    "choice_d": "By using her tail to push them",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-027",
+    "prompt": "What happened after Dolly learned the game?",
+    "choice_a": "The turtles left the ocean",
+    "choice_b": "Dolly stopped playing the game",
+    "choice_c": "Dolly forgot how to play",
+    "choice_d": "Other dolphins joined and played too",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-027",
+    "prompt": "Why was Dolly happy at the end of the story?",
+    "choice_a": "She swam alone in the ocean",
+    "choice_b": "She won a big prize",
+    "choice_c": "She found a treasure chest",
+    "choice_d": "She learned a new game and made friends",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-028",
+    "prompt": "What do soccer players use to pass the ball?",
+    "choice_a": "A stick",
+    "choice_b": "Their heads",
+    "choice_c": "Their hands",
+    "choice_d": "Their feet",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-028",
+    "prompt": "Which type of pass is NOT mentioned as a basketball pass?",
+    "choice_a": "Foot pass",
+    "choice_b": "Bounce pass",
+    "choice_c": "Overhead pass",
+    "choice_d": "Chest pass",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-028",
+    "prompt": "Why do players need to watch their partner closely in soccer?",
+    "choice_a": "To avoid opponents",
+    "choice_b": "To stop the game",
+    "choice_c": "To run faster",
+    "choice_d": "To score points",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-028",
+    "prompt": "What is one similarity between passing in soccer and basketball?",
+    "choice_a": "Both use the feet",
+    "choice_b": "Both use a stick",
+    "choice_c": "Both need good teamwork",
+    "choice_d": "Both require players to stay still",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-028",
+    "prompt": "What skill is important for passing in basketball?",
+    "choice_a": "Jumping high",
+    "choice_b": "Kicking power",
+    "choice_c": "Running speed",
+    "choice_d": "Hand-eye coordination",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-029",
+    "prompt": "What are hurdles in track sports?",
+    "choice_a": "Low barriers you jump over while running",
+    "choice_b": "Shoes you wear for running",
+    "choice_c": "Flags you wave at the finish line",
+    "choice_d": "Balls you throw during the race",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-029",
+    "prompt": "How did the coach describe the hurdles?",
+    "choice_a": "Sticky and slow",
+    "choice_b": "Light and easy to knock down",
+    "choice_c": "Tall and sharp",
+    "choice_d": "Heavy and hard to move",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-029",
+    "prompt": "What did Tommy do when he first tried the hurdles?",
+    "choice_a": "He walked around the hurdle",
+    "choice_b": "He sat down and watched",
+    "choice_c": "He ran and jumped over the hurdle",
+    "choice_d": "He kicked the hurdle",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-029",
+    "prompt": "Why did Mia say hurdles are fun?",
+    "choice_a": "Because they are like a fun game",
+    "choice_b": "Because they don’t require running",
+    "choice_c": "Because they are easy to break",
+    "choice_d": "Because they are very tall",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-029",
+    "prompt": "What can we guess about why Coach said to start slow?",
+    "choice_a": "Because jumping hurdles takes practice",
+    "choice_b": "Because the track is slippery",
+    "choice_c": "Because Mia and Tommy were tired",
+    "choice_d": "Because the hurdles are very heavy",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-030",
+    "prompt": "What is the first step to clean up after a party?",
+    "choice_a": "Arrange the chairs",
+    "choice_b": "Collect all the trash",
+    "choice_c": "Sweep the floor",
+    "choice_d": "Put dishes in the sink",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-030",
+    "prompt": "What should you do with leftover food that is still good?",
+    "choice_a": "Put it away in containers",
+    "choice_b": "Give it to friends",
+    "choice_c": "Throw it in the trash",
+    "choice_d": "Leave it on the table",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-030",
+    "prompt": "How do you clean tables and countertops?",
+    "choice_a": "Throw away trash",
+    "choice_b": "Sweep the floor",
+    "choice_c": "Put chairs away",
+    "choice_d": "Wipe with a damp cloth",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-030",
+    "prompt": "Why is cleaning up after a party important?",
+    "choice_a": "It stops people from talking",
+    "choice_b": "It makes the party longer",
+    "choice_c": "It makes food taste better",
+    "choice_d": "It helps keep the space neat",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-030",
+    "prompt": "What can make cleaning up faster and more fun?",
+    "choice_a": "Skipping the cleaning",
+    "choice_b": "Doing it alone",
+    "choice_c": "Cleaning together with friends or family",
+    "choice_d": "Cleaning before the party",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-031",
+    "prompt": "What is the Sun mostly made of?",
+    "choice_a": "Oxygen and nitrogen",
+    "choice_b": "Water and carbon dioxide",
+    "choice_c": "Iron and gold",
+    "choice_d": "Hydrogen and helium gases",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-031",
+    "prompt": "Why does the Sun look bigger and brighter than other stars?",
+    "choice_a": "Because it is much closer to Earth",
+    "choice_b": "Because it is the biggest star in space",
+    "choice_c": "Because it moves closer every day",
+    "choice_d": "Because it is made of fire",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-031",
+    "prompt": "What process inside the Sun produces energy?",
+    "choice_a": "Photosynthesis",
+    "choice_b": "Nuclear fusion",
+    "choice_c": "Evaporation",
+    "choice_d": "Condensation",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-031",
+    "prompt": "What does the Sun give to Earth that helps life?",
+    "choice_a": "Light and heat",
+    "choice_b": "Water and air",
+    "choice_c": "Soil and rocks",
+    "choice_d": "Food and animals",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-031",
+    "prompt": "What can we learn by studying the Sun?",
+    "choice_a": "How to make the Sun bigger",
+    "choice_b": "How to stop the Sun from shining",
+    "choice_c": "How stars work and affect Earth",
+    "choice_d": "How to travel to the Sun",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-032",
+    "prompt": "Where did Pebble live?",
+    "choice_a": "Under the sea",
+    "choice_b": "In a big mountain",
+    "choice_c": "In a forest",
+    "choice_d": "At the edge of a sparkling river",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-032",
+    "prompt": "What did Pebble want to do?",
+    "choice_a": "Grow into a big rock",
+    "choice_b": "Fly in the sky",
+    "choice_c": "Swim like a fish",
+    "choice_d": "Skip across the water",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-032",
+    "prompt": "Who helped Pebble learn to skip?",
+    "choice_a": "A fisherman",
+    "choice_b": "A girl named Lily",
+    "choice_c": "A dog",
+    "choice_d": "A boy named Sam",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-032",
+    "prompt": "What happened on Pebble's first try to skip?",
+    "choice_a": "Pebble flew back to the shore",
+    "choice_b": "Pebble touched the water once and sank",
+    "choice_c": "Pebble bounced three times",
+    "choice_d": "Pebble did not touch the water",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-032",
+    "prompt": "What can we guess about Pebble after it learned to skip?",
+    "choice_a": "Pebble was afraid of water",
+    "choice_b": "Pebble stopped wanting to skip",
+    "choice_c": "Pebble became heavy and stayed on shore",
+    "choice_d": "Pebble felt proud and happy",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-033",
+    "prompt": "What is one of the best ways to protect yourself while cycling?",
+    "choice_a": "Wearing sunglasses",
+    "choice_b": "Riding very fast",
+    "choice_c": "Riding without hands",
+    "choice_d": "Wearing a helmet",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-033",
+    "prompt": "How should your helmet fit on your head?",
+    "choice_a": "Only on the back of your head",
+    "choice_b": "Loose and wobbly",
+    "choice_c": "Covering your eyes",
+    "choice_d": "Snug but not too tight",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-033",
+    "prompt": "What should you do if your helmet has cracks or damage?",
+    "choice_a": "Wear it anyway",
+    "choice_b": "Use it only for short rides",
+    "choice_c": "Fix it with tape",
+    "choice_d": "Do not use it and get a new one",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-033",
+    "prompt": "How many fingers should fit between the chin strap and your chin?",
+    "choice_a": "No fingers",
+    "choice_b": "One or two fingers",
+    "choice_c": "Five fingers",
+    "choice_d": "Three or four fingers",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-033",
+    "prompt": "Why should you wear your helmet every time you ride?",
+    "choice_a": "To protect yourself from serious injuries",
+    "choice_b": "To look cool",
+    "choice_c": "To keep your hair neat",
+    "choice_d": "Because it is heavy",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-034",
+    "prompt": "Why are leaves green during spring and summer?",
+    "choice_a": "Because they are dry",
+    "choice_b": "Because they have carotenoids",
+    "choice_c": "Because they have anthocyanins",
+    "choice_d": "Because they have chlorophyll",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-034",
+    "prompt": "What causes leaves to change color in the fall?",
+    "choice_a": "The tree stops making chlorophyll",
+    "choice_b": "The tree gets more sunlight",
+    "choice_c": "The tree makes more chlorophyll",
+    "choice_d": "The tree grows new leaves",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-034",
+    "prompt": "What colors appear when chlorophyll fades?",
+    "choice_a": "Yellow, orange, and red",
+    "choice_b": "Green, brown, and yellow",
+    "choice_c": "Blue, purple, and pink",
+    "choice_d": "Black, white, and gray",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-034",
+    "prompt": "What do carotenoids give leaves?",
+    "choice_a": "Brown colors",
+    "choice_b": "Green colors",
+    "choice_c": "Yellow and orange colors",
+    "choice_d": "Red colors",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-034",
+    "prompt": "Why do leaves fall off the tree in the fall?",
+    "choice_a": "Because the tree is resting for winter",
+    "choice_b": "Because the leaves grow bigger",
+    "choice_c": "Because the tree is thirsty",
+    "choice_d": "Because the tree needs more food",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-035",
+    "prompt": "What are Lily's two favorite toys?",
+    "choice_a": "A red toy train and a blue robot",
+    "choice_b": "A yellow ball and a green dinosaur",
+    "choice_c": "A doll and a puzzle",
+    "choice_d": "A bike and a skateboard",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-035",
+    "prompt": "What can the robot do?",
+    "choice_a": "Change colors",
+    "choice_b": "Walk, talk, and dance",
+    "choice_c": "Whisper stories",
+    "choice_d": "Fly in the air",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-035",
+    "prompt": "What is special about the toy train?",
+    "choice_a": "It makes loud noises and flashes lights",
+    "choice_b": "It talks loudly",
+    "choice_c": "It whispers stories from faraway places",
+    "choice_d": "It can walk and dance",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-035",
+    "prompt": "How does Lily feel about the robot and the train?",
+    "choice_a": "She likes only the robot",
+    "choice_b": "She does not like either toy",
+    "choice_c": "She loves both for different reasons",
+    "choice_d": "She likes only the train",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-035",
+    "prompt": "Why is the toy train peaceful?",
+    "choice_a": "Because it shares calm and quiet stories",
+    "choice_b": "Because it dances and talks",
+    "choice_c": "Because it makes loud noises",
+    "choice_d": "Because it flashes colorful lights",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-036",
+    "prompt": "What do students bring to Show and Tell Day?",
+    "choice_a": "A snack",
+    "choice_b": "Their homework",
+    "choice_c": "Something important to share",
+    "choice_d": "A book to read",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-036",
+    "prompt": "What happened when Sarah brought her turtle to class?",
+    "choice_a": "Sarah left early",
+    "choice_b": "The turtle ran away",
+    "choice_c": "Classmates asked questions about pets",
+    "choice_d": "Everyone ignored the turtle",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-036",
+    "prompt": "How did Daniel’s rock affect the students?",
+    "choice_a": "It made students bored",
+    "choice_b": "It was lost during class",
+    "choice_c": "It caused a class argument",
+    "choice_d": "It made some students want to explore nature",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-036",
+    "prompt": "Why do shy students feel more confident on Show and Tell Day?",
+    "choice_a": "Because they get extra recess",
+    "choice_b": "Because they have a special object to talk about",
+    "choice_c": "Because the teacher gives them candy",
+    "choice_d": "Because they sit with friends",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-036",
+    "prompt": "What is one main reason Show and Tell Day makes school life fun?",
+    "choice_a": "It lets students watch movies",
+    "choice_b": "It allows students to eat snacks in class",
+    "choice_c": "It gives students a day off from homework",
+    "choice_d": "It helps students connect and learn from each other",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-037",
+    "prompt": "Where did Emma find the colorful scarf?",
+    "choice_a": "At school",
+    "choice_b": "Under the old oak tree",
+    "choice_c": "In her bedroom",
+    "choice_d": "In her grandmother's attic",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-037",
+    "prompt": "What did the scarf say to Emma when she wrapped it around her neck?",
+    "choice_a": "\"I will take you to a magical place\"",
+    "choice_b": "\"I am just a scarf\"",
+    "choice_c": "\"Solve my riddles, and you shall find a treasure\"",
+    "choice_d": "\"Wear me to stay warm\"",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-037",
+    "prompt": "What was the answer to the first riddle the scarf gave Emma?",
+    "choice_a": "The wind",
+    "choice_b": "An echo",
+    "choice_c": "A star",
+    "choice_d": "A shadow",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-037",
+    "prompt": "Where did Emma find the treasure?",
+    "choice_a": "In her grandmother's house",
+    "choice_b": "Under the old oak tree",
+    "choice_c": "In the attic",
+    "choice_d": "Inside the scarf",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-037",
+    "prompt": "Why did Emma hug the scarf at the end?",
+    "choice_a": "Because it was a gift from her friend",
+    "choice_b": "Because it was magical and helped her find treasure",
+    "choice_c": "Because it was very cold outside",
+    "choice_d": "Because it was her favorite color",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-038",
+    "prompt": "What are sedimentary rocks made of?",
+    "choice_a": "Molten lava from volcanoes",
+    "choice_b": "Large crystals from deep underground",
+    "choice_c": "Metals and minerals mixed together",
+    "choice_d": "Layers of tiny pieces called sediments",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-038",
+    "prompt": "What is sandstone mostly made from?",
+    "choice_a": "Tiny shells and bones",
+    "choice_b": "Sand grains",
+    "choice_c": "Volcanic ash",
+    "choice_d": "Mud and clay",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-038",
+    "prompt": "How does limestone react when it touches acid?",
+    "choice_a": "It turns red",
+    "choice_b": "It becomes rough",
+    "choice_c": "It melts quickly",
+    "choice_d": "It bubbles or fizzes",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-038",
+    "prompt": "Where does limestone usually form?",
+    "choice_a": "In deserts",
+    "choice_b": "In oceans",
+    "choice_c": "In forests",
+    "choice_d": "On mountains",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-038",
+    "prompt": "What can scientists learn by studying sedimentary rocks?",
+    "choice_a": "How to find gold",
+    "choice_b": "How to make new rocks",
+    "choice_c": "How to create volcanoes",
+    "choice_d": "How the Earth has changed over time",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-039",
+    "prompt": "What is the first step in making a paper airplane?",
+    "choice_a": "Throw the airplane gently forward",
+    "choice_b": "Fold the wings down",
+    "choice_c": "Fold the paper in half lengthwise and then unfold it",
+    "choice_d": "Fold the top corners to the center crease",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-039",
+    "prompt": "What size paper is most commonly used for making paper airplanes?",
+    "choice_a": "10 by 12 inches",
+    "choice_b": "6 by 9 inches",
+    "choice_c": "5 by 7 inches",
+    "choice_d": "8.5 by 11 inches",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-039",
+    "prompt": "Why do you fold the paper in half and then unfold it at the start?",
+    "choice_a": "To make the wings",
+    "choice_b": "To make the paper smaller",
+    "choice_c": "To create a center crease for symmetry",
+    "choice_d": "To throw the airplane better",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-039",
+    "prompt": "What should you do after folding the top corners down to the center crease?",
+    "choice_a": "Throw the airplane",
+    "choice_b": "Cut the paper",
+    "choice_c": "Fold the new top edges to the center crease",
+    "choice_d": "Fold the paper in half again",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-039",
+    "prompt": "Why might you try different folding styles or throwing speeds?",
+    "choice_a": "To make the airplane fly better",
+    "choice_b": "To make the airplane look colorful",
+    "choice_c": "To learn how to write",
+    "choice_d": "To make the paper smaller",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-040",
+    "prompt": "What did Mia decide to make for breakfast?",
+    "choice_a": "Cereal",
+    "choice_b": "Waffles",
+    "choice_c": "Pancakes",
+    "choice_d": "Toast",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-040",
+    "prompt": "What surprised Mia about the pancake?",
+    "choice_a": "It flipped itself in the air",
+    "choice_b": "It burned quickly",
+    "choice_c": "It tasted salty",
+    "choice_d": "It was very big",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-040",
+    "prompt": "What did the pancake do after it landed on the plate?",
+    "choice_a": "It disappeared",
+    "choice_b": "It cooled down",
+    "choice_c": "It started dancing",
+    "choice_d": "It rolled off the plate",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-040",
+    "prompt": "Why did breakfast become fun and silly?",
+    "choice_a": "Because they had juice to drink",
+    "choice_b": "Because the pancake flipped and danced",
+    "choice_c": "Because the family ate outside",
+    "choice_d": "Because Mia made many pancakes",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-040",
+    "prompt": "What did Mia name the pancake?",
+    "choice_a": "Happy",
+    "choice_b": "Jump",
+    "choice_c": "Flip",
+    "choice_d": "Dancer",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-041",
+    "prompt": "What causes day and night on Earth?",
+    "choice_a": "Clouds covering the sky",
+    "choice_b": "The Sun moving around Earth",
+    "choice_c": "The Moon blocking the Sun",
+    "choice_d": "The Earth spinning around",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-041",
+    "prompt": "How long does it take for the Earth to complete one full turn?",
+    "choice_a": "24 hours",
+    "choice_b": "12 hours",
+    "choice_c": "1 hour",
+    "choice_d": "7 days",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-041",
+    "prompt": "When is it daytime in one place, what can happen in another place?",
+    "choice_a": "It is nighttime there",
+    "choice_b": "It is also daytime there",
+    "choice_c": "The Sun is not shining anywhere",
+    "choice_d": "The Earth stops spinning",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-041",
+    "prompt": "Why do plants grow better with the day and night cycle?",
+    "choice_a": "Because it rains at night",
+    "choice_b": "Because the Sun's light helps them",
+    "choice_c": "Because the Moon shines on them",
+    "choice_d": "Because the Earth stops spinning",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-041",
+    "prompt": "What is the effect of the Earth's spinning?",
+    "choice_a": "The cycle of day and night",
+    "choice_b": "The Sun moves closer to Earth",
+    "choice_c": "The stars disappear",
+    "choice_d": "The Moon changes shape",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-042",
+    "prompt": "What do children use to weave in the activity?",
+    "choice_a": "Clay and tools",
+    "choice_b": "Yarn and needles",
+    "choice_c": "Colorful strips of paper",
+    "choice_d": "Paint and brushes",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-042",
+    "prompt": "What happens if you don't pay attention while weaving?",
+    "choice_a": "The paper will burn",
+    "choice_b": "The colors will fade",
+    "choice_c": "The paper will tear",
+    "choice_d": "The strips might get tangled",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-042",
+    "prompt": "Why do children enjoy weaving with different colors and sizes of paper strips?",
+    "choice_a": "It makes the paper heavier",
+    "choice_b": "It makes the finished product look unique and exciting",
+    "choice_c": "It makes the paper easier to cut",
+    "choice_d": "It helps the paper last longer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-042",
+    "prompt": "What skills do children develop when they learn to weave?",
+    "choice_a": "Reading and writing",
+    "choice_b": "Speed and strength",
+    "choice_c": "Singing and dancing",
+    "choice_d": "Patience and coordination",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-042",
+    "prompt": "How do children feel when they finish a weaving project?",
+    "choice_a": "Proud of what they make",
+    "choice_b": "Angry and upset",
+    "choice_c": "Bored and tired",
+    "choice_d": "Confused and sad",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-043",
+    "prompt": "Where does photosynthesis mainly happen in a plant?",
+    "choice_a": "In the stem",
+    "choice_b": "In the leaves",
+    "choice_c": "In the roots",
+    "choice_d": "In the flowers",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-043",
+    "prompt": "What do plants need to perform photosynthesis?",
+    "choice_a": "Animals, water, and soil",
+    "choice_b": "Sunlight, water, and air",
+    "choice_c": "Wind, rain, and soil",
+    "choice_d": "Soil, flowers, and seeds",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-043",
+    "prompt": "What is the green substance in leaves that captures sunlight?",
+    "choice_a": "Chlorophyll",
+    "choice_b": "Stomata",
+    "choice_c": "Oxygen",
+    "choice_d": "Sugar",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-043",
+    "prompt": "What do plants release into the air when they make food?",
+    "choice_a": "Sugar",
+    "choice_b": "Oxygen",
+    "choice_c": "Carbon dioxide",
+    "choice_d": "Water",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-043",
+    "prompt": "Why is sunlight important for plants?",
+    "choice_a": "It makes plants lose leaves",
+    "choice_b": "It makes plants grow roots",
+    "choice_c": "It helps plants drink water",
+    "choice_d": "It helps plants make food",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-044",
+    "prompt": "Why does Mia's mom usually shop on weekends?",
+    "choice_a": "Because the store is less crowded",
+    "choice_b": "Because the store is cheaper",
+    "choice_c": "Because the store is closed on weekdays",
+    "choice_d": "Because Mia likes to help",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-044",
+    "prompt": "What did Mia read from her mom's hand?",
+    "choice_a": "A map",
+    "choice_b": "A note",
+    "choice_c": "A shopping list",
+    "choice_d": "A recipe",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-044",
+    "prompt": "What kind of apples did Mia choose?",
+    "choice_a": "Green apples",
+    "choice_b": "Bruised apples",
+    "choice_c": "Small apples",
+    "choice_d": "Shiny red apples without bruises",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-044",
+    "prompt": "What did Mia do at the checkout?",
+    "choice_a": "Packed the groceries into bags",
+    "choice_b": "Paid for the groceries",
+    "choice_c": "Picked out more fruits",
+    "choice_d": "Helped unload items onto the conveyor belt",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-044",
+    "prompt": "Why was Mia happy to help with groceries?",
+    "choice_a": "Because her mom asked her to stay home",
+    "choice_b": "Because she wanted to buy candy",
+    "choice_c": "Because working together makes chores easier and more fun",
+    "choice_d": "Because she likes to shop alone",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-045",
+    "prompt": "What kind of games did Dolly like to play at first?",
+    "choice_a": "Games with shiny shells only",
+    "choice_b": "Fast and exciting games",
+    "choice_c": "Slow and quiet games",
+    "choice_d": "Games with turtles only",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-045",
+    "prompt": "What is the name of the game the turtles invited Dolly to play?",
+    "choice_a": "Shell Search",
+    "choice_b": "Ocean Race",
+    "choice_c": "Shell Shuffle",
+    "choice_d": "Wave Jump",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-045",
+    "prompt": "What skill did Shell Shuffle help Dolly practice?",
+    "choice_a": "Memory and patience",
+    "choice_b": "Swimming fast",
+    "choice_c": "Finding shiny shells",
+    "choice_d": "Jumping high",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-045",
+    "prompt": "How did Dolly feel about playing Shell Shuffle after practicing?",
+    "choice_a": "She liked it less than racing",
+    "choice_b": "She began to enjoy it",
+    "choice_c": "She wanted to stop playing",
+    "choice_d": "She found it too easy",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-045",
+    "prompt": "Why did Dolly decide to play both fast and slow games?",
+    "choice_a": "Because her friends told her to",
+    "choice_b": "Because slow games were easier",
+    "choice_c": "Because fast games were boring",
+    "choice_d": "Because she liked learning new skills",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-046",
+    "prompt": "What is the first step to start saving money in a jar?",
+    "choice_a": "Decide how much to save each week",
+    "choice_b": "Buy something special",
+    "choice_c": "Count the money in your jar",
+    "choice_d": "Find a jar that you like",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-046",
+    "prompt": "Why might you choose a clear jar?",
+    "choice_a": "Because it is colorful",
+    "choice_b": "Because it is harder to open",
+    "choice_c": "So you can hide your money",
+    "choice_d": "So you can see your money grow",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-046",
+    "prompt": "When should you put money into your jar?",
+    "choice_a": "Before you buy something",
+    "choice_b": "After you get your allowance or earn money from chores",
+    "choice_c": "Only on holidays",
+    "choice_d": "When the jar is full",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-046",
+    "prompt": "What should you do after a few weeks of saving?",
+    "choice_a": "Buy a new jar",
+    "choice_b": "Stop saving",
+    "choice_c": "Count the money in your jar",
+    "choice_d": "Spend all the money",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-046",
+    "prompt": "What does saving money in a jar teach you?",
+    "choice_a": "To buy many jars",
+    "choice_b": "To be patient and plan for the future",
+    "choice_c": "To hide money from others",
+    "choice_d": "To spend money quickly",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-047",
+    "prompt": "What did Henry the hedgehog decide to do?",
+    "choice_a": "Go for a walk",
+    "choice_b": "Host a tea party",
+    "choice_c": "Build a treehouse",
+    "choice_d": "Paint a picture",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-047",
+    "prompt": "Who did Henry invite to his tea party?",
+    "choice_a": "Lucy the rabbit, Oliver the owl, and Mia the squirrel",
+    "choice_b": "Tom the fox and Jerry the mouse",
+    "choice_c": "Sam the bear and Lily the deer",
+    "choice_d": "No one",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-047",
+    "prompt": "What did Henry prepare to eat at the party?",
+    "choice_a": "Cupcakes made with fresh berries",
+    "choice_b": "Sandwiches and salad",
+    "choice_c": "Pizza and soda",
+    "choice_d": "Fruit salad only",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-047",
+    "prompt": "How did Henry feel after the tea party?",
+    "choice_a": "Angry at his friends",
+    "choice_b": "Bored and lonely",
+    "choice_c": "Happy to share with friends",
+    "choice_d": "Tired and sad",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-047",
+    "prompt": "Why did Henry clean and decorate his house before the party?",
+    "choice_a": "To make it nice for his friends",
+    "choice_b": "To prepare for winter",
+    "choice_c": "Because he was bored",
+    "choice_d": "To sell his house",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-048",
+    "prompt": "What did Liam order at the pretend restaurant?",
+    "choice_a": "Grilled cheese sandwich and orange juice",
+    "choice_b": "Burger and soda",
+    "choice_c": "Cupcakes and water",
+    "choice_d": "Pizza and milk",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-048",
+    "prompt": "Who pretended to make the grilled cheese sandwich?",
+    "choice_a": "Emma",
+    "choice_b": "The cashier",
+    "choice_c": "Liam",
+    "choice_d": "Mia",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-048",
+    "prompt": "How much did Liam pay for his order?",
+    "choice_a": "Five pretend dollars",
+    "choice_b": "Ten pretend dollars",
+    "choice_c": "One pretend dollar",
+    "choice_d": "Two pretend dollars",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-048",
+    "prompt": "What does Mia like about playing restaurant?",
+    "choice_a": "Being the server and talking to customers",
+    "choice_b": "Counting money",
+    "choice_c": "Making cupcakes",
+    "choice_d": "Ordering food",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-048",
+    "prompt": "What game do they want to play next time?",
+    "choice_a": "Supermarket",
+    "choice_b": "School",
+    "choice_c": "Bakery with cupcakes",
+    "choice_d": "Hospital",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-049",
+    "prompt": "Who wants to be the line leader?",
+    "choice_a": "Only Sofia",
+    "choice_b": "Only Tom",
+    "choice_c": "Tom and Sofia",
+    "choice_d": "Ms. Parker",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-049",
+    "prompt": "What does Ms. Parker say a line leader should do?",
+    "choice_a": "Help keep the class safe and organized",
+    "choice_b": "Run in the hallway",
+    "choice_c": "Ignore the rules",
+    "choice_d": "Push friends to move faster",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-049",
+    "prompt": "What should a line leader do if someone does not listen?",
+    "choice_a": "Push the person",
+    "choice_b": "Ignore it",
+    "choice_c": "Tell Ms. Parker",
+    "choice_d": "Run ahead alone",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-049",
+    "prompt": "How will Tom and Sofia share the line leader job?",
+    "choice_a": "They will both lead at the same time",
+    "choice_b": "Only Sofia will be the leader",
+    "choice_c": "Only Tom will be the leader",
+    "choice_d": "They will take turns",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-049",
+    "prompt": "Why is being patient important for a line leader?",
+    "choice_a": "Because it is fun to shout",
+    "choice_b": "Because friends might get excited or distracted",
+    "choice_c": "Because pushing helps move the line",
+    "choice_d": "Because running is faster",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-050",
+    "prompt": "What did Lily and Max decide to do with the buttons?",
+    "choice_a": "Paint the buttons",
+    "choice_b": "Sort them by color",
+    "choice_c": "Throw them away",
+    "choice_d": "Count how many buttons",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-050",
+    "prompt": "Which color did Lily and Max start sorting first?",
+    "choice_a": "Red",
+    "choice_b": "Blue",
+    "choice_c": "Yellow",
+    "choice_d": "Green",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-050",
+    "prompt": "What did Lily say about sorting buttons?",
+    "choice_a": "It is a fun way to play and practice organizing",
+    "choice_b": "It takes too long",
+    "choice_c": "It is better to throw buttons away",
+    "choice_d": "It is boring and hard",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-050",
+    "prompt": "What shapes did Max notice about the buttons?",
+    "choice_a": "All buttons are the same size",
+    "choice_b": "Buttons are only square",
+    "choice_c": "Buttons are only round",
+    "choice_d": "Some buttons are small, and some are big",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-050",
+    "prompt": "Why do you think Lily said they make a good team?",
+    "choice_a": "Because they played video games",
+    "choice_b": "Because they worked well sorting buttons together",
+    "choice_c": "Because they ate dinner",
+    "choice_d": "Because they went outside",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-051",
+    "prompt": "What did Sam do before jumping into the pool?",
+    "choice_a": "He pushed his friends.",
+    "choice_b": "He ran around the pool.",
+    "choice_c": "He remembered the pool safety rules.",
+    "choice_d": "He jumped in right away.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-051",
+    "prompt": "Why did Sam make sure to walk around the pool?",
+    "choice_a": "To race his friends.",
+    "choice_b": "To avoid slipping.",
+    "choice_c": "Because running is fun.",
+    "choice_d": "To get there faster.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-051",
+    "prompt": "Where did Sam and his friends swim?",
+    "choice_a": "Outside the pool.",
+    "choice_b": "In the deep end.",
+    "choice_c": "In the diving area.",
+    "choice_d": "In the shallow area.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-051",
+    "prompt": "What did Sam do to stay healthy while swimming?",
+    "choice_a": "He ate snacks in the pool.",
+    "choice_b": "He took a nap in the sun.",
+    "choice_c": "He swam alone.",
+    "choice_d": "He drank water and put on sunscreen.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-051",
+    "prompt": "Why did Sam stay close to his friends while swimming?",
+    "choice_a": "Because he wanted to race them.",
+    "choice_b": "Because it is safer to swim with others.",
+    "choice_c": "Because the pool was empty.",
+    "choice_d": "Because he was tired.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-052",
+    "prompt": "What does dribbling in soccer help a player do?",
+    "choice_a": "Move the ball while keeping control",
+    "choice_b": "Throw the ball to teammates",
+    "choice_c": "Kick the ball out of the field",
+    "choice_d": "Hold the ball in their hands",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-052",
+    "prompt": "Which part of the foot is NOT mentioned as used for dribbling?",
+    "choice_a": "Inside of the foot",
+    "choice_b": "Sole of the foot",
+    "choice_c": "Heel of the foot",
+    "choice_d": "Outside of the foot",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-052",
+    "prompt": "What is the 'pull-back' move in soccer dribbling?",
+    "choice_a": "Running without the ball",
+    "choice_b": "Kicking the ball very hard",
+    "choice_c": "Passing the ball to a teammate",
+    "choice_d": "Pulling the ball back with the sole of the foot",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-052",
+    "prompt": "Why do players practice dribbling slowly in a straight line first?",
+    "choice_a": "To run faster without the ball",
+    "choice_b": "To score goals quickly",
+    "choice_c": "To avoid playing with others",
+    "choice_d": "To learn control before going faster",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-052",
+    "prompt": "What can we infer about the 'step-over' move?",
+    "choice_a": "It is a way to stop the ball",
+    "choice_b": "It is only used by beginners",
+    "choice_c": "It helps confuse defenders",
+    "choice_d": "It is used to pass the ball",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-053",
+    "prompt": "What is the main goal in capture-the-flag?",
+    "choice_a": "To capture the other team's flag",
+    "choice_b": "To build a fort",
+    "choice_c": "To collect rocks",
+    "choice_d": "To run the fastest",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-053",
+    "prompt": "Why do players need to follow safety rules?",
+    "choice_a": "To find hidden treasure",
+    "choice_b": "To run faster",
+    "choice_c": "To prevent accidents and injuries",
+    "choice_d": "To win the game easily",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-053",
+    "prompt": "What should players avoid to keep the game safe?",
+    "choice_a": "Wearing hats",
+    "choice_b": "Talking to teammates",
+    "choice_c": "Pushing or shoving",
+    "choice_d": "Running slowly",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-053",
+    "prompt": "Where should players stay during the game?",
+    "choice_a": "In the trees",
+    "choice_b": "Inside the safe boundaries",
+    "choice_c": "Near busy streets",
+    "choice_d": "Far from the flags",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-053",
+    "prompt": "Why do safe rules make the game more fun?",
+    "choice_a": "Because players can run faster",
+    "choice_b": "Because everyone plays fairly and safely",
+    "choice_c": "Because players can push each other",
+    "choice_d": "Because the flags are hidden better",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-054",
+    "prompt": "What is the main idea of the passage?",
+    "choice_a": "Buttons are only red and blue.",
+    "choice_b": "You should throw away buttons you don't need.",
+    "choice_c": "Sorting buttons by color is fun and helps organize them.",
+    "choice_d": "Buttons are all the same size and shape.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-054",
+    "prompt": "What do you need to start sorting buttons?",
+    "choice_a": "A box to throw buttons away.",
+    "choice_b": "A flat surface and a container for each color.",
+    "choice_c": "A pair of scissors.",
+    "choice_d": "A pencil and paper.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-054",
+    "prompt": "How can sorting buttons help you?",
+    "choice_a": "It helps you find the button you want easily.",
+    "choice_b": "It makes buttons disappear.",
+    "choice_c": "It makes buttons heavier.",
+    "choice_d": "It makes buttons change color.",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-054",
+    "prompt": "If a button has many colors, what should you do?",
+    "choice_a": "Put it with the smallest buttons.",
+    "choice_b": "Put it in a pile by size.",
+    "choice_c": "Throw it away because it is hard to sort.",
+    "choice_d": "Choose the color that stands out the most.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-054",
+    "prompt": "Why might sorting buttons be like a game?",
+    "choice_a": "Because buttons can jump around.",
+    "choice_b": "Because you can eat the buttons.",
+    "choice_c": "Because you have to guess the color.",
+    "choice_d": "Because you can time yourself to see how fast you sort.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-055",
+    "prompt": "What did Mia see when she stepped outside?",
+    "choice_a": "A snowy yard",
+    "choice_b": "A sunny beach",
+    "choice_c": "A colorful garden",
+    "choice_d": "A dull and gray backyard",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-055",
+    "prompt": "What was wrong with the wooden fence?",
+    "choice_a": "It was old and peeling",
+    "choice_b": "It was too tall",
+    "choice_c": "It was broken in half",
+    "choice_d": "It was made of metal",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-055",
+    "prompt": "What happened when the rainbow touched the fence?",
+    "choice_a": "The fence broke",
+    "choice_b": "The colors slid off and painted the fence",
+    "choice_c": "The fence disappeared",
+    "choice_d": "The rainbow turned into a cloud",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-055",
+    "prompt": "What shapes did the rainbow colors make on the fence?",
+    "choice_a": "Stars, hearts, and swirls",
+    "choice_b": "Circles and stripes",
+    "choice_c": "Squares and triangles",
+    "choice_d": "Zigzags and dots",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-055",
+    "prompt": "Why was Mia happy about the fence after the rainbow painted it?",
+    "choice_a": "Because she could climb it",
+    "choice_b": "Because it was taller",
+    "choice_c": "Because it made her backyard cheerful and magical",
+    "choice_d": "Because it was made of metal",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-056",
+    "prompt": "What is one way children can help their neighbors according to the passage?",
+    "choice_a": "Walking their dog",
+    "choice_b": "Delivering groceries",
+    "choice_c": "Washing their car",
+    "choice_d": "Painting the house",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-056",
+    "prompt": "Why is delivering groceries helpful for some neighbors?",
+    "choice_a": "Because they cannot easily leave their homes",
+    "choice_b": "Because it involves talking a lot",
+    "choice_c": "Because it takes a long time",
+    "choice_d": "Because it cleans the yard",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-056",
+    "prompt": "What does mowing the lawn show to neighbors?",
+    "choice_a": "That you want to visit inside",
+    "choice_b": "That you like to play outside",
+    "choice_c": "That you want to borrow tools",
+    "choice_d": "Respect for their property",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-056",
+    "prompt": "Which task usually takes longer and is done outside?",
+    "choice_a": "Mowing the lawn",
+    "choice_b": "Carrying bags",
+    "choice_c": "Delivering groceries",
+    "choice_d": "Chatting with neighbors",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-056",
+    "prompt": "How do both ways of helping neighbors make the community?",
+    "choice_a": "Messy and dirty",
+    "choice_b": "Quieter and lonelier",
+    "choice_c": "Bigger and louder",
+    "choice_d": "Stronger and friendlier",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-057",
+    "prompt": "What state of matter is ice?",
+    "choice_a": "Liquid",
+    "choice_b": "Solid",
+    "choice_c": "Water",
+    "choice_d": "Gas",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-057",
+    "prompt": "What does 'states of matter' mean?",
+    "choice_a": "Different forms of matter like solid, liquid, and gas",
+    "choice_b": "Different colors of ice",
+    "choice_c": "Kinds of food",
+    "choice_d": "Types of animals",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-057",
+    "prompt": "What happens when ice melts?",
+    "choice_a": "It becomes solid again",
+    "choice_b": "It disappears",
+    "choice_c": "It changes from solid to liquid",
+    "choice_d": "It turns into gas",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-057",
+    "prompt": "Why does water take the shape of its container?",
+    "choice_a": "Because it has no weight",
+    "choice_b": "Because it is a solid",
+    "choice_c": "Because it is a liquid",
+    "choice_d": "Because it is a gas",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-057",
+    "prompt": "What can we learn from the passage?",
+    "choice_a": "Ice is always cold",
+    "choice_b": "Gas is heavier than solids",
+    "choice_c": "Water is always clear",
+    "choice_d": "Matter can change states when temperature changes",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-058",
+    "prompt": "Where did Mia find the wind-up robot?",
+    "choice_a": "In Tim's room",
+    "choice_b": "In the garden",
+    "choice_c": "In the attic",
+    "choice_d": "In the kitchen",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-058",
+    "prompt": "What did Mia do to make the robot move?",
+    "choice_a": "Clapped her hands",
+    "choice_b": "Wound the key on its back",
+    "choice_c": "Pushed a button",
+    "choice_d": "Shook the robot",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-058",
+    "prompt": "What did the robot do after it started walking?",
+    "choice_a": "Spun in circles",
+    "choice_b": "Walked toward the door",
+    "choice_c": "Fell down",
+    "choice_d": "Stopped immediately",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-058",
+    "prompt": "Why did Mia and Tim open the door?",
+    "choice_a": "To find the robot's battery",
+    "choice_b": "To let the robot go outside",
+    "choice_c": "To let their dog out",
+    "choice_d": "To get fresh air",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-058",
+    "prompt": "What can we guess about the robot from the story?",
+    "choice_a": "It only walks in the attic",
+    "choice_b": "It is scared of the garden",
+    "choice_c": "It likes to explore new places",
+    "choice_d": "It does not move at all",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-059",
+    "prompt": "What should students do when waiting in line for lunch?",
+    "choice_a": "Line up quietly and wait their turn",
+    "choice_b": "Skip the line",
+    "choice_c": "Talk loudly",
+    "choice_d": "Push to get ahead",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-059",
+    "prompt": "What happens when students push in line?",
+    "choice_a": "It causes arguments and slows down the line",
+    "choice_b": "The line moves faster",
+    "choice_c": "Everyone gets lunch early",
+    "choice_d": "Students feel respected",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-059",
+    "prompt": "Why is speaking softly during lunch better?",
+    "choice_a": "It makes lunch take longer",
+    "choice_b": "It makes people upset",
+    "choice_c": "It helps students shout",
+    "choice_d": "It makes a calm and friendly environment",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-059",
+    "prompt": "What should students do after eating lunch?",
+    "choice_a": "Leave trash on the table",
+    "choice_b": "Throw away trash and wipe tables",
+    "choice_c": "Talk loudly",
+    "choice_d": "Push in line",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-059",
+    "prompt": "What is one effect of good lunchroom etiquette?",
+    "choice_a": "The lunchroom becomes messy",
+    "choice_b": "Students argue more",
+    "choice_c": "The line moves slower",
+    "choice_d": "Lunchtime is enjoyable for all students",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-060",
+    "prompt": "What are pom-poms made from?",
+    "choice_a": "Plastic",
+    "choice_b": "Paper",
+    "choice_c": "Wood",
+    "choice_d": "Yarn",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-060",
+    "prompt": "What do you need to stick pom-poms together?",
+    "choice_a": "Glue",
+    "choice_b": "Stapler",
+    "choice_c": "String",
+    "choice_d": "Tape",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-060",
+    "prompt": "Which of these is NOT mentioned as a pom-pom craft idea?",
+    "choice_a": "Hat",
+    "choice_b": "Pom-pom caterpillar",
+    "choice_c": "Keychain",
+    "choice_d": "Necklace",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-060",
+    "prompt": "How long should you let your craft dry?",
+    "choice_a": "Ten minutes",
+    "choice_b": "About an hour",
+    "choice_c": "One day",
+    "choice_d": "Five minutes",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-060",
+    "prompt": "Why do you add googly eyes to pom-poms?",
+    "choice_a": "To make a cute face",
+    "choice_b": "To make it dry faster",
+    "choice_c": "To make it heavier",
+    "choice_d": "To stick pom-poms together",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-061",
+    "prompt": "Who is Lila?",
+    "choice_a": "A big forest animal",
+    "choice_b": "A child exploring the woods",
+    "choice_c": "A small fairy with sparkling wings",
+    "choice_d": "A traveler lost in the forest",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-061",
+    "prompt": "What does Lila carry in her pouch?",
+    "choice_a": "Food and water",
+    "choice_b": "A map and a compass",
+    "choice_c": "A flashlight and batteries",
+    "choice_d": "A tiny paintbrush and bright colors",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-061",
+    "prompt": "Where does Lila paint her tiny signs?",
+    "choice_a": "On leaves",
+    "choice_b": "On the travelers' clothes",
+    "choice_c": "On rocks or trees",
+    "choice_d": "On the ground",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-061",
+    "prompt": "Who followed Lila's tiny signs?",
+    "choice_a": "Other fairies",
+    "choice_b": "Forest animals",
+    "choice_c": "Lost travelers",
+    "choice_d": "A group of children",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-061",
+    "prompt": "Why did Lila feel happy at the end?",
+    "choice_a": "Because she made big signs",
+    "choice_b": "Because her signs helped the children get home safely",
+    "choice_c": "Because she met new fairies",
+    "choice_d": "Because she found a new place to live",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-062",
+    "prompt": "What should you do before using the slide?",
+    "choice_a": "Go down standing up",
+    "choice_b": "Check if it is clean and dry",
+    "choice_c": "Push the person in front of you",
+    "choice_d": "Run around the slide",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-062",
+    "prompt": "How many people should slide at the same time?",
+    "choice_a": "Two people",
+    "choice_b": "One person",
+    "choice_c": "Four people",
+    "choice_d": "Three people",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-062",
+    "prompt": "How should you sit when you start sliding?",
+    "choice_a": "Lie on your stomach",
+    "choice_b": "Stand up feet first",
+    "choice_c": "Sit at the bottom of the slide",
+    "choice_d": "Sit down at the top of the slide",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-062",
+    "prompt": "What should you do when you reach the bottom of the slide?",
+    "choice_a": "Move away quickly",
+    "choice_b": "Go back up the slide",
+    "choice_c": "Hold on to the sides",
+    "choice_d": "Stay at the bottom",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-062",
+    "prompt": "Why is it important to wait your turn in line?",
+    "choice_a": "To prevent accidents",
+    "choice_b": "To make the line longer",
+    "choice_c": "To slide faster",
+    "choice_d": "To get dirty",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-063",
+    "prompt": "What happens to a solid when heat is added?",
+    "choice_a": "It stays the same",
+    "choice_b": "It evaporates and becomes a gas",
+    "choice_c": "It melts and becomes a liquid",
+    "choice_d": "It freezes and becomes a gas",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-063",
+    "prompt": "What is an example of a solid melting into a liquid?",
+    "choice_a": "Water freezing into ice",
+    "choice_b": "Water evaporating into steam",
+    "choice_c": "Steam turning into water",
+    "choice_d": "Ice melting into water",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-063",
+    "prompt": "What causes a liquid to turn into a gas?",
+    "choice_a": "Freezing",
+    "choice_b": "Removing heat",
+    "choice_c": "Condensation",
+    "choice_d": "Adding heat",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-063",
+    "prompt": "What happens when heat is removed from a gas?",
+    "choice_a": "It evaporates into a gas",
+    "choice_b": "It melts into a solid",
+    "choice_c": "It changes into a liquid",
+    "choice_d": "It boils",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-063",
+    "prompt": "Why does water freeze into ice?",
+    "choice_a": "Because heat is removed and particles slow down",
+    "choice_b": "Because heat is added and particles move faster",
+    "choice_c": "Because particles spread apart",
+    "choice_d": "Because particles evaporate",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-064",
+    "prompt": "Why is it daytime on one side of the Earth?",
+    "choice_a": "Because the Earth stops spinning",
+    "choice_b": "Because it is colder there",
+    "choice_c": "Because that side faces the Sun",
+    "choice_d": "Because that side faces away from the Sun",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-064",
+    "prompt": "What happens during the night?",
+    "choice_a": "The Sun shines on your side",
+    "choice_b": "It is dark and cool",
+    "choice_c": "It is bright and warm",
+    "choice_d": "Plants grow faster",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-064",
+    "prompt": "Why do owls and bats hunt at night?",
+    "choice_a": "Because it is bright and warm",
+    "choice_b": "Because the Sun helps them see",
+    "choice_c": "Because they like sunlight",
+    "choice_d": "Because it is dark and they are active then",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-064",
+    "prompt": "How long does it take the Earth to spin once?",
+    "choice_a": "24 hours",
+    "choice_b": "1 hour",
+    "choice_c": "48 hours",
+    "choice_d": "12 hours",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-064",
+    "prompt": "What can we learn by understanding day and night?",
+    "choice_a": "How to grow plants only at night",
+    "choice_b": "How to stop the Earth from spinning",
+    "choice_c": "How our planet works and how living things adapt",
+    "choice_d": "How to make the night brighter",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-065",
+    "prompt": "Who teaches Emma how to do a forehand?",
+    "choice_a": "Jack",
+    "choice_b": "Her friend",
+    "choice_c": "A coach",
+    "choice_d": "Emma",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-065",
+    "prompt": "Which hand does Jack use to hold the racket?",
+    "choice_a": "No hands",
+    "choice_b": "Right hand",
+    "choice_c": "Both hands",
+    "choice_d": "Left hand",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-065",
+    "prompt": "How should you stand when preparing to hit a forehand?",
+    "choice_a": "Feet together and facing the net",
+    "choice_b": "Sitting down",
+    "choice_c": "One foot in front of the other, facing the net",
+    "choice_d": "Feet shoulder-width apart and body turned sideways",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-065",
+    "prompt": "What should you do after hitting the ball with the racket?",
+    "choice_a": "Stop the swing immediately",
+    "choice_b": "Follow through with your swing",
+    "choice_c": "Throw the racket",
+    "choice_d": "Close your eyes",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-065",
+    "prompt": "Why does Jack say you should practice a lot?",
+    "choice_a": "To win every game",
+    "choice_b": "To get tired",
+    "choice_c": "To make friends",
+    "choice_d": "To get a better forehand",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-066",
+    "prompt": "What does taking turns help people do?",
+    "choice_a": "Win games quickly",
+    "choice_b": "Skip their turn",
+    "choice_c": "Talk louder",
+    "choice_d": "Get along and be fair",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-066",
+    "prompt": "How do players take turns in a board game?",
+    "choice_a": "They roll dice and move in order",
+    "choice_b": "They all move at the same time",
+    "choice_c": "They skip their turn",
+    "choice_d": "They talk while playing",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-066",
+    "prompt": "What is important when taking turns in a conversation?",
+    "choice_a": "Listening and waiting to speak",
+    "choice_b": "Speaking all at once",
+    "choice_c": "Talking over others",
+    "choice_d": "Ignoring what others say",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-066",
+    "prompt": "In a line, who is served first?",
+    "choice_a": "The last person in line",
+    "choice_b": "The tallest person",
+    "choice_c": "Anyone who shouts",
+    "choice_d": "The first person in line",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-066",
+    "prompt": "Why is taking turns different in games, talking, and waiting?",
+    "choice_a": "Because each situation has its own way to be fair",
+    "choice_b": "Because waiting in line is not fair",
+    "choice_c": "Because people don’t like taking turns",
+    "choice_d": "Because only games need fairness",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-067",
+    "prompt": "What is camping?",
+    "choice_a": "Sleeping in tents and enjoying nature",
+    "choice_b": "Playing video games",
+    "choice_c": "Going to school",
+    "choice_d": "Watching TV at home",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-067",
+    "prompt": "What is a fort made of in pretend camping?",
+    "choice_a": "Rocks and sticks",
+    "choice_b": "Wood and nails",
+    "choice_c": "Blankets, pillows, and chairs",
+    "choice_d": "Metal and glass",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-067",
+    "prompt": "What can you pretend to do inside your fort?",
+    "choice_a": "Go swimming",
+    "choice_b": "Fly a kite",
+    "choice_c": "Ride a bike",
+    "choice_d": "Roast marshmallows and tell stories",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-067",
+    "prompt": "Why is pretend camping helpful?",
+    "choice_a": "It helps you practice creativity and problem-solving",
+    "choice_b": "It helps you sleep better",
+    "choice_c": "It teaches you how to cook real food",
+    "choice_d": "It makes you run faster",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-067",
+    "prompt": "What might you pack in a pretend backpack?",
+    "choice_a": "Clothes and shoes",
+    "choice_b": "Snacks and supplies",
+    "choice_c": "School papers",
+    "choice_d": "Toys and books",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-068",
+    "prompt": "What did Mia fold into a paper airplane?",
+    "choice_a": "A napkin",
+    "choice_b": "A leaf",
+    "choice_c": "A piece of paper",
+    "choice_d": "A cloth",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-068",
+    "prompt": "Where did Mia want Leo to meet her?",
+    "choice_a": "At the old oak tree",
+    "choice_b": "At the school",
+    "choice_c": "At Leo's house",
+    "choice_d": "At the park bench",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-068",
+    "prompt": "How far away did Leo live from Mia?",
+    "choice_a": "Two blocks away",
+    "choice_b": "Ten blocks away",
+    "choice_c": "Next door",
+    "choice_d": "Across the street",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-068",
+    "prompt": "What did Leo do when he found the note?",
+    "choice_a": "He smiled widely",
+    "choice_b": "He ignored it",
+    "choice_c": "He threw it away",
+    "choice_d": "He gave it back",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-068",
+    "prompt": "What did Mia and Leo use paper airplanes for after that day?",
+    "choice_a": "To play catch",
+    "choice_b": "To decorate their room",
+    "choice_c": "To make a big sculpture",
+    "choice_d": "To send secret messages",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-069",
+    "prompt": "Why is it easier to focus when reading in the library?",
+    "choice_a": "Because the library has noisy people",
+    "choice_b": "Because the library is quiet with few distractions",
+    "choice_c": "Because the library is very bright",
+    "choice_d": "Because the library has no books",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-069",
+    "prompt": "What can happen if you read in a noisy place?",
+    "choice_a": "You will find more books",
+    "choice_b": "You will read faster",
+    "choice_c": "You will learn new words easily",
+    "choice_d": "You might miss important details",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-069",
+    "prompt": "Why do libraries help you find books that match your interests?",
+    "choice_a": "Because they only have magazines",
+    "choice_b": "Because they do not have books",
+    "choice_c": "Because they have many books on different topics",
+    "choice_d": "Because they only have one type of book",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-069",
+    "prompt": "Who can help you find books in the library?",
+    "choice_a": "Friends",
+    "choice_b": "Parents",
+    "choice_c": "Teachers",
+    "choice_d": "Librarians",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-069",
+    "prompt": "What is one reason reading in the library helps you learn better?",
+    "choice_a": "You can talk loudly with friends",
+    "choice_b": "You can eat snacks while reading",
+    "choice_c": "You can concentrate better and get help from librarians",
+    "choice_d": "You can watch TV while reading",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-070",
+    "prompt": "What game did Anna's class play?",
+    "choice_a": "Hide and Seek",
+    "choice_b": "Soft Beanbag Challenge",
+    "choice_c": "Basketball",
+    "choice_d": "Tag",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-070",
+    "prompt": "What color was the center of the target?",
+    "choice_a": "Blue",
+    "choice_b": "Red",
+    "choice_c": "Yellow",
+    "choice_d": "Green",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-070",
+    "prompt": "Where did Mia's beanbag land?",
+    "choice_a": "In the red ring",
+    "choice_b": "Outside the target",
+    "choice_c": "In the blue ring",
+    "choice_d": "In the yellow center",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-070",
+    "prompt": "How did Anna feel before she threw the beanbag?",
+    "choice_a": "Angry and upset",
+    "choice_b": "Excited and nervous",
+    "choice_c": "Sleepy and quiet",
+    "choice_d": "Bored and tired",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-070",
+    "prompt": "What did Anna learn from playing the game?",
+    "choice_a": "Running fast is the best way to win",
+    "choice_b": "Hitting the blue ring is easiest",
+    "choice_c": "Practice helps improve skills",
+    "choice_d": "Games are not fun",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-071",
+    "prompt": "What did Mia notice about the new big slide?",
+    "choice_a": "It could talk and tell jokes",
+    "choice_b": "It was very tall",
+    "choice_c": "It was broken",
+    "choice_d": "It was very fast",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-071",
+    "prompt": "What joke did the slide tell Leo?",
+    "choice_a": "How do you make a slide laugh?",
+    "choice_b": "Why did the slide go to school?",
+    "choice_c": "Why did the playground close?",
+    "choice_d": "What do you get when you cross a slide with a joke?",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-071",
+    "prompt": "What was the answer to the slide's first joke?",
+    "choice_a": "Because it liked to slide",
+    "choice_b": "Because it was very slippery",
+    "choice_c": "Because it wanted to play",
+    "choice_d": "Because it wanted to be a little brrr-ighter",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-071",
+    "prompt": "What did the slide say to Mia before she slid down?",
+    "choice_a": "Are you ready to slide fast?",
+    "choice_b": "Do you want to climb higher?",
+    "choice_c": "Can you tell me a joke?",
+    "choice_d": "Want to hear a funny one?",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-071",
+    "prompt": "Why was the playground full of laughter after the slide arrived?",
+    "choice_a": "Because the slide told jokes",
+    "choice_b": "Because the slide was new",
+    "choice_c": "Because the slide was very tall",
+    "choice_d": "Because the slide was fast",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-072",
+    "prompt": "What should you choose first when packing a lunch?",
+    "choice_a": "A drink",
+    "choice_b": "A dessert",
+    "choice_c": "A snack",
+    "choice_d": "A main item like a sandwich or salad",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-072",
+    "prompt": "Which of these is a good source of protein for lunch?",
+    "choice_a": "Orange slices",
+    "choice_b": "Turkey",
+    "choice_c": "Apple",
+    "choice_d": "Carrot sticks",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-072",
+    "prompt": "Why should you include fruits and vegetables in your lunch?",
+    "choice_a": "They give your body vitamins and keep you feeling good",
+    "choice_b": "They are expensive",
+    "choice_c": "They make your lunch heavier",
+    "choice_d": "They are sweet",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-072",
+    "prompt": "What is the best drink to pack for lunch?",
+    "choice_a": "Milkshake",
+    "choice_b": "Water",
+    "choice_c": "Soda",
+    "choice_d": "Juice",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-072",
+    "prompt": "Why might you use an ice pack in your lunchbox?",
+    "choice_a": "To make your lunchbox heavier",
+    "choice_b": "To warm your food",
+    "choice_c": "To keep food fresh and cold",
+    "choice_d": "To decorate your lunchbox",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-073",
+    "prompt": "What are snowflakes made of?",
+    "choice_a": "Small pieces of paper",
+    "choice_b": "Tiny ice crystals",
+    "choice_c": "Sand particles",
+    "choice_d": "Drops of rain",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-073",
+    "prompt": "How many sides do most snowflakes have?",
+    "choice_a": "Six",
+    "choice_b": "Ten",
+    "choice_c": "Four",
+    "choice_d": "Eight",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-073",
+    "prompt": "Why are no two snowflakes exactly alike?",
+    "choice_a": "Because some fall faster than others",
+    "choice_b": "Because they melt quickly",
+    "choice_c": "Because they come from different clouds",
+    "choice_d": "Because temperature and humidity change as they fall",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-073",
+    "prompt": "What happens to a water droplet high in the clouds when it gets very cold?",
+    "choice_a": "It freezes and starts to grow",
+    "choice_b": "It becomes a cloud",
+    "choice_c": "It turns into rain",
+    "choice_d": "It disappears",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-073",
+    "prompt": "What can you do to see a snowflake’s unique shape?",
+    "choice_a": "Catch a snowflake and look closely",
+    "choice_b": "Look at the snow on the ground",
+    "choice_c": "Touch the snow with your hand",
+    "choice_d": "Wait for it to melt",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-074",
+    "prompt": "What is Lily trying for the first time in gymnastics class?",
+    "choice_a": "Vault",
+    "choice_b": "Trampoline",
+    "choice_c": "Rings",
+    "choice_d": "Balance beam",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-074",
+    "prompt": "What did Coach Maria tell the class to do on the balance beam?",
+    "choice_a": "Spin around and wave your arms",
+    "choice_b": "Look straight ahead and walk slowly",
+    "choice_c": "Look down and run quickly",
+    "choice_d": "Close your eyes and jump fast",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-074",
+    "prompt": "What happened to Lily's friend Max on the beam?",
+    "choice_a": "He fell off the beam",
+    "choice_b": "He walked slowly and smiled",
+    "choice_c": "He jumped and landed perfectly",
+    "choice_d": "He wobbled but caught himself",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-074",
+    "prompt": "How did Lily feel after trying the balance beam?",
+    "choice_a": "Happy and excited",
+    "choice_b": "Angry and scared",
+    "choice_c": "Sad and tired",
+    "choice_d": "Bored and sleepy",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-074",
+    "prompt": "Why is it important to stay focused on the balance beam?",
+    "choice_a": "To show off to friends",
+    "choice_b": "To finish the class faster",
+    "choice_c": "To stay safe and keep balance",
+    "choice_d": "To jump higher",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-075",
+    "prompt": "What do players use instead of a puck in ringette?",
+    "choice_a": "A plastic ring",
+    "choice_b": "A frisbee",
+    "choice_c": "A ball",
+    "choice_d": "A hockey puck",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-075",
+    "prompt": "What kind of stick do players use in ringette?",
+    "choice_a": "A curved stick",
+    "choice_b": "A stick with a blade",
+    "choice_c": "A straight stick with no blade",
+    "choice_d": "A wooden stick",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-075",
+    "prompt": "What should players wear to be safe while playing ringette?",
+    "choice_a": "A hat",
+    "choice_b": "Helmet and pads",
+    "choice_c": "Sandals",
+    "choice_d": "Gloves only",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-075",
+    "prompt": "What is very important when moving the ring to the other team’s goal?",
+    "choice_a": "Throwing the ring",
+    "choice_b": "Carrying the ring across lines",
+    "choice_c": "Passing the ring to teammates",
+    "choice_d": "Running with the ring",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-075",
+    "prompt": "Why do players need to work as a team in ringette?",
+    "choice_a": "To move the ring toward the goal",
+    "choice_b": "To wear helmets",
+    "choice_c": "To skate faster",
+    "choice_d": "To carry the ring alone",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-076",
+    "prompt": "What was special about the teacup in the shop?",
+    "choice_a": "It could fly.",
+    "choice_b": "It was made of silver.",
+    "choice_c": "It could tell stories.",
+    "choice_d": "It was very heavy.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-076",
+    "prompt": "Who gave Leo the magical teacup?",
+    "choice_a": "Leo's mother",
+    "choice_b": "A brave explorer",
+    "choice_c": "Mrs. Willow",
+    "choice_d": "A shopkeeper named Jack",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-076",
+    "prompt": "What did Leo ask the teacup to tell him?",
+    "choice_a": "A story about a talking animal.",
+    "choice_b": "A story about a flying ship.",
+    "choice_c": "A story about a brave explorer.",
+    "choice_d": "A story about a magical forest.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-076",
+    "prompt": "What happened when Leo asked the teacup for a story?",
+    "choice_a": "The shop disappeared.",
+    "choice_b": "The teacup broke.",
+    "choice_c": "The teacup began to glow softly.",
+    "choice_d": "Leo fell asleep.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-076",
+    "prompt": "Why did Leo visit Mrs. Willow often?",
+    "choice_a": "To play with other children.",
+    "choice_b": "To buy more teacups.",
+    "choice_c": "To help Mrs. Willow in the shop.",
+    "choice_d": "To hear new stories from the teacup.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-077",
+    "prompt": "What can you use to set up your pretend store in the garden?",
+    "choice_a": "Flowers, fruits, and vegetables",
+    "choice_b": "Clothes and shoes",
+    "choice_c": "Toys and games",
+    "choice_d": "Books and pencils",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-077",
+    "prompt": "What should you make to show the prices of items?",
+    "choice_a": "Tickets and coupons",
+    "choice_b": "Maps and charts",
+    "choice_c": "Posters and drawings",
+    "choice_d": "Labels and price tags",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-077",
+    "prompt": "Who can you invite to be customers in your store?",
+    "choice_a": "Friends or family",
+    "choice_b": "Neighbors only",
+    "choice_c": "Teachers only",
+    "choice_d": "Strangers only",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-077",
+    "prompt": "What is one thing you learn by playing store?",
+    "choice_a": "How to ride a bike",
+    "choice_b": "How buying and selling work",
+    "choice_c": "How to paint pictures",
+    "choice_d": "How to cook food",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-077",
+    "prompt": "Why is playing store in the garden good for you?",
+    "choice_a": "You can stay inside",
+    "choice_b": "You can eat snacks",
+    "choice_c": "You get fresh air and sunshine",
+    "choice_d": "You can watch TV",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-078",
+    "prompt": "Who were blowing bubbles in the backyard?",
+    "choice_a": "Mom and Dad",
+    "choice_b": "Lily and Max",
+    "choice_c": "Lily and Mom",
+    "choice_d": "Max and Dad",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-078",
+    "prompt": "Why are bubbles round according to Mom?",
+    "choice_a": "Because of surface tension",
+    "choice_b": "Because they hit walls",
+    "choice_c": "Because they like round shapes",
+    "choice_d": "Because Max said so",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-078",
+    "prompt": "What is surface tension compared to in the passage?",
+    "choice_a": "A wall",
+    "choice_b": "A tiny skin on the bubble",
+    "choice_c": "A perfect circle",
+    "choice_d": "A big ball",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-078",
+    "prompt": "What shape is a bubble when it floats in the air?",
+    "choice_a": "A circle",
+    "choice_b": "A sphere",
+    "choice_c": "A triangle",
+    "choice_d": "A square",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-078",
+    "prompt": "What happens to a bubble's shape if it hits a wall?",
+    "choice_a": "It pops immediately",
+    "choice_b": "It becomes a square",
+    "choice_c": "Its shape can change",
+    "choice_d": "It stays round",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-079",
+    "prompt": "What part of the body do players use when bumping the ball?",
+    "choice_a": "Forearms",
+    "choice_b": "Feet",
+    "choice_c": "Fingers",
+    "choice_d": "Head",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-079",
+    "prompt": "What is another name for passing in volleyball?",
+    "choice_a": "Spiking",
+    "choice_b": "Setting",
+    "choice_c": "Blocking",
+    "choice_d": "Serving",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-079",
+    "prompt": "Why do players use passing (setting) in volleyball?",
+    "choice_a": "To block the ball at the net",
+    "choice_b": "To send the ball high for a teammate to spike",
+    "choice_c": "To hit the ball low and fast",
+    "choice_d": "To serve the ball to the other team",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-079",
+    "prompt": "When is bumping usually used?",
+    "choice_a": "When the ball is high in the air",
+    "choice_b": "When serving the ball",
+    "choice_c": "When jumping to spike",
+    "choice_d": "When the ball comes low and fast",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-079",
+    "prompt": "What helps a volleyball team score points and have fun?",
+    "choice_a": "Learning both bumping and passing",
+    "choice_b": "Only passing the ball",
+    "choice_c": "Not practicing",
+    "choice_d": "Only bumping the ball",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-080",
+    "prompt": "What was Lenny the llama known for?",
+    "choice_a": "His fast running",
+    "choice_b": "His quiet whisper",
+    "choice_c": "His loud voice",
+    "choice_d": "His big ears",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-080",
+    "prompt": "Where did Lenny try to whisper for the first time?",
+    "choice_a": "On a mountain",
+    "choice_b": "Under a big tree",
+    "choice_c": "By a river",
+    "choice_d": "In a cave",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-080",
+    "prompt": "Who did Lenny watch to learn how to whisper?",
+    "choice_a": "A friendly dog",
+    "choice_b": "Mia the mouse",
+    "choice_c": "A big lion",
+    "choice_d": "A noisy bird",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-080",
+    "prompt": "What did Lenny use his whisper for in the end?",
+    "choice_a": "To tell a surprise party",
+    "choice_b": "To run fast",
+    "choice_c": "To shout loudly",
+    "choice_d": "To sing a song",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-080",
+    "prompt": "What can we guess about Lenny from the story?",
+    "choice_a": "He never listens to friends",
+    "choice_b": "He likes to try new things",
+    "choice_c": "He is afraid of loud noises",
+    "choice_d": "He does not like animals",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-081",
+    "prompt": "What is one reason karate students practice moves slowly?",
+    "choice_a": "To focus on correct form and avoid accidents",
+    "choice_b": "To make the moves harder",
+    "choice_c": "To compete with others",
+    "choice_d": "To finish practice quickly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-081",
+    "prompt": "Which protective gear is mentioned for karate sparring?",
+    "choice_a": "Pads and shin guards",
+    "choice_b": "Gloves, helmets, and pads",
+    "choice_c": "Shin guards and helmets",
+    "choice_d": "Mouthguards and gloves",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-081",
+    "prompt": "What is sparring in karate?",
+    "choice_a": "Playing a game like soccer",
+    "choice_b": "Running fast drills",
+    "choice_c": "A controlled fight practice",
+    "choice_d": "Practicing moves slowly",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-081",
+    "prompt": "How is karate different from soccer or basketball in practice?",
+    "choice_a": "Karate players practice fast drills",
+    "choice_b": "Karate players wear shin guards",
+    "choice_c": "Karate players do not wear any gear",
+    "choice_d": "Karate combines slow practice with protective gear",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-081",
+    "prompt": "Why do karate students wear protective gear?",
+    "choice_a": "To look like a soccer player",
+    "choice_b": "To stay safe during sparring",
+    "choice_c": "To run faster",
+    "choice_d": "To practice moves slowly",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-082",
+    "prompt": "What process do plants use to make their own food?",
+    "choice_a": "Photosynthesis",
+    "choice_b": "Pollination",
+    "choice_c": "Transpiration",
+    "choice_d": "Evaporation",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-082",
+    "prompt": "Where do plants absorb water from?",
+    "choice_a": "Sunlight",
+    "choice_b": "Soil through roots",
+    "choice_c": "Flowers",
+    "choice_d": "Leaves",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-082",
+    "prompt": "What happens to plants without enough water?",
+    "choice_a": "They grow taller",
+    "choice_b": "They make more food",
+    "choice_c": "They wilt and may die",
+    "choice_d": "They get cooler",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-082",
+    "prompt": "How does water help keep plants cool?",
+    "choice_a": "By evaporating from the leaves",
+    "choice_b": "By making flowers bloom",
+    "choice_c": "By making the leaves green",
+    "choice_d": "By growing roots",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-082",
+    "prompt": "Why do gardeners water plants during dry times?",
+    "choice_a": "Because plants need water to survive",
+    "choice_b": "Because sunlight is not enough",
+    "choice_c": "Because plants like dry soil",
+    "choice_d": "Because water makes plants wilt",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-083",
+    "prompt": "Where did Mia and her friends play after school?",
+    "choice_a": "At the park",
+    "choice_b": "At the library",
+    "choice_c": "At school",
+    "choice_d": "At home",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-083",
+    "prompt": "What special jump rope move did Leo show Mia?",
+    "choice_a": "Running",
+    "choice_b": "Hopping",
+    "choice_c": "Double-under",
+    "choice_d": "Skipping",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-083",
+    "prompt": "How did Mia feel when she first tried the double-under?",
+    "choice_a": "Frustrated",
+    "choice_b": "Bored",
+    "choice_c": "Sleepy",
+    "choice_d": "Excited",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-083",
+    "prompt": "What helped Mia finally succeed at the double-under?",
+    "choice_a": "Watching TV",
+    "choice_b": "Eating snacks",
+    "choice_c": "Practicing every day",
+    "choice_d": "Sleeping more",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-083",
+    "prompt": "What did Mia learn from practicing the jump rope?",
+    "choice_a": "Practice is not important",
+    "choice_b": "Friends are not helpful",
+    "choice_c": "She could learn new things with patience",
+    "choice_d": "Jump rope is easy for everyone",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-084",
+    "prompt": "What did Lily wonder about food?",
+    "choice_a": "What colors food has",
+    "choice_b": "Why some foods tasted better than others",
+    "choice_c": "How to cook food",
+    "choice_d": "Where food comes from",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-084",
+    "prompt": "What helps us enjoy the flavor of food?",
+    "choice_a": "Taste and smell working together",
+    "choice_b": "Only taste buds on the tongue",
+    "choice_c": "The color of the food",
+    "choice_d": "Only the nose",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-084",
+    "prompt": "What are taste buds?",
+    "choice_a": "Tiny bumps on the tongue that detect flavors",
+    "choice_b": "The shape of the mouth",
+    "choice_c": "The color of food",
+    "choice_d": "Parts of the nose that smell",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-084",
+    "prompt": "What happened when Lily held her nose while eating an apple?",
+    "choice_a": "The apple tasted salty",
+    "choice_b": "The apple did not taste as sweet",
+    "choice_c": "The apple tasted sour",
+    "choice_d": "The apple tasted bitter",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-084",
+    "prompt": "Why do smells travel from the mouth to the nose when we eat?",
+    "choice_a": "To help us see the food better",
+    "choice_b": "To help us experience the full flavor of food",
+    "choice_c": "To help us chew the food faster",
+    "choice_d": "To make the food look colorful",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-085",
+    "prompt": "What did Mia see falling from the sky?",
+    "choice_a": "A balloon",
+    "choice_b": "A bird",
+    "choice_c": "A bright star",
+    "choice_d": "A cloud",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-085",
+    "prompt": "Where did the star land?",
+    "choice_a": "In Mia's pocket",
+    "choice_b": "In a river",
+    "choice_c": "On the ground",
+    "choice_d": "On a tree",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-085",
+    "prompt": "How did the star make the night around Mia?",
+    "choice_a": "Rainy and cloudy",
+    "choice_b": "Bright and colorful",
+    "choice_c": "Cold and windy",
+    "choice_d": "Dark and scary",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-085",
+    "prompt": "Why did Mia keep her pocket close and avoid running?",
+    "choice_a": "To hide from friends",
+    "choice_b": "Because she was tired",
+    "choice_c": "To keep the star safe",
+    "choice_d": "Because it was raining",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-085",
+    "prompt": "What happened when Mia shared the star's light with the townspeople?",
+    "choice_a": "The town became full of hope and wonder",
+    "choice_b": "The star stopped shining",
+    "choice_c": "The night became dark again",
+    "choice_d": "The star disappeared",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-086",
+    "prompt": "Where did Emma and Jack go after school?",
+    "choice_a": "To the zoo",
+    "choice_b": "To the store",
+    "choice_c": "To the library",
+    "choice_d": "To the park",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-086",
+    "prompt": "What kind of book was Emma looking for?",
+    "choice_a": "A book about sports",
+    "choice_b": "A book about animals and adventures",
+    "choice_c": "A book about cooking",
+    "choice_d": "A book about space",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-086",
+    "prompt": "Who helped Emma and Jack find books?",
+    "choice_a": "The principal",
+    "choice_b": "Their friend",
+    "choice_c": "Mrs. Green, the librarian",
+    "choice_d": "Their teacher",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-086",
+    "prompt": "What did Jack want to learn about?",
+    "choice_a": "Cooking",
+    "choice_b": "Space and planets",
+    "choice_c": "Sports",
+    "choice_d": "Jungle animals",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-086",
+    "prompt": "Why did Jack say reading in the library was the best?",
+    "choice_a": "Because there were snacks",
+    "choice_b": "Because he could run around",
+    "choice_c": "Because he could watch TV",
+    "choice_d": "Because it was quiet and he could focus",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-087",
+    "prompt": "What were Lily and Max doing when they saw the bird?",
+    "choice_a": "Having a picnic",
+    "choice_b": "Flying kites",
+    "choice_c": "Riding bikes",
+    "choice_d": "Walking in the park",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-087",
+    "prompt": "How do birds fly according to Max?",
+    "choice_a": "By flapping their wings up and down",
+    "choice_b": "By floating in the air",
+    "choice_c": "By using their feet",
+    "choice_d": "By jumping high",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-087",
+    "prompt": "What type of wings help birds glide for a long time?",
+    "choice_a": "Long, narrow wings",
+    "choice_b": "Big, fluffy wings",
+    "choice_c": "Small, pointed wings",
+    "choice_d": "Short, rounded wings",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-087",
+    "prompt": "What do penguins use their wings for?",
+    "choice_a": "To fly high",
+    "choice_b": "To build nests",
+    "choice_c": "To swim like flippers",
+    "choice_d": "To catch fish in the air",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-087",
+    "prompt": "Why do you think Max says birds are perfectly made for their homes?",
+    "choice_a": "Because they like to sing",
+    "choice_b": "Because they live in trees",
+    "choice_c": "Because their wings help them do many things",
+    "choice_d": "Because they eat seeds",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-088",
+    "prompt": "What type of water do ponds have?",
+    "choice_a": "No water",
+    "choice_b": "Still or slow-moving fresh water",
+    "choice_c": "Hot water",
+    "choice_d": "Fast-moving salt water",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-088",
+    "prompt": "Which plants grow around and inside a pond?",
+    "choice_a": "Pine trees and roses",
+    "choice_b": "Oak and maple trees",
+    "choice_c": "Water lilies and cattails",
+    "choice_d": "Cactus and grass",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-088",
+    "prompt": "Which animals live in and near the pond?",
+    "choice_a": "Elephants, giraffes, and zebras",
+    "choice_b": "Lions, tigers, bears, and wolves",
+    "choice_c": "Frogs, turtles, fish, and dragonflies",
+    "choice_d": "Birds, cats, dogs, and horses",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-088",
+    "prompt": "What do frogs eat in the pond habitat?",
+    "choice_a": "Water lilies",
+    "choice_b": "Plants",
+    "choice_c": "Insects",
+    "choice_d": "Fish",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-088",
+    "prompt": "Why is it important to keep the pond clean?",
+    "choice_a": "So the water can dry up",
+    "choice_b": "To make the pond bigger",
+    "choice_c": "To catch more fish",
+    "choice_d": "To protect the plants and animals living there",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-089",
+    "prompt": "What is the main purpose of helmets in sports?",
+    "choice_a": "To make players look cool",
+    "choice_b": "To protect the head from injuries",
+    "choice_c": "To keep players warm",
+    "choice_d": "To help players run faster",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-089",
+    "prompt": "Which sport uses helmets that are hard and cover most of the top and sides of the head?",
+    "choice_a": "Biking and skateboarding",
+    "choice_b": "Baseball and softball",
+    "choice_c": "Soccer and tennis",
+    "choice_d": "Football and hockey",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-089",
+    "prompt": "Why do baseball helmets have a faceguard?",
+    "choice_a": "To protect from falls",
+    "choice_b": "To protect from fast-moving balls",
+    "choice_c": "To make the helmet lighter",
+    "choice_d": "To keep the head warm",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-089",
+    "prompt": "What do football and hockey helmets have inside to protect players?",
+    "choice_a": "Extra hard plastic",
+    "choice_b": "Faceguards only",
+    "choice_c": "No protection inside",
+    "choice_d": "Padding",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-089",
+    "prompt": "Why do helmets look different for each sport?",
+    "choice_a": "Because players want different colors",
+    "choice_b": "Because some sports don’t need helmets",
+    "choice_c": "Because helmets are made by different companies",
+    "choice_d": "Because each sport has different dangers",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-090",
+    "prompt": "What did Mia want to learn last winter?",
+    "choice_a": "How to ride a bike",
+    "choice_b": "How to ice skate",
+    "choice_c": "How to swim",
+    "choice_d": "How to play soccer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-090",
+    "prompt": "Who helped Mia learn to skate?",
+    "choice_a": "Mr. Lee",
+    "choice_b": "Her friend",
+    "choice_c": "Her parents",
+    "choice_d": "A figure skater",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-090",
+    "prompt": "What is the first skill Mia learned?",
+    "choice_a": "Jumping on ice",
+    "choice_b": "The forward stride",
+    "choice_c": "Spinning around",
+    "choice_d": "Stopping quickly",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-090",
+    "prompt": "What did Mia do when she first tried skating?",
+    "choice_a": "She wobbled and sometimes fell",
+    "choice_b": "She refused to try",
+    "choice_c": "She ran on the ice",
+    "choice_d": "She skated perfectly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-090",
+    "prompt": "How did Mia feel at the end of her lesson?",
+    "choice_a": "Angry at the coach",
+    "choice_b": "Proud of herself",
+    "choice_c": "Bored and tired",
+    "choice_d": "Ready to quit skating",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-091",
+    "prompt": "What do you mix first when baking cookies?",
+    "choice_a": "Chocolate chips",
+    "choice_b": "Dry ingredients like flour and sugar",
+    "choice_c": "Wet ingredients like butter and eggs",
+    "choice_d": "The dough balls",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-091",
+    "prompt": "What happens after you shape the dough into little balls?",
+    "choice_a": "You mix more ingredients",
+    "choice_b": "You eat them right away",
+    "choice_c": "You put them on a baking tray",
+    "choice_d": "You add more sugar",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-091",
+    "prompt": "Why do you have to wait when baking cookies?",
+    "choice_a": "Because you need to measure again",
+    "choice_b": "Because the oven needs time to bake them",
+    "choice_c": "Because you need to mix more ingredients",
+    "choice_d": "Because you have to shape the dough",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-091",
+    "prompt": "What is one life skill you learn from baking cookies?",
+    "choice_a": "Teamwork",
+    "choice_b": "Drawing pictures",
+    "choice_c": "Running fast",
+    "choice_d": "Singing songs",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-091",
+    "prompt": "What does the sweet smell from the oven make people feel?",
+    "choice_a": "Tired",
+    "choice_b": "Angry",
+    "choice_c": "Happy",
+    "choice_d": "Sad",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-092",
+    "prompt": "Why do students enjoy reading more with a buddy?",
+    "choice_a": "Because they do not have to read aloud",
+    "choice_b": "Because they can finish books alone",
+    "choice_c": "Because they get to read faster",
+    "choice_d": "Because it makes reading less lonely and more fun",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-092",
+    "prompt": "What can friends do if one does not understand a word?",
+    "choice_a": "They stop reading",
+    "choice_b": "They skip the word",
+    "choice_c": "They can explain the word to each other",
+    "choice_d": "They ask the teacher to read it",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-092",
+    "prompt": "How does reading with a buddy help students stay interested?",
+    "choice_a": "They can talk about the story and ask questions",
+    "choice_b": "They only read easy books",
+    "choice_c": "They read silently by themselves",
+    "choice_d": "They finish the story quickly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-092",
+    "prompt": "What skill do students practice when they take turns reading aloud?",
+    "choice_a": "Writing stories",
+    "choice_b": "Drawing pictures",
+    "choice_c": "Memorizing words",
+    "choice_d": "Speaking clearly and listening carefully",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-092",
+    "prompt": "What is one reason schools encourage reading with a buddy?",
+    "choice_a": "Because it helps students enjoy and understand reading better",
+    "choice_b": "Because students do not have to talk",
+    "choice_c": "Because students read faster alone",
+    "choice_d": "Because it is easier to finish books quickly",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-093",
+    "prompt": "What are clouds made of?",
+    "choice_a": "Smoke and steam",
+    "choice_b": "Tiny water droplets or ice crystals",
+    "choice_c": "Leaves and grass",
+    "choice_d": "Dust and sand",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-093",
+    "prompt": "Which type of cloud is thin and wispy?",
+    "choice_a": "Stratus",
+    "choice_b": "Nimbus",
+    "choice_c": "Cirrus",
+    "choice_d": "Cumulus",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-093",
+    "prompt": "What do cumulus clouds look like?",
+    "choice_a": "Thin and high",
+    "choice_b": "Low and gray",
+    "choice_c": "Dark and rainy",
+    "choice_d": "Big, puffy, and white",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-093",
+    "prompt": "What weather do stratus clouds usually bring?",
+    "choice_a": "Snow",
+    "choice_b": "Drizzle or light rain",
+    "choice_c": "Thunderstorms",
+    "choice_d": "Sunny skies",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-093",
+    "prompt": "If you see tall, dark cumulus clouds, what might happen?",
+    "choice_a": "It will be sunny",
+    "choice_b": "The sky will be clear",
+    "choice_c": "The weather will be fair",
+    "choice_d": "It might rain or storm",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-094",
+    "prompt": "Why do ice skating rinks have special rules?",
+    "choice_a": "To keep skaters safe and have fun",
+    "choice_b": "To stop people from skating",
+    "choice_c": "To make skating harder",
+    "choice_d": "To make the rink colder",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-094",
+    "prompt": "What happens if people skate in different directions?",
+    "choice_a": "They have more fun",
+    "choice_b": "They might bump into each other",
+    "choice_c": "They skate faster",
+    "choice_d": "They learn new tricks",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-094",
+    "prompt": "Why should skaters wear helmets and pads?",
+    "choice_a": "To keep warm",
+    "choice_b": "To prevent serious injuries",
+    "choice_c": "To skate faster",
+    "choice_d": "To look cool",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-094",
+    "prompt": "What does waiting your turn for skate rental help with?",
+    "choice_a": "Skating faster",
+    "choice_b": "Avoiding confusion and being fair",
+    "choice_c": "Making friends",
+    "choice_d": "Getting skates for free",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-094",
+    "prompt": "What is one result of everyone following rink rules?",
+    "choice_a": "The rink closes early",
+    "choice_b": "Skaters get tired quickly",
+    "choice_c": "More accidents and less fun",
+    "choice_d": "Fewer accidents and more fun",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-095",
+    "prompt": "What did Jack show Mia?",
+    "choice_a": "A magical umbrella",
+    "choice_b": "A raincoat",
+    "choice_c": "A beach ball",
+    "choice_d": "A picnic basket",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-095",
+    "prompt": "What happens when Jack opens the umbrella?",
+    "choice_a": "It starts to rain",
+    "choice_b": "It makes a cool, dark shade",
+    "choice_c": "It changes color",
+    "choice_d": "It flies away",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-095",
+    "prompt": "Why did Mia think the umbrella was perfect for their picnic?",
+    "choice_a": "Because it could fly",
+    "choice_b": "Because it could rain",
+    "choice_c": "Because it was colorful",
+    "choice_d": "Because it made shade from the hot sun",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-095",
+    "prompt": "Where did Jack say they could use the magic umbrella?",
+    "choice_a": "Inside their house",
+    "choice_b": "At the beach or waiting for the bus",
+    "choice_c": "Only during rainstorms",
+    "choice_d": "At school",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-095",
+    "prompt": "What can we infer about Mia and Jack's feelings about the umbrella?",
+    "choice_a": "They want to sell it",
+    "choice_b": "They are scared of it",
+    "choice_c": "They think it is broken",
+    "choice_d": "They are happy and excited about it",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-096",
+    "prompt": "Who is Toby?",
+    "choice_a": "A turtle who loves to race",
+    "choice_b": "A speedy rabbit",
+    "choice_c": "A forest bird",
+    "choice_d": "A slow snail",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-096",
+    "prompt": "What did the rabbits say to Toby before the race?",
+    "choice_a": "\"You are too slow\"",
+    "choice_b": "\"Let's race together\"",
+    "choice_c": "\"You will win easily\"",
+    "choice_d": "\"You are the fastest\"",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-096",
+    "prompt": "What happened when the rabbits got tired?",
+    "choice_a": "They left the race",
+    "choice_b": "They stopped to rest",
+    "choice_c": "They helped Toby",
+    "choice_d": "They ran faster",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-096",
+    "prompt": "How did Toby win the race?",
+    "choice_a": "By moving slowly and steadily",
+    "choice_b": "By hopping like rabbits",
+    "choice_c": "By running very fast",
+    "choice_d": "By resting halfway",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-096",
+    "prompt": "What can we learn from Toby's story?",
+    "choice_a": "Slow and steady wins the race",
+    "choice_b": "Rabbits are always faster",
+    "choice_c": "Only fast animals win",
+    "choice_d": "Racing is not fun",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-097",
+    "prompt": "What did Mia want to draw on the sidewalk?",
+    "choice_a": "A big blue elephant",
+    "choice_b": "Flowers and stars",
+    "choice_c": "Silly faces",
+    "choice_d": "A giant rainbow",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-097",
+    "prompt": "What animals did Jake want to draw?",
+    "choice_a": "A big blue elephant and a pink flamingo",
+    "choice_b": "A dog and a cat",
+    "choice_c": "A lion and a tiger",
+    "choice_d": "A horse and a bird",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-097",
+    "prompt": "Who joined Mia and Jake to add drawings?",
+    "choice_a": "Some neighbors",
+    "choice_b": "Their parents",
+    "choice_c": "Their teachers",
+    "choice_d": "No one",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-097",
+    "prompt": "What did the sidewalk look like by the end of the afternoon?",
+    "choice_a": "It was a colorful masterpiece",
+    "choice_b": "It was dirty",
+    "choice_c": "It was empty",
+    "choice_d": "It was covered in leaves",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-097",
+    "prompt": "Why did Mia and Jake feel proud?",
+    "choice_a": "Because they worked together and had fun",
+    "choice_b": "Because they cleaned the sidewalk",
+    "choice_c": "Because they finished their homework",
+    "choice_d": "Because they won a prize",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-098",
+    "prompt": "What is a double-under in jump rope?",
+    "choice_a": "Jumping rope very slowly",
+    "choice_b": "Jumping without using a rope",
+    "choice_c": "The rope passes under your feet twice with one jump",
+    "choice_d": "Holding the rope still while jumping",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-098",
+    "prompt": "What happens to your heart when you jump rope often?",
+    "choice_a": "It stops beating",
+    "choice_b": "It gets smaller",
+    "choice_c": "It gets healthier",
+    "choice_d": "It beats slower",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-098",
+    "prompt": "Which part of your body becomes stronger from jumping rope?",
+    "choice_a": "Neck",
+    "choice_b": "Arms",
+    "choice_c": "Legs",
+    "choice_d": "Fingers",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-098",
+    "prompt": "Why do kids who jump rope regularly play sports better?",
+    "choice_a": "Because their body becomes healthier and stronger",
+    "choice_b": "Because they sleep more",
+    "choice_c": "Because they eat more candy",
+    "choice_d": "Because they watch sports on TV",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-098",
+    "prompt": "What should you do to get better at double-unders?",
+    "choice_a": "Jump lower and swing the rope slowly",
+    "choice_b": "Stop jumping and only swing the rope",
+    "choice_c": "Jump without the rope",
+    "choice_d": "Practice jumping higher and swinging the rope faster",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-099",
+    "prompt": "What is the main purpose of shooting in basketball?",
+    "choice_a": "To pass the ball",
+    "choice_b": "To run faster",
+    "choice_c": "To block shots",
+    "choice_d": "To score points",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-099",
+    "prompt": "How is a jump shot different from a set shot?",
+    "choice_a": "A jump shot uses both hands, a set shot uses one hand",
+    "choice_b": "A jump shot is only used by beginners",
+    "choice_c": "A jump shot is taken while jumping, a set shot is taken with feet on the ground",
+    "choice_d": "A jump shot is slower than a set shot",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-099",
+    "prompt": "When is a set shot usually used?",
+    "choice_a": "When the player is not closely defended",
+    "choice_b": "When the player is blocked",
+    "choice_c": "When the player wants to run fast",
+    "choice_d": "When the player is jumping",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-099",
+    "prompt": "Why might a player want to learn both jump shots and set shots?",
+    "choice_a": "Because one shot is always better",
+    "choice_b": "To run faster on the court",
+    "choice_c": "To avoid practicing",
+    "choice_d": "To be able to play better in different game situations",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-099",
+    "prompt": "What can we guess about a player who only knows the set shot?",
+    "choice_a": "They can jump higher than others",
+    "choice_b": "They might find it harder to shoot over defenders",
+    "choice_c": "They always score more points",
+    "choice_d": "They never practice shooting",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-100",
+    "prompt": "What is softball similar to?",
+    "choice_a": "Basketball",
+    "choice_b": "Tennis",
+    "choice_c": "Baseball",
+    "choice_d": "Soccer",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G5-100",
+    "prompt": "What do you use to catch the ball in softball?",
+    "choice_a": "A glove",
+    "choice_b": "A helmet",
+    "choice_c": "A bat",
+    "choice_d": "A ball",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G5-100",
+    "prompt": "Where do you stand when you try to hit the ball?",
+    "choice_a": "In the outfield",
+    "choice_b": "At first base",
+    "choice_c": "On home plate",
+    "choice_d": "In the batter's box",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G5-100",
+    "prompt": "What happens when a player reaches home plate?",
+    "choice_a": "The player gets a rest",
+    "choice_b": "The team scores a run",
+    "choice_c": "The game ends",
+    "choice_d": "The player is out",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G5-100",
+    "prompt": "Why does Coach Tim say to keep your eyes on the ball?",
+    "choice_a": "To throw the ball farther",
+    "choice_b": "To hit or catch it better",
+    "choice_c": "To score more points",
+    "choice_d": "To run faster",
+    "correct_choice": "B"
+  }
+]

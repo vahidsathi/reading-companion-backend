@@ -1,0 +1,2702 @@
+[
+  {
+    "passage_code": "G1-001",
+    "prompt": "What did Milo want to build?",
+    "choice_a": "A paper boat",
+    "choice_b": "A sandcastle",
+    "choice_c": "A kite",
+    "choice_d": "A treehouse",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-001",
+    "prompt": "What did Bella ask about the boat?",
+    "choice_a": "Is it colorful?",
+    "choice_b": "Will it float?",
+    "choice_c": "Is it big?",
+    "choice_d": "Is it fast?",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-001",
+    "prompt": "What happened when they put the boat in the pond?",
+    "choice_a": "The boat sailed",
+    "choice_b": "The boat flew",
+    "choice_c": "The boat sank",
+    "choice_d": "The boat broke",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-002",
+    "prompt": "What is dribbling in soccer?",
+    "choice_a": "Kicking the ball very hard",
+    "choice_b": "Moving the ball using your feet",
+    "choice_c": "Catching the ball in the air",
+    "choice_d": "Throwing the ball with your hands",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-002",
+    "prompt": "Why do players tap the ball gently?",
+    "choice_a": "To keep the ball close",
+    "choice_b": "To kick it far away",
+    "choice_c": "To stop the game",
+    "choice_d": "To throw it to a friend",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-002",
+    "prompt": "What does dribbling help you do?",
+    "choice_a": "Catch the ball with your hands",
+    "choice_b": "Sit down on the field",
+    "choice_c": "Control the ball and move past players",
+    "choice_d": "Score a goal without moving",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-003",
+    "prompt": "What do you need to do to ride a skateboard?",
+    "choice_a": "Sit down",
+    "choice_b": "Hold the handlebars",
+    "choice_c": "Stay steady",
+    "choice_d": "Pedal fast",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-003",
+    "prompt": "How do you move on a bike?",
+    "choice_a": "Stand and roll",
+    "choice_b": "Sit and pedal",
+    "choice_c": "Fly in the air",
+    "choice_d": "Jump and run",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-003",
+    "prompt": "What is similar about riding a bike and a skateboard?",
+    "choice_a": "Both need you to pedal",
+    "choice_b": "Both need you to stay steady",
+    "choice_c": "Both need you to sit",
+    "choice_d": "Both have handlebars",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-004",
+    "prompt": "Who writes about a cat?",
+    "choice_a": "No one",
+    "choice_b": "Sam",
+    "choice_c": "Both Sam and Mia",
+    "choice_d": "Mia",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-004",
+    "prompt": "What can a cat do that a hat cannot?",
+    "choice_a": "Sit on your head",
+    "choice_b": "Make you giggle",
+    "choice_c": "Purr",
+    "choice_d": "Jump off",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-004",
+    "prompt": "Why are the riddles silly and fun?",
+    "choice_a": "Because they are about food",
+    "choice_b": "Because they are different",
+    "choice_c": "Because they are very long",
+    "choice_d": "Because they are the same",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-005",
+    "prompt": "What did Sara like to play on?",
+    "choice_a": "The seesaw",
+    "choice_b": "The sandbox",
+    "choice_c": "The slide",
+    "choice_d": "The swing",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-005",
+    "prompt": "What did the swing say it wished it could do?",
+    "choice_a": "Jump",
+    "choice_b": "Sing",
+    "choice_c": "Fly",
+    "choice_d": "Run",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-005",
+    "prompt": "How did Sara feel when she pushed the swing higher?",
+    "choice_a": "Happy",
+    "choice_b": "Tired",
+    "choice_c": "Sad",
+    "choice_d": "Angry",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-006",
+    "prompt": "What did Ben find in his lunchbox?",
+    "choice_a": "A book",
+    "choice_b": "A tiny spaceship",
+    "choice_c": "A toy car",
+    "choice_d": "A sandwich",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-006",
+    "prompt": "Who looked inside the lunchbox?",
+    "choice_a": "A teacher",
+    "choice_b": "Mia",
+    "choice_c": "An astronaut",
+    "choice_d": "Ben",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-006",
+    "prompt": "What did Ben and Mia pretend to be?",
+    "choice_a": "Astronauts",
+    "choice_b": "Teachers",
+    "choice_c": "Pilots",
+    "choice_d": "Doctors",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-007",
+    "prompt": "What should you do first to balance on a snowboard?",
+    "choice_a": "Hold your arms out",
+    "choice_b": "Stand with your feet apart on the board",
+    "choice_c": "Bend your knees a little",
+    "choice_d": "Look ahead and smile",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-007",
+    "prompt": "How should you use your arms to balance?",
+    "choice_a": "Keep them down",
+    "choice_b": "Hold them out",
+    "choice_c": "Cross them",
+    "choice_d": "Wave them",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-007",
+    "prompt": "Why do you bend your knees a little?",
+    "choice_a": "To jump high",
+    "choice_b": "To help balance",
+    "choice_c": "To run fast",
+    "choice_d": "To sit down",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-008",
+    "prompt": "Why do we wash fruits?",
+    "choice_a": "To remove dirt and germs",
+    "choice_b": "To make them cold",
+    "choice_c": "To make them bigger",
+    "choice_d": "To change their color",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-008",
+    "prompt": "What can happen if we do not wash fruits?",
+    "choice_a": "The fruits will grow",
+    "choice_b": "The fruits will taste sweet",
+    "choice_c": "We might get sick",
+    "choice_d": "The fruits will shine",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-008",
+    "prompt": "How do clean fruits taste?",
+    "choice_a": "Bitter",
+    "choice_b": "Fresh",
+    "choice_c": "Salty",
+    "choice_d": "Sour",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-009",
+    "prompt": "What color is Casey the carrot?",
+    "choice_a": "Green",
+    "choice_b": "Red",
+    "choice_c": "Orange",
+    "choice_d": "Blue",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-009",
+    "prompt": "What does Casey put on before skateboarding?",
+    "choice_a": "Gloves",
+    "choice_b": "A big hat",
+    "choice_c": "Sunglasses",
+    "choice_d": "A tiny helmet",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-009",
+    "prompt": "What does Casey do after rolling down the ramp?",
+    "choice_a": "He falls down",
+    "choice_b": "He eats a snack",
+    "choice_c": "He laughs and spins",
+    "choice_d": "He goes home",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-010",
+    "prompt": "Whose bag is small?",
+    "choice_a": "Anna's",
+    "choice_b": "Her brother's",
+    "choice_c": "No one has a bag",
+    "choice_d": "Their friend's",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-010",
+    "prompt": "Why is Anna's bag safer for her?",
+    "choice_a": "Because it is broken",
+    "choice_b": "Because it is heavy",
+    "choice_c": "Because it is big",
+    "choice_d": "Because she can hold it well",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-010",
+    "prompt": "What can be too heavy for kids?",
+    "choice_a": "Big bags",
+    "choice_b": "Small bags",
+    "choice_c": "Books",
+    "choice_d": "Toys",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-011",
+    "prompt": "What do you need to start making a marble run?",
+    "choice_a": "A toy car",
+    "choice_b": "A book",
+    "choice_c": "Empty paper tubes",
+    "choice_d": "A ball",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-011",
+    "prompt": "Where should you tape the paper tubes?",
+    "choice_a": "On the ceiling",
+    "choice_b": "On a table",
+    "choice_c": "On the floor",
+    "choice_d": "To a wall or a box",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-011",
+    "prompt": "What happens when you drop the marble at the top?",
+    "choice_a": "It breaks",
+    "choice_b": "It rolls down",
+    "choice_c": "It flies up",
+    "choice_d": "It stays still",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-012",
+    "prompt": "What do you do first with the buttons?",
+    "choice_a": "Put the blue buttons in a pile",
+    "choice_b": "Put the red buttons in a pile",
+    "choice_c": "Look at all the buttons",
+    "choice_d": "Check your groups",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-012",
+    "prompt": "Where do you put the red buttons?",
+    "choice_a": "In one pile",
+    "choice_b": "In your hand",
+    "choice_c": "In the blue pile",
+    "choice_d": "In two piles",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-012",
+    "prompt": "What should you do last?",
+    "choice_a": "Put buttons in your pocket",
+    "choice_b": "Throw buttons away",
+    "choice_c": "Look at the buttons",
+    "choice_d": "Check your groups",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-013",
+    "prompt": "Where do roots grow?",
+    "choice_a": "Under the ground",
+    "choice_b": "On the leaves",
+    "choice_c": "Above the soil",
+    "choice_d": "In the air",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-013",
+    "prompt": "What do roots help the plant do?",
+    "choice_a": "Drink water",
+    "choice_b": "Stand tall",
+    "choice_c": "Make flowers",
+    "choice_d": "Grow leaves",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-013",
+    "prompt": "What do stems do for the plant?",
+    "choice_a": "Make it grow roots",
+    "choice_b": "Hold it under the ground",
+    "choice_c": "Help it stand tall",
+    "choice_d": "Help it drink water",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-014",
+    "prompt": "What is Carrie?",
+    "choice_a": "A garden",
+    "choice_b": "A skateboard",
+    "choice_c": "A dirt pile",
+    "choice_d": "A carrot",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-014",
+    "prompt": "What does Carrie like to do?",
+    "choice_a": "Spin in the dirt",
+    "choice_b": "Dig in the dirt",
+    "choice_c": "Stay in the garden",
+    "choice_d": "Skateboard and do tricks",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-014",
+    "prompt": "How is Carrie different from her carrot friends?",
+    "choice_a": "She likes to dig",
+    "choice_b": "She stays in the garden",
+    "choice_c": "She likes to skateboard",
+    "choice_d": "She is not silly",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-015",
+    "prompt": "Who joined the coloring contest?",
+    "choice_a": "Ben and Tim",
+    "choice_b": "Only Sara",
+    "choice_c": "Sara and Ben",
+    "choice_d": "Sara and Tim",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-015",
+    "prompt": "What colors did Sara use?",
+    "choice_a": "No colors",
+    "choice_b": "Only blue",
+    "choice_c": "Bright colors",
+    "choice_d": "Only red",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-015",
+    "prompt": "How were Sara and Ben's pictures different?",
+    "choice_a": "They used only black",
+    "choice_b": "They did not color",
+    "choice_c": "They used different colors",
+    "choice_d": "They drew the same picture",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-016",
+    "prompt": "What can writing a poem be?",
+    "choice_a": "Boring",
+    "choice_b": "Hard",
+    "choice_c": "Fun",
+    "choice_d": "Sad",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-016",
+    "prompt": "What do poems use to show feelings?",
+    "choice_a": "Pictures",
+    "choice_b": "Words",
+    "choice_c": "Numbers",
+    "choice_d": "Songs",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-016",
+    "prompt": "What can you write a poem about?",
+    "choice_a": "Your favorite game or toy",
+    "choice_b": "A place you never visited",
+    "choice_c": "A movie",
+    "choice_d": "A math problem",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-017",
+    "prompt": "Who invited friends for tea?",
+    "choice_a": "Squirrel",
+    "choice_b": "Bunny",
+    "choice_c": "Hazel the hedgehog",
+    "choice_d": "Mouse",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-017",
+    "prompt": "What did they drink at the tea party?",
+    "choice_a": "Water",
+    "choice_b": "Berry tea",
+    "choice_c": "Milk",
+    "choice_d": "Juice",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-017",
+    "prompt": "How did everyone feel at the tea party?",
+    "choice_a": "Tired",
+    "choice_b": "Sad",
+    "choice_c": "Happy",
+    "choice_d": "Angry",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-018",
+    "prompt": "Who played with the puzzle?",
+    "choice_a": "Jack and Emma",
+    "choice_b": "Sam and Mia",
+    "choice_c": "Ben and Anna",
+    "choice_d": "Tom and Lily",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-018",
+    "prompt": "What did Sam and Mia do with the puzzle pieces?",
+    "choice_a": "They worked together to fit them",
+    "choice_b": "They threw them away",
+    "choice_c": "They colored the pieces",
+    "choice_d": "They hid the pieces",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-018",
+    "prompt": "How did Sam and Mia feel after finishing the puzzle?",
+    "choice_a": "Angry",
+    "choice_b": "Sad",
+    "choice_c": "Tired",
+    "choice_d": "Happy",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-019",
+    "prompt": "Who made the puppets?",
+    "choice_a": "The puppet show",
+    "choice_b": "Sarah and her friends",
+    "choice_c": "The children clapping",
+    "choice_d": "The teacher",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-019",
+    "prompt": "What did the children do during the puppet show?",
+    "choice_a": "They went outside",
+    "choice_b": "They sang a song",
+    "choice_c": "They made puppets",
+    "choice_d": "They clapped and smiled",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-019",
+    "prompt": "Why was the puppet show funny?",
+    "choice_a": "Because everyone worked together",
+    "choice_b": "Because the puppets were big",
+    "choice_c": "Because the teacher told jokes",
+    "choice_d": "Because it rained outside",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-020",
+    "prompt": "What do people wear when they go to the pool?",
+    "choice_a": "Swimsuits",
+    "choice_b": "Hats",
+    "choice_c": "Boots",
+    "choice_d": "Coats",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-020",
+    "prompt": "What should you always do at the pool?",
+    "choice_a": "Bring toys",
+    "choice_b": "Listen to the lifeguard",
+    "choice_c": "Run around the pool",
+    "choice_d": "Eat snacks",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-020",
+    "prompt": "How is the water in the pool described?",
+    "choice_a": "Hot",
+    "choice_b": "Cold and snowy",
+    "choice_c": "Cool",
+    "choice_d": "Dry",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-021",
+    "prompt": "What does a mammal do first?",
+    "choice_a": "Helps the baby learn",
+    "choice_b": "Keeps the baby warm",
+    "choice_c": "Feeds the baby with milk",
+    "choice_d": "Gives birth to its baby",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-021",
+    "prompt": "How does the mother feed her baby?",
+    "choice_a": "With milk",
+    "choice_b": "With water",
+    "choice_c": "With food",
+    "choice_d": "With fruit",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-021",
+    "prompt": "Why does the mother keep the baby warm and safe?",
+    "choice_a": "So the baby can grow",
+    "choice_b": "So the baby can jump",
+    "choice_c": "So the baby can play",
+    "choice_d": "So the baby can sleep",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-022",
+    "prompt": "Who was missing from the rainbow?",
+    "choice_a": "Orange",
+    "choice_b": "Red",
+    "choice_c": "Yellow",
+    "choice_d": "Blue",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-022",
+    "prompt": "What was Blue doing while missing?",
+    "choice_a": "Sleeping",
+    "choice_b": "Running",
+    "choice_c": "Playing hide and seek",
+    "choice_d": "Eating",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-022",
+    "prompt": "How did the other colors feel when Blue was missing?",
+    "choice_a": "Excited",
+    "choice_b": "Scared",
+    "choice_c": "Not complete",
+    "choice_d": "Happy",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-023",
+    "prompt": "What does a push do?",
+    "choice_a": "Keeps something still",
+    "choice_b": "Moves something away from you",
+    "choice_c": "Brings something closer to you",
+    "choice_d": "Makes something bigger",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-023",
+    "prompt": "What does a pull do?",
+    "choice_a": "Moves something away from you",
+    "choice_b": "Brings something closer to you",
+    "choice_c": "Stops something",
+    "choice_d": "Breaks something",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-023",
+    "prompt": "When you open a door, what do you do?",
+    "choice_a": "You close it",
+    "choice_b": "You throw it",
+    "choice_c": "You push or pull it",
+    "choice_d": "You lift it up",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-024",
+    "prompt": "What did Waffle want in the morning?",
+    "choice_a": "A nap",
+    "choice_b": "New friends",
+    "choice_c": "A snack",
+    "choice_d": "A toy",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-024",
+    "prompt": "Who joined Waffle's club?",
+    "choice_a": "Car, Bus, and Train",
+    "choice_b": "Cat, Dog, and Bird",
+    "choice_c": "Apple, Orange, and Pear",
+    "choice_d": "Muffin, Banana, and Egg",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-024",
+    "prompt": "How did Waffle feel after making the club?",
+    "choice_a": "Happy",
+    "choice_b": "Tired",
+    "choice_c": "Sad",
+    "choice_d": "Angry",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-025",
+    "prompt": "What kind of ball do you use to play dodgeball?",
+    "choice_a": "A hard, heavy ball",
+    "choice_b": "A big, bouncy ball",
+    "choice_c": "A soft, squishy ball",
+    "choice_d": "A small, fast ball",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-025",
+    "prompt": "Where do players stand when they play dodgeball?",
+    "choice_a": "In a line",
+    "choice_b": "In a circle",
+    "choice_c": "On the playground",
+    "choice_d": "In a square",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-025",
+    "prompt": "What should you do if the ball touches you?",
+    "choice_a": "Run away fast",
+    "choice_b": "Smile and join the side",
+    "choice_c": "Stop playing",
+    "choice_d": "Throw the ball hard",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-026",
+    "prompt": "What started talking at school?",
+    "choice_a": "Mia's shoes",
+    "choice_b": "Mia's backpack",
+    "choice_c": "Mia's pencil",
+    "choice_d": "Mia's lunchbox",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-026",
+    "prompt": "How did Mia feel when the backpack talked?",
+    "choice_a": "She laughed",
+    "choice_b": "She was scared",
+    "choice_c": "She was angry",
+    "choice_d": "She cried",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-026",
+    "prompt": "Why did everyone want to be Mia's friend?",
+    "choice_a": "Because Mia had a new toy",
+    "choice_b": "Because Mia shared her lunch",
+    "choice_c": "Because the backpack told funny stories",
+    "choice_d": "Because Mia was very tall",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-027",
+    "prompt": "Who made the poster?",
+    "choice_a": "Anna and her friends",
+    "choice_b": "The actors",
+    "choice_c": "The audience",
+    "choice_d": "The teacher",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-027",
+    "prompt": "Why did many people come to the play?",
+    "choice_a": "Because the poster was colorful",
+    "choice_b": "Because the play was outside",
+    "choice_c": "Because it was raining",
+    "choice_d": "Because the play was long",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-027",
+    "prompt": "What did Anna and her friends want?",
+    "choice_a": "To go to the park",
+    "choice_b": "For people to see their play",
+    "choice_c": "To watch a movie",
+    "choice_d": "To eat lunch",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-028",
+    "prompt": "Who wanted to finish the puzzle?",
+    "choice_a": "Their friends",
+    "choice_b": "Only Anna",
+    "choice_c": "Anna and Ben",
+    "choice_d": "Only Ben",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-028",
+    "prompt": "What did Anna and Ben do to finish the puzzle quickly?",
+    "choice_a": "They lost the pieces",
+    "choice_b": "They gave up",
+    "choice_c": "They worked together",
+    "choice_d": "They worked alone",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-028",
+    "prompt": "How did Anna and Ben feel when the puzzle was done?",
+    "choice_a": "Sad",
+    "choice_b": "Tired",
+    "choice_c": "Proud",
+    "choice_d": "Angry",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-029",
+    "prompt": "What does Wally like to do?",
+    "choice_a": "Watch TV",
+    "choice_b": "Help others",
+    "choice_c": "Eat candy",
+    "choice_d": "Sleep all day",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-029",
+    "prompt": "What does Wally use to make toys appear?",
+    "choice_a": "A magic hat",
+    "choice_b": "His wand",
+    "choice_c": "A paintbrush",
+    "choice_d": "A hammer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-029",
+    "prompt": "What happens when Wally uses his spells?",
+    "choice_a": "The flowers wilt",
+    "choice_b": "The toys disappear",
+    "choice_c": "It rains",
+    "choice_d": "People smile",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-030",
+    "prompt": "What do they do first when baking cookies?",
+    "choice_a": "Put cookies in the oven",
+    "choice_b": "Wash their hands",
+    "choice_c": "Mix the flour",
+    "choice_d": "Shape the dough",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-030",
+    "prompt": "What ingredients do they mix?",
+    "choice_a": "Water and honey",
+    "choice_b": "Flour, sugar, and eggs",
+    "choice_c": "Butter and salt",
+    "choice_d": "Milk and chocolate",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-030",
+    "prompt": "Who puts the cookies in the oven?",
+    "choice_a": "The dad",
+    "choice_b": "The neighbor",
+    "choice_c": "The child",
+    "choice_d": "The mom",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-031",
+    "prompt": "What makes Sammy different from other squirrels?",
+    "choice_a": "He can fly.",
+    "choice_b": "He lives in a hole.",
+    "choice_c": "He likes to find nuts.",
+    "choice_d": "He can talk.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-031",
+    "prompt": "What do Sammy's friends like to do?",
+    "choice_a": "Sing songs.",
+    "choice_b": "Find nuts.",
+    "choice_c": "Build nests.",
+    "choice_d": "Share stories.",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-031",
+    "prompt": "Where do Sammy and his friends play?",
+    "choice_a": "In the big, leafy tree.",
+    "choice_b": "On the ground.",
+    "choice_c": "In a cave.",
+    "choice_d": "In a river.",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-032",
+    "prompt": "What can you do with cardboard boxes?",
+    "choice_a": "Use them as shoes",
+    "choice_b": "Write a story on them",
+    "choice_c": "Stack them to make towers",
+    "choice_d": "Eat them for lunch",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-032",
+    "prompt": "What can boxes become?",
+    "choice_a": "Food or drinks",
+    "choice_b": "Pencils or crayons",
+    "choice_c": "Cars, robots, or houses",
+    "choice_d": "Animals or plants",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-032",
+    "prompt": "What do you need to make something new with boxes?",
+    "choice_a": "A hammer",
+    "choice_b": "Paint",
+    "choice_c": "Imagination",
+    "choice_d": "Glue",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-033",
+    "prompt": "Who do Mia and Ben want to make a card for?",
+    "choice_a": "Teacher",
+    "choice_b": "Friend",
+    "choice_c": "Dad",
+    "choice_d": "Mom",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-033",
+    "prompt": "What does Mia say they need to make the card?",
+    "choice_a": "Paint and brushes",
+    "choice_b": "Paper, crayons, and stickers",
+    "choice_c": "Markers and tape",
+    "choice_d": "Glue and scissors",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-033",
+    "prompt": "What will Ben draw on the card?",
+    "choice_a": "A big heart",
+    "choice_b": "A star",
+    "choice_c": "A flower",
+    "choice_d": "A smiley face",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-034",
+    "prompt": "What should you do first to help cook dinner?",
+    "choice_a": "Hand the spoon to an adult",
+    "choice_b": "Set the table",
+    "choice_c": "Wash your hands",
+    "choice_d": "Wash the vegetables",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-034",
+    "prompt": "What do you wash after washing your hands?",
+    "choice_a": "The vegetables",
+    "choice_b": "The forks",
+    "choice_c": "The cups",
+    "choice_d": "The plates",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-034",
+    "prompt": "Who do you give the spoon to?",
+    "choice_a": "A pet",
+    "choice_b": "A friend",
+    "choice_c": "An adult",
+    "choice_d": "A child",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-035",
+    "prompt": "What can a sock become when you put it on your hand?",
+    "choice_a": "A shoe",
+    "choice_b": "A puppet",
+    "choice_c": "A hat",
+    "choice_d": "A glove",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-035",
+    "prompt": "What do you add to the sock puppet to help it see?",
+    "choice_a": "A nose",
+    "choice_b": "Buttons for eyes",
+    "choice_c": "Shoelaces",
+    "choice_d": "A hat",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-035",
+    "prompt": "Why do people make sock puppets?",
+    "choice_a": "To keep their feet warm",
+    "choice_b": "To have fun and tell stories",
+    "choice_c": "To wear to school",
+    "choice_d": "To clean the floor",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-036",
+    "prompt": "What does Anna say is on the shopping list?",
+    "choice_a": "Bananas, juice, and eggs",
+    "choice_b": "Carrots, cheese, and water",
+    "choice_c": "Cookies, soda, and chips",
+    "choice_d": "Apples, milk, and bread",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-036",
+    "prompt": "What does Mom want to find first?",
+    "choice_a": "Milk",
+    "choice_b": "Apples",
+    "choice_c": "Bananas",
+    "choice_d": "Bread",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-036",
+    "prompt": "How does Anna feel about shopping with a list?",
+    "choice_a": "She is tired",
+    "choice_b": "She thinks it is boring",
+    "choice_c": "She is angry",
+    "choice_d": "She thinks it is fun",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-037",
+    "prompt": "What kind of sounds does Daisy like?",
+    "choice_a": "Soft sounds like humming bees",
+    "choice_b": "Loud noises like thunder",
+    "choice_c": "Shouting and yelling",
+    "choice_d": "Roaring like big dragons",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-037",
+    "prompt": "What does Daisy do when she hears loud noises?",
+    "choice_a": "She roars loudly",
+    "choice_b": "She sings",
+    "choice_c": "She jumps high",
+    "choice_d": "She hides",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-037",
+    "prompt": "How is Daisy different from big dragons?",
+    "choice_a": "She makes thunder sounds",
+    "choice_b": "She roars loudly",
+    "choice_c": "She loves shouting",
+    "choice_d": "She likes quiet places",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-038",
+    "prompt": "Why was Anna hot?",
+    "choice_a": "Because she was inside",
+    "choice_b": "Because she was running",
+    "choice_c": "Because it was raining",
+    "choice_d": "Because it was a sunny day",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-038",
+    "prompt": "What did Anna make?",
+    "choice_a": "A paper airplane",
+    "choice_b": "A paper boat",
+    "choice_c": "A paper hat",
+    "choice_d": "A paper fan",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-038",
+    "prompt": "What happened when Anna waved the fan?",
+    "choice_a": "She got hotter",
+    "choice_b": "She felt a cool breeze",
+    "choice_c": "The fan broke",
+    "choice_d": "It started to rain",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-039",
+    "prompt": "What did Sam want to get better at?",
+    "choice_a": "Soccer",
+    "choice_b": "Running",
+    "choice_c": "Drawing",
+    "choice_d": "Reading",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-039",
+    "prompt": "How many times did Sam want to kick the ball in a row?",
+    "choice_a": "Three",
+    "choice_b": "Seven",
+    "choice_c": "Ten",
+    "choice_d": "Five",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-039",
+    "prompt": "How did Sam feel after reaching his goal?",
+    "choice_a": "Angry",
+    "choice_b": "Tired",
+    "choice_c": "Sad",
+    "choice_d": "Proud",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-040",
+    "prompt": "What does Mia like about the teddy bear?",
+    "choice_a": "It is loud",
+    "choice_b": "It is soft",
+    "choice_c": "It is big",
+    "choice_d": "It is fast",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-040",
+    "prompt": "What does Sam say about the toy car?",
+    "choice_a": "It is fast",
+    "choice_b": "It is slow",
+    "choice_c": "It is soft",
+    "choice_d": "It is big",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-040",
+    "prompt": "Which toy does Mia choose?",
+    "choice_a": "Both toys",
+    "choice_b": "Neither toy",
+    "choice_c": "The teddy bear",
+    "choice_d": "The toy car",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-041",
+    "prompt": "What do Lily and Max want to build?",
+    "choice_a": "A castle",
+    "choice_b": "A car",
+    "choice_c": "A house",
+    "choice_d": "A tree",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-041",
+    "prompt": "Who will make the walls of the castle?",
+    "choice_a": "No one",
+    "choice_b": "Lily",
+    "choice_c": "Max",
+    "choice_d": "Their friend",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-041",
+    "prompt": "What does Lily say she will make?",
+    "choice_a": "A wall",
+    "choice_b": "A tower",
+    "choice_c": "A door",
+    "choice_d": "A window",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-042",
+    "prompt": "What does tying shoelaces help with?",
+    "choice_a": "Makes shoes colorful",
+    "choice_b": "Makes shoes bigger",
+    "choice_c": "Cleans your shoes",
+    "choice_d": "Keeps shoes on your feet",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-042",
+    "prompt": "What do you do first when tying shoelaces?",
+    "choice_a": "Pull the lace through",
+    "choice_b": "Wrap the lace around",
+    "choice_c": "Cross the laces",
+    "choice_d": "Make a loop",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-042",
+    "prompt": "What makes tying shoelaces easier?",
+    "choice_a": "Running fast",
+    "choice_b": "Using big shoes",
+    "choice_c": "Wearing socks",
+    "choice_d": "Practice",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-043",
+    "prompt": "What should you do first before feeding your pet?",
+    "choice_a": "Watch your pet eat",
+    "choice_b": "Put food in the bowl",
+    "choice_c": "Wash your hands",
+    "choice_d": "Get the pet's food",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-043",
+    "prompt": "Where do you put the pet's food?",
+    "choice_a": "On the floor",
+    "choice_b": "In your hand",
+    "choice_c": "In the pet's bed",
+    "choice_d": "In the bowl",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-043",
+    "prompt": "What do you do after putting food in the bowl?",
+    "choice_a": "Watch your pet eat",
+    "choice_b": "Wash your hands",
+    "choice_c": "Take the bowl away",
+    "choice_d": "Get more food",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-044",
+    "prompt": "Who went on the treasure hunt?",
+    "choice_a": "Anna and Amy",
+    "choice_b": "Max and Mia",
+    "choice_c": "Sam and Sue",
+    "choice_d": "Tom and Tim",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-044",
+    "prompt": "What did Max and Mia find inside the shiny box?",
+    "choice_a": "A shiny ring",
+    "choice_b": "A big rubber duck",
+    "choice_c": "A gold coin",
+    "choice_d": "A small key",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-044",
+    "prompt": "How did Max and Mia feel about the prize?",
+    "choice_a": "They were sad",
+    "choice_b": "They were scared",
+    "choice_c": "They laughed and cheered",
+    "choice_d": "They were angry",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-045",
+    "prompt": "What does Sam watch to catch the ball?",
+    "choice_a": "The baseball",
+    "choice_b": "The bat",
+    "choice_c": "The glove",
+    "choice_d": "The sun",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-045",
+    "prompt": "Why can Sam catch the ball?",
+    "choice_a": "Because he keeps his eyes on the ball",
+    "choice_b": "Because he throws the ball",
+    "choice_c": "Because he runs fast",
+    "choice_d": "Because he hides",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-045",
+    "prompt": "How does Sam feel when he catches the ball?",
+    "choice_a": "Proud",
+    "choice_b": "Angry",
+    "choice_c": "Tired",
+    "choice_d": "Sad",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-046",
+    "prompt": "What is magma?",
+    "choice_a": "Cold water",
+    "choice_b": "Green leaves",
+    "choice_c": "Hot, melted rock",
+    "choice_d": "Soft sand",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-046",
+    "prompt": "What happens after magma comes out of a volcano?",
+    "choice_a": "It blows up",
+    "choice_b": "It cools down",
+    "choice_c": "It melts again",
+    "choice_d": "It turns into water",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-046",
+    "prompt": "What does magma become when it cools?",
+    "choice_a": "A hard rock",
+    "choice_b": "A soft rock",
+    "choice_c": "Water",
+    "choice_d": "Sand",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-047",
+    "prompt": "What does Anna do every night before bed?",
+    "choice_a": "Brushes her teeth and puts on pajamas",
+    "choice_b": "Watches TV",
+    "choice_c": "Plays outside",
+    "choice_d": "Eats dinner",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-047",
+    "prompt": "Why is it easier for Anna to fall asleep?",
+    "choice_a": "Because she drinks water",
+    "choice_b": "Because she has a bedtime routine",
+    "choice_c": "Because she is very tired",
+    "choice_d": "Because she reads a book",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-047",
+    "prompt": "How does good sleep help Anna?",
+    "choice_a": "It makes her want to play more",
+    "choice_b": "It helps her feel happy and ready for a new day",
+    "choice_c": "It helps her eat more food",
+    "choice_d": "It makes her stay awake longer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-048",
+    "prompt": "Why are the leaves moving?",
+    "choice_a": "Because Mia is running",
+    "choice_b": "Because the sun is shining",
+    "choice_c": "Because the wind is blowing",
+    "choice_d": "Because it is raining",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-048",
+    "prompt": "What is wind?",
+    "choice_a": "Flying birds",
+    "choice_b": "Moving air",
+    "choice_c": "Shining sun",
+    "choice_d": "Falling rain",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-048",
+    "prompt": "How does Mia feel about the breeze?",
+    "choice_a": "She wants the wind to stop",
+    "choice_b": "She is afraid of the wind",
+    "choice_c": "She likes when it feels cool",
+    "choice_d": "She does not like the breeze",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-049",
+    "prompt": "Who went to the pond?",
+    "choice_a": "Lily and her dad",
+    "choice_b": "Lily and her mom",
+    "choice_c": "Lily and her teacher",
+    "choice_d": "Lily and her friend",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-049",
+    "prompt": "What did the ducklings do?",
+    "choice_a": "They hopped on leaves",
+    "choice_b": "They flew in the sky",
+    "choice_c": "They swam in the water",
+    "choice_d": "They climbed trees",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-049",
+    "prompt": "What can we say about the pond?",
+    "choice_a": "It was covered in snow",
+    "choice_b": "It was empty and quiet",
+    "choice_c": "It was very dry",
+    "choice_d": "It had many animals living there",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-050",
+    "prompt": "What should you do first when saying no politely?",
+    "choice_a": "Walk away",
+    "choice_b": "Say no loudly",
+    "choice_c": "Smile and listen",
+    "choice_d": "Ignore the person",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-050",
+    "prompt": "What words can you say to say no kindly?",
+    "choice_a": "Yes, please",
+    "choice_b": "Maybe later",
+    "choice_c": "Go away",
+    "choice_d": "No, thank you",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-050",
+    "prompt": "What can you do after saying no to be polite?",
+    "choice_a": "Ignore them",
+    "choice_b": "Shout at the person",
+    "choice_c": "Run away",
+    "choice_d": "Offer another idea or say sorry",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-051",
+    "prompt": "Where are Mia and Ben?",
+    "choice_a": "At home",
+    "choice_b": "At the store",
+    "choice_c": "At the park",
+    "choice_d": "At school",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-051",
+    "prompt": "What do Mia and Ben do with the ball?",
+    "choice_a": "They throw it to a dog",
+    "choice_b": "They leave it on the ground",
+    "choice_c": "They hide it",
+    "choice_d": "They take turns kicking it",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-051",
+    "prompt": "How do Mia and Ben feel while playing?",
+    "choice_a": "They laugh and have fun",
+    "choice_b": "They are angry",
+    "choice_c": "They are sad",
+    "choice_d": "They are tired",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-052",
+    "prompt": "What does Sam hold?",
+    "choice_a": "A glove",
+    "choice_b": "A bat",
+    "choice_c": "A ball",
+    "choice_d": "A hat",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-052",
+    "prompt": "What does Coach tell Sam to do?",
+    "choice_a": "Throw the ball",
+    "choice_b": "Jump high",
+    "choice_c": "Run fast",
+    "choice_d": "Watch the ball and swing",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-052",
+    "prompt": "What happens when Sam swings the bat?",
+    "choice_a": "The bat breaks",
+    "choice_b": "He drops the bat",
+    "choice_c": "He misses the ball",
+    "choice_d": "The ball flies",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-053",
+    "prompt": "What is on a tidy desk?",
+    "choice_a": "Food and drinks",
+    "choice_b": "Toys and games",
+    "choice_c": "Papers everywhere",
+    "choice_d": "Books stacked and pencils in a cup",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-053",
+    "prompt": "What is hard to find on a messy desk?",
+    "choice_a": "Books",
+    "choice_b": "A cup",
+    "choice_c": "Things",
+    "choice_d": "Pencils",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-053",
+    "prompt": "Which desk makes it easy to find things?",
+    "choice_a": "Messy desk",
+    "choice_b": "Tidy desk",
+    "choice_c": "Both desks",
+    "choice_d": "No desk",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-054",
+    "prompt": "What is a pond?",
+    "choice_a": "A sandy beach",
+    "choice_b": "A small body of water",
+    "choice_c": "A type of tree",
+    "choice_d": "A big mountain",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-054",
+    "prompt": "What do frogs do in ponds?",
+    "choice_a": "Swim under water",
+    "choice_b": "Fly in the sky",
+    "choice_c": "Build nests",
+    "choice_d": "Jump on lily pads",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-054",
+    "prompt": "Which animals live in ponds?",
+    "choice_a": "Frogs, fish, and ducks",
+    "choice_b": "Birds and squirrels",
+    "choice_c": "Lions and tigers",
+    "choice_d": "Elephants and giraffes",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-055",
+    "prompt": "What do owls do at night?",
+    "choice_a": "Hoot in the trees",
+    "choice_b": "Sleep",
+    "choice_c": "Fly and look for bugs",
+    "choice_d": "Search for food",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-055",
+    "prompt": "Which animal flies at night?",
+    "choice_a": "Dog",
+    "choice_b": "Raccoon",
+    "choice_c": "Owl",
+    "choice_d": "Bat",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-055",
+    "prompt": "What do raccoons do at night?",
+    "choice_a": "Search for food",
+    "choice_b": "Hoot in the trees",
+    "choice_c": "Sing",
+    "choice_d": "Fly and look for bugs",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-056",
+    "prompt": "What kind of home is the ocean?",
+    "choice_a": "A big, salty home",
+    "choice_b": "A dry, sandy home",
+    "choice_c": "A warm, sunny home",
+    "choice_d": "A small, cold home",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-056",
+    "prompt": "Which animals live in the ocean?",
+    "choice_a": "Fish, whales, and dolphins",
+    "choice_b": "Lions, tigers, and bears",
+    "choice_c": "Birds and squirrels",
+    "choice_d": "Cats and dogs",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-056",
+    "prompt": "What else grows in the ocean besides animals?",
+    "choice_a": "Seaweed",
+    "choice_b": "Grass",
+    "choice_c": "Trees",
+    "choice_d": "Flowers",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-057",
+    "prompt": "Where did Mia and Ben find the small door?",
+    "choice_a": "Under the stairs",
+    "choice_b": "In the garden",
+    "choice_c": "In the garage",
+    "choice_d": "In the kitchen",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-057",
+    "prompt": "What did Mia and Ben build inside the small door?",
+    "choice_a": "A treehouse",
+    "choice_b": "A fort",
+    "choice_c": "A playroom",
+    "choice_d": "A secret clubhouse",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-057",
+    "prompt": "How did Mia and Ben feel because of their special place?",
+    "choice_a": "Bored and lonely",
+    "choice_b": "Sad and tired",
+    "choice_c": "Happy and safe",
+    "choice_d": "Angry and scared",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-058",
+    "prompt": "What does the person put on?",
+    "choice_a": "A red coat",
+    "choice_b": "Green boots",
+    "choice_c": "A yellow scarf",
+    "choice_d": "A blue hat",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-058",
+    "prompt": "What is hard to pull?",
+    "choice_a": "The string",
+    "choice_b": "The hood",
+    "choice_c": "The buttons",
+    "choice_d": "The zipper",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-058",
+    "prompt": "Why does the person zip the coat?",
+    "choice_a": "To eat lunch",
+    "choice_b": "To take off the coat",
+    "choice_c": "To go to sleep",
+    "choice_d": "To be warm",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-059",
+    "prompt": "How can you play volleyball?",
+    "choice_a": "Only with a team",
+    "choice_b": "With a ball and bat",
+    "choice_c": "Only alone",
+    "choice_d": "Alone or with a team",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-059",
+    "prompt": "What do you do when you play volleyball alone?",
+    "choice_a": "Use a bat",
+    "choice_b": "Run around the court",
+    "choice_c": "Hit the ball by yourself",
+    "choice_d": "Work with friends",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-059",
+    "prompt": "Why is teamwork good in volleyball?",
+    "choice_a": "It makes the court bigger",
+    "choice_b": "It makes the ball lighter",
+    "choice_c": "It helps you win and makes the game fun",
+    "choice_d": "It changes the rules",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-060",
+    "prompt": "What do Mia and her dad put into the blue bin?",
+    "choice_a": "Bottles and cans",
+    "choice_b": "Books and paper",
+    "choice_c": "Clothes and shoes",
+    "choice_d": "Food and toys",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-060",
+    "prompt": "Why does Mia learn to recycle?",
+    "choice_a": "To get a new toy",
+    "choice_b": "To help her friends",
+    "choice_c": "To make money",
+    "choice_d": "To keep the Earth clean",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-060",
+    "prompt": "How does Mia feel when she helps with recycling?",
+    "choice_a": "Happy",
+    "choice_b": "Angry",
+    "choice_c": "Sad",
+    "choice_d": "Tired",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-061",
+    "prompt": "How many pennies does Anna find?",
+    "choice_a": "Five",
+    "choice_b": "One",
+    "choice_c": "Two",
+    "choice_d": "Three",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-061",
+    "prompt": "What kind of coins does Anna have?",
+    "choice_a": "Dimes and quarters",
+    "choice_b": "Only pennies",
+    "choice_c": "Only nickels",
+    "choice_d": "Pennies and nickels",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-061",
+    "prompt": "What does Anna buy with her coins?",
+    "choice_a": "Candy",
+    "choice_b": "A book",
+    "choice_c": "A toy",
+    "choice_d": "A sticker",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-062",
+    "prompt": "What game did Mia and her friends play at recess?",
+    "choice_a": "Hopscotch",
+    "choice_b": "Jump rope",
+    "choice_c": "Hide and seek",
+    "choice_d": "Tag",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-062",
+    "prompt": "What did Mia make sure everyone did?",
+    "choice_a": "Took turns being 'it'",
+    "choice_b": "Ran very fast",
+    "choice_c": "Sat down",
+    "choice_d": "Played alone",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-062",
+    "prompt": "What did Mia do when someone fell?",
+    "choice_a": "Kept playing",
+    "choice_b": "Laughed",
+    "choice_c": "Stopped to help",
+    "choice_d": "Ran away",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-063",
+    "prompt": "What did Fiona find?",
+    "choice_a": "A blue hat",
+    "choice_b": "A shiny button",
+    "choice_c": "A red apple",
+    "choice_d": "A big rock",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-063",
+    "prompt": "Who is Fiona's friend?",
+    "choice_a": "Bunny",
+    "choice_b": "Dog",
+    "choice_c": "Bird",
+    "choice_d": "Cat",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-063",
+    "prompt": "Why did Bunny smile?",
+    "choice_a": "Because Bunny found a button",
+    "choice_b": "Because it was raining",
+    "choice_c": "Because Fiona has many buttons",
+    "choice_d": "Because Bunny was hungry",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-064",
+    "prompt": "What do you take for a short trip?",
+    "choice_a": "A big bag",
+    "choice_b": "A small bag",
+    "choice_c": "A suitcase",
+    "choice_d": "A backpack",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-064",
+    "prompt": "What do you pack for a short trip?",
+    "choice_a": "Food and water",
+    "choice_b": "A lot of books",
+    "choice_c": "A few clothes and a toothbrush",
+    "choice_d": "Many clothes and toys",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-064",
+    "prompt": "Which trip needs more things?",
+    "choice_a": "Short trip",
+    "choice_b": "Both need the same",
+    "choice_c": "No trips need things",
+    "choice_d": "Long trip",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-065",
+    "prompt": "Who is talking in the passage?",
+    "choice_a": "Teacher and Mia",
+    "choice_b": "Dad and Mia",
+    "choice_c": "Mia and her friend",
+    "choice_d": "Mom and Mia",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-065",
+    "prompt": "What does Mia have ready for school?",
+    "choice_a": "A small bag",
+    "choice_b": "A big backpack",
+    "choice_c": "A lunch box",
+    "choice_d": "A book",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-065",
+    "prompt": "Why is carrying a small bag good?",
+    "choice_a": "It is heavy",
+    "choice_b": "It has many pockets",
+    "choice_c": "It is safe and easy to carry",
+    "choice_d": "It is colorful",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-066",
+    "prompt": "What does 'nocturnal' mean?",
+    "choice_a": "Awake during the day",
+    "choice_b": "Sleeping all night",
+    "choice_c": "Sleeping all day",
+    "choice_d": "Awake at night",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-066",
+    "prompt": "Why do nocturnal animals come out at night?",
+    "choice_a": "To hunt during the day",
+    "choice_b": "To play with friends",
+    "choice_c": "To sleep",
+    "choice_d": "To find food",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-066",
+    "prompt": "Why is being awake at night good for some animals?",
+    "choice_a": "It helps them see better",
+    "choice_b": "It makes them run faster",
+    "choice_c": "It helps them find water",
+    "choice_d": "It keeps them safe from daytime hunters",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-067",
+    "prompt": "What did Mia put on before stepping onto the ice?",
+    "choice_a": "Socks",
+    "choice_b": "Shoes",
+    "choice_c": "Boots",
+    "choice_d": "Skates",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-067",
+    "prompt": "What did Mia do after putting on her skates?",
+    "choice_a": "Took off her skates",
+    "choice_b": "Stepped onto the ice",
+    "choice_c": "Ran around the rink",
+    "choice_d": "Sat down",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-067",
+    "prompt": "How did Mia feel while skating?",
+    "choice_a": "Happy and excited",
+    "choice_b": "Scared and nervous",
+    "choice_c": "Tired and sleepy",
+    "choice_d": "Angry and upset",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-068",
+    "prompt": "What should you do first to see the moon change?",
+    "choice_a": "Look at the stars",
+    "choice_b": "Stay inside",
+    "choice_c": "Look at the sun",
+    "choice_d": "Go outside at night and look up",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-068",
+    "prompt": "What do you need to find in the sky?",
+    "choice_a": "The moon",
+    "choice_b": "The sun",
+    "choice_c": "A bird",
+    "choice_d": "A cloud",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-068",
+    "prompt": "How does the moon change each night?",
+    "choice_a": "From a bird to a plane",
+    "choice_b": "From a thin curve to a big circle and back",
+    "choice_c": "It does not change",
+    "choice_d": "From a star to a cloud",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-069",
+    "prompt": "What color was Sam?",
+    "choice_a": "Red",
+    "choice_b": "Yellow",
+    "choice_c": "Green",
+    "choice_d": "Blue",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-069",
+    "prompt": "Where did Sam get lost?",
+    "choice_a": "On the table",
+    "choice_b": "Under the bed",
+    "choice_c": "Behind the dryer",
+    "choice_d": "In the closet",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-069",
+    "prompt": "Who helped Sam get out?",
+    "choice_a": "The red sock",
+    "choice_b": "The blue sock",
+    "choice_c": "The green sock",
+    "choice_d": "The yellow sock",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-070",
+    "prompt": "What did Sam and Mia want to do?",
+    "choice_a": "Read",
+    "choice_b": "Play",
+    "choice_c": "Eat",
+    "choice_d": "Sleep",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-070",
+    "prompt": "What did they use to make the robot?",
+    "choice_a": "Food and drinks",
+    "choice_b": "Toys and clothes",
+    "choice_c": "Books and pencils",
+    "choice_d": "Boxes, bottles, and paper rolls",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-070",
+    "prompt": "What was the robot's head made from?",
+    "choice_a": "A ball",
+    "choice_b": "A bottle",
+    "choice_c": "A box",
+    "choice_d": "Paper rolls",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-071",
+    "prompt": "What does Mia find?",
+    "choice_a": "A flower",
+    "choice_b": "A rock",
+    "choice_c": "A bird",
+    "choice_d": "A tree",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-071",
+    "prompt": "What kind of rock is it?",
+    "choice_a": "Sedimentary rock",
+    "choice_b": "Plastic rock",
+    "choice_c": "Metamorphic rock",
+    "choice_d": "Igneous rock",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-071",
+    "prompt": "Why did the rock change?",
+    "choice_a": "Because of water",
+    "choice_b": "Because of wind",
+    "choice_c": "Because of sunlight",
+    "choice_d": "Because of heat and pressure",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-072",
+    "prompt": "What does Mia see?",
+    "choice_a": "A flower",
+    "choice_b": "A plant",
+    "choice_c": "A tree",
+    "choice_d": "A rock",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-072",
+    "prompt": "What are the green things on the plant?",
+    "choice_a": "Flowers",
+    "choice_b": "Fruits",
+    "choice_c": "Leaves",
+    "choice_d": "Roots",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-072",
+    "prompt": "Why are leaves important?",
+    "choice_a": "They help the plant sleep",
+    "choice_b": "They help the plant drink water",
+    "choice_c": "They help the plant make food from the sun",
+    "choice_d": "They help the plant grow flowers",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-073",
+    "prompt": "What should safe swimmers do near the pool?",
+    "choice_a": "Ignore the lifeguard",
+    "choice_b": "Walk by the pool",
+    "choice_c": "Run by the pool",
+    "choice_d": "Jump in the pool",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-073",
+    "prompt": "Who should you listen to at the pool?",
+    "choice_a": "No one",
+    "choice_b": "Your pet",
+    "choice_c": "Your friend",
+    "choice_d": "The lifeguard",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-073",
+    "prompt": "Why is being safe at the pool important?",
+    "choice_a": "It makes you swim faster",
+    "choice_b": "It makes the pool bigger",
+    "choice_c": "It helps everyone have fun",
+    "choice_d": "It makes the water cold",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-074",
+    "prompt": "Where were Anna and Ben playing?",
+    "choice_a": "At home",
+    "choice_b": "At the park",
+    "choice_c": "At the store",
+    "choice_d": "At school",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-074",
+    "prompt": "Who watched Anna and Ben from the bench?",
+    "choice_a": "A dog",
+    "choice_b": "Ben",
+    "choice_c": "Mia",
+    "choice_d": "Anna",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-074",
+    "prompt": "What did Anna ask Mia?",
+    "choice_a": "If she was hungry",
+    "choice_b": "If she wanted to go home",
+    "choice_c": "If she wanted to play with them",
+    "choice_d": "If she liked the ball",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-075",
+    "prompt": "What kind of stories does Gerry like?",
+    "choice_a": "Happy stories about friends",
+    "choice_b": "Funny stories about animals",
+    "choice_c": "Sad stories",
+    "choice_d": "Spooky stories",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-075",
+    "prompt": "How does Gerry feel when stories are kind?",
+    "choice_a": "Angry",
+    "choice_b": "Safe",
+    "choice_c": "Bored",
+    "choice_d": "Scared",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-075",
+    "prompt": "Why do Gerry's friends love him?",
+    "choice_a": "Because he tells spooky stories",
+    "choice_b": "Because he is scary",
+    "choice_c": "Because he is quiet",
+    "choice_d": "Because he is different",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-076",
+    "prompt": "What do some kids play on music lesson day?",
+    "choice_a": "Violin",
+    "choice_b": "Piano",
+    "choice_c": "Flute",
+    "choice_d": "Guitar",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-076",
+    "prompt": "How does the piano sound?",
+    "choice_a": "Loud and fast",
+    "choice_b": "Slow and quiet",
+    "choice_c": "Soft and gentle",
+    "choice_d": "High and sharp",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-076",
+    "prompt": "What is true about the drums?",
+    "choice_a": "They are quiet and slow",
+    "choice_b": "They sound soft",
+    "choice_c": "They are loud and fast",
+    "choice_d": "They are the same as the piano",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-077",
+    "prompt": "What can you do when a teammate feels sad?",
+    "choice_a": "Leave the game",
+    "choice_b": "Ignore them",
+    "choice_c": "Cheer them on",
+    "choice_d": "Play alone",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-077",
+    "prompt": "What do we say to help teammates?",
+    "choice_a": "'Be quiet!'",
+    "choice_b": "'You can do it!'",
+    "choice_c": "'Stop playing!'",
+    "choice_d": "'Go away!'",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-077",
+    "prompt": "Why do we cheer for our team?",
+    "choice_a": "To make the game longer",
+    "choice_b": "To help everyone feel happy",
+    "choice_c": "To get tired faster",
+    "choice_d": "To stop playing",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-078",
+    "prompt": "What did Mia make with her hands?",
+    "choice_a": "A bird",
+    "choice_b": "A dog",
+    "choice_c": "A fish",
+    "choice_d": "A cat",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-078",
+    "prompt": "Where is the dog shadow?",
+    "choice_a": "On the door",
+    "choice_b": "On the wall",
+    "choice_c": "On the table",
+    "choice_d": "On the floor",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-078",
+    "prompt": "What do Mia and Tom want to do together?",
+    "choice_a": "Play outside",
+    "choice_b": "Read a book",
+    "choice_c": "Draw pictures",
+    "choice_d": "Play shadow puppets",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-079",
+    "prompt": "What do you do first to play Capture-the-Flag?",
+    "choice_a": "Run very fast",
+    "choice_b": "Split into two teams",
+    "choice_c": "Hide the flags",
+    "choice_d": "Shout loudly",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-079",
+    "prompt": "What should you remember when you run?",
+    "choice_a": "Run and hide",
+    "choice_b": "Run very fast",
+    "choice_c": "Run and shout",
+    "choice_d": "Run carefully",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-079",
+    "prompt": "Why should you listen to the rules?",
+    "choice_a": "To run faster",
+    "choice_b": "To hide the flag",
+    "choice_c": "To win the game",
+    "choice_d": "To play safely and fair",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-080",
+    "prompt": "What helps us know what to do each day?",
+    "choice_a": "A schedule",
+    "choice_b": "A toy",
+    "choice_c": "A pet",
+    "choice_d": "A book",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-080",
+    "prompt": "What do we do after we wake up?",
+    "choice_a": "Eat lunch",
+    "choice_b": "Go to bed",
+    "choice_c": "Go to school",
+    "choice_d": "Brush our teeth",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-080",
+    "prompt": "Why is following a schedule good?",
+    "choice_a": "It makes us tired",
+    "choice_b": "It makes us hungry",
+    "choice_c": "It helps us learn new things",
+    "choice_d": "It gives us toys",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-081",
+    "prompt": "What do Anna and her friends play?",
+    "choice_a": "Basketball",
+    "choice_b": "Hockey",
+    "choice_c": "Tennis",
+    "choice_d": "Soccer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-081",
+    "prompt": "What do the team members do when someone falls?",
+    "choice_a": "Cheer loudly",
+    "choice_b": "Run away",
+    "choice_c": "Help them up",
+    "choice_d": "Ignore them",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-081",
+    "prompt": "How do they score a goal?",
+    "choice_a": "By playing alone",
+    "choice_b": "By working together",
+    "choice_c": "By sitting down",
+    "choice_d": "By stopping the game",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-082",
+    "prompt": "What does Sam line up in a row?",
+    "choice_a": "Dominoes",
+    "choice_b": "Cars",
+    "choice_c": "Blocks",
+    "choice_d": "Books",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-082",
+    "prompt": "What happens when Sam pushes the first domino?",
+    "choice_a": "It stays standing",
+    "choice_b": "It breaks",
+    "choice_c": "It falls and bumps the next one",
+    "choice_d": "It rolls away",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-082",
+    "prompt": "Why does Sam laugh?",
+    "choice_a": "Because he is tired",
+    "choice_b": "Because the dominoes don’t fall",
+    "choice_c": "Because all the dominoes fall down",
+    "choice_d": "Because he lost a domino",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-083",
+    "prompt": "What did Lila put on her notebook?",
+    "choice_a": "A book",
+    "choice_b": "A toy",
+    "choice_c": "A pencil",
+    "choice_d": "A shiny star sticker",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-083",
+    "prompt": "Where did Lila find her missing sticker?",
+    "choice_a": "On the wall",
+    "choice_b": "On her shoe",
+    "choice_c": "Under her bed",
+    "choice_d": "In her backpack",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-083",
+    "prompt": "What did Lila do when she noticed the sticker was gone?",
+    "choice_a": "Lost her notebook",
+    "choice_b": "Looked under her desk",
+    "choice_c": "Asked a friend",
+    "choice_d": "Cried",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-084",
+    "prompt": "What does Mia see?",
+    "choice_a": "A shiny rock",
+    "choice_b": "A hot lava",
+    "choice_c": "A big tree",
+    "choice_d": "A cool drink",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-084",
+    "prompt": "Where does an igneous rock come from?",
+    "choice_a": "Soft soil",
+    "choice_b": "Cold water",
+    "choice_c": "Green leaves",
+    "choice_d": "Hot, melted lava",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-084",
+    "prompt": "What happens to lava to make an igneous rock?",
+    "choice_a": "It melts more",
+    "choice_b": "It grows bigger",
+    "choice_c": "It cools down",
+    "choice_d": "It turns into water",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-085",
+    "prompt": "What do Sam and Mia use to build?",
+    "choice_a": "Paper",
+    "choice_b": "Blocks",
+    "choice_c": "Legos",
+    "choice_d": "Magnet tiles",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-085",
+    "prompt": "What happens to the tower?",
+    "choice_a": "It melts",
+    "choice_b": "It flies away",
+    "choice_c": "It falls down",
+    "choice_d": "It stays up",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-085",
+    "prompt": "How do Sam and Mia feel when they play together?",
+    "choice_a": "Angry",
+    "choice_b": "Tired",
+    "choice_c": "Sad",
+    "choice_d": "Happy",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-086",
+    "prompt": "Where are Mia and her dad?",
+    "choice_a": "At the park",
+    "choice_b": "At school",
+    "choice_c": "In the library",
+    "choice_d": "In the kitchen",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-086",
+    "prompt": "What color is the book Mia likes?",
+    "choice_a": "Red",
+    "choice_b": "Blue",
+    "choice_c": "Green",
+    "choice_d": "Yellow",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-086",
+    "prompt": "What does Mia want to do with her dad?",
+    "choice_a": "Eat lunch",
+    "choice_b": "Play outside",
+    "choice_c": "Read a book",
+    "choice_d": "Watch TV",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-087",
+    "prompt": "What are igneous rocks made from?",
+    "choice_a": "Plants and soil",
+    "choice_b": "Sand and water",
+    "choice_c": "Cooled lava or melted rock",
+    "choice_d": "Air and clouds",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-087",
+    "prompt": "What is one example of an igneous rock?",
+    "choice_a": "Coal",
+    "choice_b": "Marble",
+    "choice_c": "Sandstone",
+    "choice_d": "Granite",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-087",
+    "prompt": "How do igneous rocks feel?",
+    "choice_a": "Smooth or rough",
+    "choice_b": "Soft and squishy",
+    "choice_c": "Only smooth",
+    "choice_d": "Only rough",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-088",
+    "prompt": "When does Mia go to the park?",
+    "choice_a": "At noon",
+    "choice_b": "In the morning",
+    "choice_c": "At night",
+    "choice_d": "In the afternoon",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-088",
+    "prompt": "What does Mia see in the sky at night?",
+    "choice_a": "The moon and stars",
+    "choice_b": "The sun",
+    "choice_c": "Birds",
+    "choice_d": "Clouds",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-088",
+    "prompt": "What does Mia do before she goes to sleep?",
+    "choice_a": "She plays with her friends",
+    "choice_b": "She waves goodnight to the park",
+    "choice_c": "She eats lunch",
+    "choice_d": "She reads a book",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-089",
+    "prompt": "What are asteroids made of?",
+    "choice_a": "Ice and dust",
+    "choice_b": "Big rocks",
+    "choice_c": "Water",
+    "choice_d": "Gas",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-089",
+    "prompt": "What happens to comets when they get close to the Sun?",
+    "choice_a": "They turn into asteroids",
+    "choice_b": "They disappear",
+    "choice_c": "They stop moving",
+    "choice_d": "They grow bright tails",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-089",
+    "prompt": "Where do asteroids and comets move around?",
+    "choice_a": "The Sun",
+    "choice_b": "The Moon",
+    "choice_c": "The stars",
+    "choice_d": "The Earth",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-090",
+    "prompt": "What did Anna want to lift?",
+    "choice_a": "A chair",
+    "choice_b": "A ball",
+    "choice_c": "Her toy box",
+    "choice_d": "A book",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-090",
+    "prompt": "What did Dad show Anna?",
+    "choice_a": "A wheelbarrow",
+    "choice_b": "A pulley",
+    "choice_c": "A ladder",
+    "choice_d": "A hammer",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-090",
+    "prompt": "What happened when Anna pulled the rope?",
+    "choice_a": "The rope broke",
+    "choice_b": "The box fell down",
+    "choice_c": "The box went up",
+    "choice_d": "The wheel stopped",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-091",
+    "prompt": "What is an agility ladder?",
+    "choice_a": "A hat for kids",
+    "choice_b": "A type of shoe",
+    "choice_c": "A ball for playing",
+    "choice_d": "A tool used in sports",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-091",
+    "prompt": "Where is the agility ladder placed?",
+    "choice_a": "On a wall",
+    "choice_b": "On a table",
+    "choice_c": "In the air",
+    "choice_d": "On the ground",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-091",
+    "prompt": "Why do kids use the agility ladder?",
+    "choice_a": "To draw pictures",
+    "choice_b": "To move fast and stay balanced",
+    "choice_c": "To read books",
+    "choice_d": "To sing songs",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-092",
+    "prompt": "What will Mia and Coach Lee learn today?",
+    "choice_a": "Safe taekwondo kicks",
+    "choice_b": "How to run fast",
+    "choice_c": "How to dance",
+    "choice_d": "How to swim",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-092",
+    "prompt": "How do they kick in taekwondo?",
+    "choice_a": "Hard and fast",
+    "choice_b": "Gently and carefully",
+    "choice_c": "Soft and loud",
+    "choice_d": "Slow and quiet",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-092",
+    "prompt": "How does Mia feel about trying the kicks?",
+    "choice_a": "She is ready",
+    "choice_b": "She is tired",
+    "choice_c": "She is scared",
+    "choice_d": "She is confused",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-093",
+    "prompt": "Where does Sam go to practice skating?",
+    "choice_a": "The gym",
+    "choice_b": "The pool",
+    "choice_c": "The park",
+    "choice_d": "The rink",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-093",
+    "prompt": "What does Sam wear to stay safe?",
+    "choice_a": "Gloves",
+    "choice_b": "A hat",
+    "choice_c": "A scarf",
+    "choice_d": "A helmet",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-093",
+    "prompt": "Why does Sam practice skating?",
+    "choice_a": "To eat snacks",
+    "choice_b": "To sleep",
+    "choice_c": "To watch TV",
+    "choice_d": "To skate faster",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-094",
+    "prompt": "Who sat down on the chair?",
+    "choice_a": "A boy",
+    "choice_b": "A dog",
+    "choice_c": "The chair",
+    "choice_d": "Mia",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-094",
+    "prompt": "What sound did the chair make?",
+    "choice_a": "Squeak! La la la!",
+    "choice_b": "Ring! Ring!",
+    "choice_c": "Buzz! Buzz!",
+    "choice_d": "Woof! Woof!",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-094",
+    "prompt": "How did Mia feel about the chair singing?",
+    "choice_a": "She was sad",
+    "choice_b": "She was happy and giggled",
+    "choice_c": "She was scared",
+    "choice_d": "She was angry",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-095",
+    "prompt": "Where did Mia find the magic seesaw?",
+    "choice_a": "In her house",
+    "choice_b": "At school",
+    "choice_c": "In the park",
+    "choice_d": "At the zoo",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-095",
+    "prompt": "What does the seesaw do when Mia feels sad?",
+    "choice_a": "It lifts her up",
+    "choice_b": "It stops moving",
+    "choice_c": "It makes a sound",
+    "choice_d": "It spins around",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-095",
+    "prompt": "What did Mia learn about feelings?",
+    "choice_a": "Sad feelings are bad",
+    "choice_b": "It's okay to feel both happy and sad",
+    "choice_c": "The seesaw can fix feelings",
+    "choice_d": "You should only feel happy",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-096",
+    "prompt": "What happened to the little blue sock first?",
+    "choice_a": "It found a cat.",
+    "choice_b": "It felt happy.",
+    "choice_c": "It called for help.",
+    "choice_d": "It fell behind the dresser.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-096",
+    "prompt": "How did the sock feel when it was behind the dresser?",
+    "choice_a": "Sleepy and tired.",
+    "choice_b": "Excited and loud.",
+    "choice_c": "Happy and brave.",
+    "choice_d": "Scared and alone.",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-096",
+    "prompt": "Who helped the little sock?",
+    "choice_a": "A big dog.",
+    "choice_b": "A little boy.",
+    "choice_c": "A kind cat.",
+    "choice_d": "A friendly bird.",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-097",
+    "prompt": "What did Sam find in the park?",
+    "choice_a": "A bicycle",
+    "choice_b": "A ball",
+    "choice_c": "A kite",
+    "choice_d": "A shiny skateboard",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-097",
+    "prompt": "What did the skateboard say to Sam?",
+    "choice_a": "'Let's go for a ride!'",
+    "choice_b": "'Stop and rest!'",
+    "choice_c": "'Come home now!'",
+    "choice_d": "'Look at the sky!'",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-097",
+    "prompt": "What did Sam do after the skateboard spoke?",
+    "choice_a": "Ran away quickly",
+    "choice_b": "Hopped on and zoomed down the path",
+    "choice_c": "Sat on the bench",
+    "choice_d": "Called a friend",
+    "correct_choice": "B"
+  },
+  {
+    "passage_code": "G1-098",
+    "prompt": "Who lives in the garden?",
+    "choice_a": "A gnome named Gus",
+    "choice_b": "A big dog",
+    "choice_c": "A bird",
+    "choice_d": "A cat named Gus",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-098",
+    "prompt": "What does Gus like to do every morning?",
+    "choice_a": "Write friendly notes",
+    "choice_b": "Play with bugs",
+    "choice_c": "Water the plants",
+    "choice_d": "Sing songs",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-098",
+    "prompt": "How does the garden feel because of Gus's notes?",
+    "choice_a": "Happy",
+    "choice_b": "Scared",
+    "choice_c": "Sad",
+    "choice_d": "Tired",
+    "correct_choice": "A"
+  },
+  {
+    "passage_code": "G1-099",
+    "prompt": "Who built the tall tower?",
+    "choice_a": "Only Ben",
+    "choice_b": "Their friends",
+    "choice_c": "Only Mia",
+    "choice_d": "Mia and Ben",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-099",
+    "prompt": "What did Mia and Ben put at the bottom of the tower?",
+    "choice_a": "Books",
+    "choice_b": "Small blocks",
+    "choice_c": "Big blocks",
+    "choice_d": "Toys",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-099",
+    "prompt": "Why did the tower not fall?",
+    "choice_a": "Because it was outside",
+    "choice_b": "Because they used glue",
+    "choice_c": "Because it was very short",
+    "choice_d": "Because they built it carefully",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-100",
+    "prompt": "What do you do first when rowing a boat?",
+    "choice_a": "Push the oars forward",
+    "choice_b": "Jump in the water",
+    "choice_c": "Sit in the boat",
+    "choice_d": "Pull the oars back",
+    "correct_choice": "C"
+  },
+  {
+    "passage_code": "G1-100",
+    "prompt": "How do you move the boat forward?",
+    "choice_a": "Push the oars back",
+    "choice_b": "Hold the oars with one hand",
+    "choice_c": "Sit down",
+    "choice_d": "Pull the oars back",
+    "correct_choice": "D"
+  },
+  {
+    "passage_code": "G1-100",
+    "prompt": "What do you do after pulling the oars back?",
+    "choice_a": "Push the oars forward",
+    "choice_b": "Stop rowing",
+    "choice_c": "Jump out of the boat",
+    "choice_d": "Hold the oars with one hand",
+    "correct_choice": "A"
+  }
+]

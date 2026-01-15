@@ -1,0 +1,1833 @@
+// MainActivity.kt
+// Reading Companion App (Grades 1–5)
+// - First launch onboarding: name + grade + avatar, creates child on backend and stores childId
+// - Home screen: "Ready for a reading quiz?" user starts manually (only on app entry or when user presses End)
+// - Lesson flow: passage + questions one-by-one, submit on last question
+// - Result screen: Next passage (shows interstitial if ads enabled) + Try again (same passage) + End (shows ad, then back to Ready screen)
+// - Top bar: hamburger on left, welcome text + avatar on right (avatar opens Profile)
+// - Profile: edit name + grade + avatar; shows progress summary (avg progress/score) from server if available
+// - Remove ads: real Google Play Billing (same style as your Password Generator app: BillingManager + dialog with Buy/Restore)
+// - Interstitial ads: cached + pending show logic (configured to show after EACH Next passage and End press)
+// - Drawer menu includes "Privacy Policy" and "How to use this app?" which open new in-app screens.
+// - Background music plays while app is open, with mute toggle (audio file in res/raw/startup_music.mp3)
+
+package com.vasa.readingapp
+
+import android.content.ActivityNotFoundException
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.media.AudioManager
+import android.media.MediaPlayer
+import android.net.Uri
+import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
+import androidx.datastore.preferences.core.*
+import androidx.datastore.preferences.preferencesDataStore
+import com.android.billingclient.api.AcknowledgePurchaseParams
+import com.android.billingclient.api.BillingClient
+import com.android.billingclient.api.BillingClientStateListener
+import com.android.billingclient.api.BillingFlowParams
+import com.android.billingclient.api.BillingResult
+import com.android.billingclient.api.ProductDetails
+import com.android.billingclient.api.Purchase
+import com.android.billingclient.api.PurchasesUpdatedListener
+import com.android.billingclient.api.QueryProductDetailsParams
+import com.android.billingclient.api.QueryPurchasesParams
+import com.google.android.gms.ads.AdError
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.RequestBody.Companion.toRequestBody
+import org.json.JSONArray
+import org.json.JSONObject
+
+private const val TAG_ADS = "Ads"
+private const val TAG_BILLING = "Billing"
+private const val TAG_API = "Api"
+private const val TAG_AUDIO = "Audio"
+
+// ------------ CONFIG ------------
+private const val API_BASE_URL = "http://10.0.2.2:8000/api" // emulator -> localhost
+
+// Interstitial TEST unit id
+private const val ADMOB_INTERSTITIAL_TEST_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
+
+// Play Store rate
+private const val PLAY_STORE_PACKAGE = "com.vasa.readingapp"
+
+// Support email
+private const val SUPPORT_EMAIL = "cipherworks26@gmail.com"
+
+// Billing product id (must match Play Console)
+private const val REMOVE_ADS_PRODUCT_ID = "remove_ads"
+
+// Global kill-switch for ads (keep false)
+private const val ADS_GLOBALLY_DISABLED = false
+
+// SharedPreferences (for entitlement like Password Generator app)
+private const val PREFS_NAME = "reading_companion_prefs_sp"
+private const val KEY_ENTITLEMENT_PRO_V1 = "entitlement_pro_v1"
+
+// Background music file in res/raw: startup_music.mp3
+private const val RAW_MUSIC_NAME = "startup_music"
+// --------------------------------
+
+private val Context.dataStore by preferencesDataStore(name = "reading_companion_prefs")
+
+private object PrefKeys {
+    val onboardingDone = booleanPreferencesKey("onboarding_done")
+    val childId = intPreferencesKey("child_id")
+    val childGrade = intPreferencesKey("child_grade") // 1..5 (local)
+    val avatarId = intPreferencesKey("avatar_id") // 1..3
+    val studentName = stringPreferencesKey("student_name")
+    val darkTheme = booleanPreferencesKey("dark_theme")
+
+    // Music mute state
+    val musicMuted = booleanPreferencesKey("music_muted")
+}
+
+class MainActivity : ComponentActivity() {
+
+    private lateinit var prefs: SharedPreferences
+    private lateinit var monetization: MonetizationManager
+    private var billing: BillingManager? = null
+
+    // Ads (cached + pending)
+    private var interstitialAd: InterstitialAd? = null
+    private var interstitialLoading: Boolean = false
+    private var pendingShowOnLoad: Boolean = false
+    private var pendingAfterAction: (() -> Unit)? = null
+    private var mobileAdsInitialized: Boolean = false
+
+    // Music
+    private var musicPlayer: MediaPlayer? = null
+    private var musicMuted: Boolean = false
+    private var isForeground: Boolean = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        monetization = MonetizationManager(prefs)
+
+        billing = BillingManager(
+            appContext = applicationContext,
+            prefs = prefs,
+            monetization = monetization,
+            onLog = { msg -> Log.i(TAG_BILLING, msg) },
+            onMessage = { msg -> toast(msg) },
+            onEntitlementChanged = {
+                // If pro becomes active, clear ad cache immediately
+                interstitialAd = null
+                interstitialLoading = false
+                pendingShowOnLoad = false
+                pendingAfterAction = null
+                Log.i(TAG_BILLING, "Entitlement changed: isPro=${monetization.isPro()}")
+            }
+        ).also { it.startConnectionIfNeeded() }
+
+        // Important: initialize MobileAds, then load (some devices can be picky if you load too early)
+        MobileAds.initialize(this) {
+            mobileAdsInitialized = true
+            ensureInterstitialPreloaded()
+        }
+
+        initMusicIfPossible()
+
+        setContent {
+            val ctx = LocalContext.current
+            val scope = rememberCoroutineScope()
+
+            val onboardingDone by ctx.dataStore.data.map { it[PrefKeys.onboardingDone] ?: false }
+                .collectAsState(initial = false)
+            val darkTheme by ctx.dataStore.data.map { it[PrefKeys.darkTheme] ?: false }
+                .collectAsState(initial = false)
+
+            val childId by ctx.dataStore.data.map { it[PrefKeys.childId] ?: 0 }
+                .collectAsState(initial = 0)
+            val childGrade by ctx.dataStore.data.map { it[PrefKeys.childGrade] ?: 3 }
+                .collectAsState(initial = 3)
+            val avatarId by ctx.dataStore.data.map { it[PrefKeys.avatarId] ?: 1 }
+                .collectAsState(initial = 1)
+            val studentName by ctx.dataStore.data.map { it[PrefKeys.studentName] ?: "Student" }
+                .collectAsState(initial = "Student")
+
+            val musicMutedState by ctx.dataStore.data.map { it[PrefKeys.musicMuted] ?: false }
+                .collectAsState(initial = false)
+
+            // Sync Activity playback state with preference
+            LaunchedEffect(musicMutedState) {
+                setMusicMuted(musicMutedState)
+            }
+
+            // Pro entitlement comes from SharedPreferences
+            val isProState = remember { mutableStateOf(monetization.isPro()) }
+            LaunchedEffect(Unit) { isProState.value = monetization.isPro() }
+
+            AppTheme(darkTheme) {
+                ReadingAppShell(
+                    onboardingDone = onboardingDone,
+                    childId = childId,
+                    childGrade = childGrade,
+                    studentName = studentName,
+                    avatarId = avatarId,
+
+                    onSaveOnboarding = { name, grade, avatar ->
+                        // Fix phone crash: never let createChild exception crash the app
+                        scope.launch {
+                            try {
+                                val created = ApiClient.createChild(name = name, grade = grade)
+                                ctx.dataStore.edit {
+                                    it[PrefKeys.studentName] = name
+                                    it[PrefKeys.childGrade] = grade
+                                    it[PrefKeys.avatarId] = avatar
+                                    it[PrefKeys.childId] = created.child_id
+                                    it[PrefKeys.onboardingDone] = true
+                                }
+                            } catch (e: Exception) {
+                                Toast.makeText(ctx, e.message ?: "Failed to create child (server not reachable?)", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    },
+
+                    onStudentNameChanged = { name ->
+                        scope.launch { ctx.dataStore.edit { it[PrefKeys.studentName] = name } }
+                    },
+                    onAvatarSelected = { id ->
+                        scope.launch { ctx.dataStore.edit { it[PrefKeys.avatarId] = id } }
+                    },
+
+                    // Grade fix: when grade changes, create a new child on the server (fresh child_id)
+                    onChildGradeChanged = { grade ->
+                        val g = grade.coerceIn(1, 5)
+                        scope.launch {
+                            try {
+                                val created = ApiClient.createChild(name = studentName, grade = g)
+                                ctx.dataStore.edit {
+                                    it[PrefKeys.childGrade] = g
+                                    it[PrefKeys.childId] = created.child_id
+                                    it[PrefKeys.onboardingDone] = true
+                                }
+                            } catch (e: Exception) {
+                                Toast.makeText(ctx, e.message ?: "Failed to update grade", Toast.LENGTH_LONG).show()
+                                ctx.dataStore.edit { it[PrefKeys.childGrade] = g }
+                            }
+                        }
+                    },
+
+                    darkTheme = darkTheme,
+                    onToggleTheme = {
+                        scope.launch { ctx.dataStore.edit { it[PrefKeys.darkTheme] = !darkTheme } }
+                    },
+
+                    // Music toggle
+                    musicMuted = musicMutedState,
+                    onToggleMusicMuted = {
+                        scope.launch {
+                            ctx.dataStore.edit { prefsMap ->
+                                val cur = prefsMap[PrefKeys.musicMuted] ?: false
+                                prefsMap[PrefKeys.musicMuted] = !cur
+                            }
+                        }
+                    },
+
+                    // Billing + entitlement
+                    isPro = isProState.value,
+                    onOpenRemoveAds = { showDialog ->
+                        billing?.startConnectionIfNeeded()
+                        showDialog()
+                    },
+                    onBuyRemoveAds = {
+                        billing?.startConnectionIfNeeded()
+                        billing?.launchRemoveAdsPurchaseFlow(this@MainActivity)
+                    },
+                    onRestoreRemoveAds = {
+                        billing?.startConnectionIfNeeded()
+                        billing?.restorePurchases()
+                    },
+                    onRefreshEntitlement = {
+                        isProState.value = monetization.isPro()
+                        if (!monetization.areAdsEnabledNow()) {
+                            interstitialAd = null
+                            interstitialLoading = false
+                            pendingShowOnLoad = false
+                            pendingAfterAction = null
+                        } else {
+                            ensureInterstitialPreloaded()
+                        }
+                    },
+
+                    // Ads helper: ensure ad is always preloaded when you reach Result screen
+                    onEnsureAdLoaded = { ensureInterstitialPreloaded() },
+
+                    // Menu intents
+                    onRate = { openRate(ctx) },
+                    onContactSupport = { openEmail(ctx, SUPPORT_EMAIL, "Reading Companion Support") },
+                    onShare = { shareApp(ctx) },
+
+                    // Ads after result: show after each Next passage and End press
+                    showInterstitialAfterResult = { onDone ->
+                        if (!monetization.areAdsEnabledNow()) {
+                            onDone()
+                            return@ReadingAppShell
+                        }
+                        showInterstitialThen(onDone)
+                    }
+                )
+            }
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        isForeground = true
+        updateMusicPlayback()
+        ensureInterstitialPreloaded()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        isForeground = false
+        updateMusicPlayback()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        billing?.endConnection()
+
+        try { musicPlayer?.stop() } catch (_: Exception) {}
+        try { musicPlayer?.release() } catch (_: Exception) {}
+        musicPlayer = null
+    }
+
+    private fun toast(msg: String) {
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+    }
+
+    private fun adsEnabledNow(): Boolean = monetization.areAdsEnabledNow()
+
+    private fun ensureInterstitialPreloaded() {
+        if (!mobileAdsInitialized) return
+        loadInterstitialIfNeeded()
+    }
+
+    private fun loadInterstitialIfNeeded() {
+        Log.d(TAG_ADS, "loadInterstitialIfNeeded enter")
+        if (!adsEnabledNow()) {
+            interstitialAd = null
+            interstitialLoading = false
+            pendingShowOnLoad = false
+            pendingAfterAction = null
+            Log.d(TAG_ADS, "ads disabled -> clear ad state")
+            return
+        }
+        if (interstitialLoading) return
+        if (interstitialAd != null) return
+
+        interstitialLoading = true
+        val request = AdRequest.Builder().build()
+
+        InterstitialAd.load(
+            this,
+            ADMOB_INTERSTITIAL_TEST_UNIT_ID,
+            request,
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) {
+                    Log.d(TAG_ADS, "Interstitial LOADED")
+                    interstitialLoading = false
+                    interstitialAd = ad
+
+                    // If a press requested an ad, show it now and then run the queued action.
+                    if (pendingShowOnLoad) {
+                        pendingShowOnLoad = false
+                        val action = pendingAfterAction
+                        pendingAfterAction = null
+                        if (action != null) {
+                            showInterstitialThen(action)
+                        }
+                    }
+                }
+
+                override fun onAdFailedToLoad(adError: LoadAdError) {
+                    Log.e(TAG_ADS, "Interstitial FAILED: ${adError.code} ${adError.message}")
+                    interstitialLoading = false
+                    interstitialAd = null
+
+                    // If we were waiting to show an ad after a button press, fall back to continuing.
+                    if (pendingShowOnLoad) {
+                        pendingShowOnLoad = false
+                        val action = pendingAfterAction
+                        pendingAfterAction = null
+                        action?.invoke()
+                    }
+                }
+            }
+        )
+    }
+
+    // Shows an interstitial if ready, and runs onAfter ONLY AFTER the ad is dismissed/failed.
+    // If ad isn't ready, we load and WAIT. If load fails, we run onAfter.
+    private fun showInterstitialThen(onAfter: () -> Unit) {
+        if (!adsEnabledNow()) {
+            onAfter()
+            return
+        }
+
+        // Make sure we are trying to preload too
+        ensureInterstitialPreloaded()
+
+        val ad = interstitialAd
+        if (ad == null) {
+            // Queue the action, load the ad, and wait (no navigation until dismiss/fail).
+            pendingAfterAction = onAfter
+            pendingShowOnLoad = true
+            ensureInterstitialPreloaded()
+            return
+        }
+
+        var didFinish = false
+        fun finishOnce() {
+            if (didFinish) return
+            didFinish = true
+            onAfter()
+        }
+
+        ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdDismissedFullScreenContent() {
+                Log.d(TAG_ADS, "onAdDismissedFullScreenContent")
+                interstitialAd = null
+                ensureInterstitialPreloaded()
+                finishOnce()
+            }
+
+            override fun onAdFailedToShowFullScreenContent(adError: AdError) {
+                Log.e(TAG_ADS, "onAdFailedToShowFullScreenContent: ${adError.code} ${adError.message}")
+                interstitialAd = null
+                ensureInterstitialPreloaded()
+                finishOnce()
+            }
+
+            override fun onAdShowedFullScreenContent() {
+                Log.d(TAG_ADS, "onAdShowedFullScreenContent")
+                interstitialAd = null
+            }
+        }
+
+        Log.d(TAG_ADS, "Interstitial show() called")
+        ad.show(this)
+    }
+
+    private class MonetizationManager(private val prefs: SharedPreferences) {
+        fun isPro(): Boolean = prefs.getBoolean(KEY_ENTITLEMENT_PRO_V1, false)
+        fun setPro(value: Boolean) {
+            prefs.edit().putBoolean(KEY_ENTITLEMENT_PRO_V1, value).apply()
+        }
+
+        fun areAdsEnabledNow(): Boolean {
+            if (ADS_GLOBALLY_DISABLED) return false
+            if (isPro()) return false
+            return true
+        }
+    }
+
+    private class BillingManager(
+        private val appContext: Context,
+        private val prefs: SharedPreferences,
+        private val monetization: MonetizationManager,
+        private val onLog: (String) -> Unit,
+        private val onMessage: (String) -> Unit,
+        private val onEntitlementChanged: () -> Unit
+    ) : PurchasesUpdatedListener {
+
+        private var billingClient: BillingClient? = null
+        private var ready = false
+        private var connecting = false
+        private var productDetails: ProductDetails? = null
+        private var queryingProducts = false
+        private var restoring = false
+
+        fun startConnectionIfNeeded() {
+            if (ready || connecting) return
+
+            connecting = true
+            val client = BillingClient.newBuilder(appContext)
+                .setListener(this)
+                .enablePendingPurchases()
+                .build()
+
+            billingClient = client
+
+            onLog("startConnection()")
+            client.startConnection(object : BillingClientStateListener {
+                override fun onBillingSetupFinished(result: BillingResult) {
+                    connecting = false
+                    ready = result.responseCode == BillingClient.BillingResponseCode.OK
+                    onLog("onBillingSetupFinished rc=${result.responseCode} msg=${result.debugMessage} ready=$ready")
+
+                    if (ready) {
+                        queryProductDetails()
+                        restorePurchasesInternal(reason = "auto_on_setup")
+                    } else {
+                        onMessage("Billing not available on this device/account.")
+                    }
+                }
+
+                override fun onBillingServiceDisconnected() {
+                    connecting = false
+                    ready = false
+                    onLog("onBillingServiceDisconnected()")
+                }
+            })
+        }
+
+        fun endConnection() {
+            try { billingClient?.endConnection() } catch (_: Exception) {}
+            billingClient = null
+            ready = false
+            connecting = false
+        }
+
+        private fun queryProductDetails() {
+            val client = billingClient ?: return
+            if (!ready) return
+            if (queryingProducts) return
+
+            queryingProducts = true
+            onLog("queryProductDetails() start productId=$REMOVE_ADS_PRODUCT_ID")
+
+            val products = listOf(
+                QueryProductDetailsParams.Product.newBuilder()
+                    .setProductId(REMOVE_ADS_PRODUCT_ID)
+                    .setProductType(BillingClient.ProductType.INAPP)
+                    .build()
+            )
+
+            val params = QueryProductDetailsParams.newBuilder()
+                .setProductList(products)
+                .build()
+
+            client.queryProductDetailsAsync(params) { result, detailsList ->
+                queryingProducts = false
+                onLog("queryProductDetailsAsync rc=${result.responseCode} msg=${result.debugMessage} count=${detailsList.size}")
+
+                val found = detailsList.firstOrNull { it.productId == REMOVE_ADS_PRODUCT_ID }
+                productDetails = found
+                if (found == null) {
+                    onMessage("Product not found in Play Console yet (ID: $REMOVE_ADS_PRODUCT_ID).")
+                }
+            }
+        }
+
+        fun launchRemoveAdsPurchaseFlow(activity: ComponentActivity) {
+            if (!ready) {
+                onMessage("Billing not ready yet.")
+                startConnectionIfNeeded()
+                return
+            }
+            if (monetization.isPro()) {
+                onMessage("Remove Ads already active on this account/device.")
+                return
+            }
+
+            val details = productDetails
+            if (details == null) {
+                onMessage("Product not loaded yet. Try again in a moment.")
+                queryProductDetails()
+                return
+            }
+
+            val offer = details.oneTimePurchaseOfferDetails
+            if (offer == null) {
+                onMessage("Offer details missing for product.")
+                return
+            }
+
+            onLog("launchBillingFlow() start sku=${details.productId} price=${offer.formattedPrice}")
+
+            val productParams = BillingFlowParams.ProductDetailsParams.newBuilder()
+                .setProductDetails(details)
+                .build()
+
+            val flowParams = BillingFlowParams.newBuilder()
+                .setProductDetailsParamsList(listOf(productParams))
+                .build()
+
+            val res = billingClient?.launchBillingFlow(activity, flowParams)
+            onLog("launchBillingFlow() rc=${res?.responseCode} msg=${res?.debugMessage}")
+        }
+
+        fun restorePurchases() {
+            restorePurchasesInternal(reason = "manual_restore")
+        }
+
+        private fun restorePurchasesInternal(reason: String) {
+            val client = billingClient ?: run {
+                onLog("restorePurchasesInternal($reason): no client")
+                return
+            }
+            if (!ready) {
+                onLog("restorePurchasesInternal($reason): not ready")
+                return
+            }
+            if (restoring) return
+            restoring = true
+
+            onLog("restorePurchasesInternal($reason): queryPurchasesAsync start")
+            val params = QueryPurchasesParams.newBuilder()
+                .setProductType(BillingClient.ProductType.INAPP)
+                .build()
+
+            client.queryPurchasesAsync(params) { result, purchases ->
+                restoring = false
+                onLog("queryPurchasesAsync rc=${result.responseCode} msg=${result.debugMessage} count=${purchases.size}")
+                handlePurchases(purchases, source = "restore_$reason")
+
+                if (result.responseCode != BillingClient.BillingResponseCode.OK) {
+                    onMessage("Restore failed: ${result.debugMessage}")
+                } else {
+                    if (monetization.isPro()) onMessage("Restore complete: Remove Ads is active.")
+                    else onMessage("No purchases found to restore.")
+                }
+            }
+        }
+
+        override fun onPurchasesUpdated(result: BillingResult, purchases: MutableList<Purchase>?) {
+            onLog("onPurchasesUpdated rc=${result.responseCode} msg=${result.debugMessage} purchases=${purchases?.size ?: 0}")
+
+            if (result.responseCode == BillingClient.BillingResponseCode.OK && purchases != null) {
+                handlePurchases(purchases, source = "onPurchasesUpdated")
+                return
+            }
+
+            if (result.responseCode == BillingClient.BillingResponseCode.USER_CANCELED) {
+                onMessage("Purchase canceled.")
+                return
+            }
+
+            if (result.responseCode != BillingClient.BillingResponseCode.OK) {
+                onMessage("Purchase failed: ${result.debugMessage}")
+            }
+        }
+
+        private fun handlePurchases(purchases: List<Purchase>, source: String) {
+            var found = false
+
+            for (p in purchases) {
+                val hasRemoveAds = p.products.contains(REMOVE_ADS_PRODUCT_ID)
+                if (!hasRemoveAds) continue
+
+                found = true
+                onLog("handlePurchases($source): found remove_ads state=${p.purchaseState} acknowledged=${p.isAcknowledged}")
+
+                if (p.purchaseState == Purchase.PurchaseState.PURCHASED) {
+                    monetization.setPro(true)
+                    prefs.edit().putBoolean(KEY_ENTITLEMENT_PRO_V1, true).apply()
+                    onEntitlementChanged()
+
+                    if (!p.isAcknowledged) {
+                        acknowledge(p)
+                    }
+                }
+            }
+
+            if (!found) {
+                onLog("handlePurchases($source): remove_ads not present in purchases list")
+            }
+        }
+
+        private fun acknowledge(purchase: Purchase) {
+            val client = billingClient ?: return
+            if (!ready) return
+
+            onLog("acknowledgePurchase() start token=${purchase.purchaseToken.take(10)}...")
+
+            val params = AcknowledgePurchaseParams.newBuilder()
+                .setPurchaseToken(purchase.purchaseToken)
+                .build()
+
+            client.acknowledgePurchase(params) { result ->
+                onLog("acknowledgePurchase() rc=${result.responseCode} msg=${result.debugMessage}")
+            }
+        }
+    }
+
+    // ---------------- MUSIC ----------------
+
+    private fun initMusicIfPossible() {
+        val resId = resources.getIdentifier(RAW_MUSIC_NAME, "raw", packageName)
+        if (resId == 0) {
+            Log.w(TAG_AUDIO, "Music raw resource not found: $RAW_MUSIC_NAME (expected res/raw/$RAW_MUSIC_NAME.*)")
+            return
+        }
+
+        try {
+            val mp = MediaPlayer.create(this, resId)
+            if (mp == null) {
+                Log.w(TAG_AUDIO, "MediaPlayer.create returned null for resId=$resId")
+                return
+            }
+            mp.isLooping = true
+            mp.setAudioStreamType(AudioManager.STREAM_MUSIC)
+            musicPlayer = mp
+            Log.i(TAG_AUDIO, "Music initialized: res/raw/$RAW_MUSIC_NAME")
+            updateMusicPlayback()
+        } catch (e: Exception) {
+            Log.e(TAG_AUDIO, "Failed to init music: ${e.message}", e)
+        }
+    }
+
+    private fun setMusicMuted(muted: Boolean) {
+        musicMuted = muted
+        updateMusicPlayback()
+    }
+
+    private fun updateMusicPlayback() {
+        val mp = musicPlayer ?: return
+        try {
+            val shouldPlay = isForeground && !musicMuted
+            if (shouldPlay) {
+                if (!mp.isPlaying) mp.start()
+            } else {
+                if (mp.isPlaying) mp.pause()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG_AUDIO, "updateMusicPlayback error: ${e.message}", e)
+        }
+    }
+}
+
+// ---------------- UI SHELL ----------------
+
+private sealed class Screen {
+    data object Onboarding : Screen()
+    data object Home : Screen()
+    data object Lesson : Screen()
+    data object Result : Screen()
+    data object Profile : Screen()
+    data object PrivacyPolicy : Screen()
+    data object HowToUse : Screen()
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ReadingAppShell(
+    onboardingDone: Boolean,
+    childId: Int,
+    childGrade: Int,
+    studentName: String,
+    avatarId: Int,
+
+    onSaveOnboarding: (name: String, grade: Int, avatarId: Int) -> Unit,
+    onStudentNameChanged: (String) -> Unit,
+    onAvatarSelected: (Int) -> Unit,
+    onChildGradeChanged: (Int) -> Unit,
+
+    darkTheme: Boolean,
+    onToggleTheme: () -> Unit,
+
+    musicMuted: Boolean,
+    onToggleMusicMuted: () -> Unit,
+
+    isPro: Boolean,
+    onOpenRemoveAds: (showDialog: () -> Unit) -> Unit,
+    onBuyRemoveAds: () -> Unit,
+    onRestoreRemoveAds: () -> Unit,
+    onRefreshEntitlement: () -> Unit,
+
+    onEnsureAdLoaded: () -> Unit,
+
+    onRate: () -> Unit,
+    onContactSupport: () -> Unit,
+    onShare: () -> Unit,
+
+    showInterstitialAfterResult: (onDone: () -> Unit) -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val drawerState = rememberDrawerState(DrawerValue.Closed)
+
+    var screen by remember { mutableStateOf<Screen>(if (onboardingDone && childId != 0) Screen.Home else Screen.Onboarding) }
+
+    LaunchedEffect(onboardingDone, childId) {
+        screen = if (onboardingDone && childId != 0) Screen.Home else Screen.Onboarding
+    }
+
+    // Preload interstitial whenever we enter Result (and also after onboarding/home)
+    LaunchedEffect(screen) {
+        when (screen) {
+            Screen.Home, Screen.Lesson, Screen.Result -> onEnsureAdLoaded()
+            else -> {}
+        }
+    }
+
+    var removeAdsDialogOpen by remember { mutableStateOf(false) }
+
+    // Lesson state
+    var isLoading by remember { mutableStateOf(false) }
+    var errorText by remember { mutableStateOf<String?>(null) }
+
+    var currentLesson by remember { mutableStateOf<LessonDto?>(null) }
+    var qIndex by remember { mutableStateOf(0) }
+    var selectedChoice by remember { mutableStateOf<String?>(null) }
+    var answers by remember { mutableStateOf(mutableListOf<SubmitAnswerItem>()) }
+
+    // Result
+    var lastResult by remember { mutableStateOf<SubmitResultDto?>(null) }
+
+    fun resetForLessonStart(keepLesson: Boolean) {
+        qIndex = 0
+        selectedChoice = null
+        answers = mutableListOf()
+        lastResult = null
+        if (!keepLesson) currentLesson = null
+    }
+
+    suspend fun loadNextLessonAndGo() {
+        isLoading = true
+        errorText = null
+        try {
+            if (childId == 0) throw RuntimeException("No child profile found yet.")
+            val lesson = ApiClient.getNextLesson(childId)
+            currentLesson = lesson
+            resetForLessonStart(keepLesson = true)
+            screen = Screen.Lesson
+        } catch (e: Exception) {
+            errorText = e.message ?: "Failed to load lesson"
+        } finally {
+            isLoading = false
+        }
+    }
+
+    suspend fun submitLessonAndShowResult() {
+        val lesson = currentLesson ?: return
+        isLoading = true
+        errorText = null
+        try {
+            val result = ApiClient.submitAnswers(
+                childId = lesson.child_id,
+                passageId = lesson.passage_id,
+                answers = answers.toList()
+            )
+            lastResult = result
+            screen = Screen.Result
+        } catch (e: Exception) {
+            errorText = e.message ?: "Submit failed"
+        } finally {
+            isLoading = false
+        }
+    }
+
+    ModalNavigationDrawer(
+        drawerState = drawerState,
+        drawerContent = {
+            ModalDrawerSheet {
+                Spacer(Modifier.height(12.dp))
+                DrawerHeader(studentName = studentName, avatarId = avatarId)
+
+                DrawerItem("Home") {
+                    screen = Screen.Home
+                    scope.launch { drawerState.close() }
+                }
+                DrawerItem("Profile") {
+                    screen = Screen.Profile
+                    scope.launch { drawerState.close() }
+                }
+
+                DrawerItem("How to use this app?") {
+                    screen = Screen.HowToUse
+                    scope.launch { drawerState.close() }
+                }
+                DrawerItem("Privacy Policy") {
+                    screen = Screen.PrivacyPolicy
+                    scope.launch { drawerState.close() }
+                }
+
+                DrawerItem(if (darkTheme) "Theme: Dark" else "Theme: Light") { onToggleTheme() }
+
+                DrawerItem(if (musicMuted) "Music: Off" else "Music: On") { onToggleMusicMuted() }
+
+                DrawerItem(if (isPro) "Remove Ads (active)" else "Remove Ads") {
+                    onOpenRemoveAds { removeAdsDialogOpen = true }
+                }
+
+                DrawerItem("Rate") { onRate() }
+                DrawerItem("Contact / Support") { onContactSupport() }
+                DrawerItem("Share") { onShare() }
+
+                Spacer(Modifier.height(16.dp))
+                DrawerFooter(isPro = isPro)
+            }
+        }
+    ) {
+        Scaffold(
+            topBar = {
+                TopAppBar(
+                    title = { Text("") },
+                    navigationIcon = {
+                        IconButton(onClick = { scope.launch { drawerState.open() } }) {
+                            Icon(Icons.Default.Menu, contentDescription = "Menu")
+                        }
+                    },
+                    actions = {
+                        TopRightWelcome(
+                            name = studentName,
+                            avatarId = avatarId,
+                            onAvatarClick = { screen = Screen.Profile }
+                        )
+                    }
+                )
+            }
+        ) { padding ->
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+            ) {
+                when (screen) {
+                    Screen.Onboarding -> {
+                        OnboardingScreen(
+                            initialName = studentName,
+                            initialGrade = childGrade.coerceIn(1, 5),
+                            initialAvatarId = avatarId.coerceIn(1, 3),
+                            onContinue = { name, grade, av ->
+                                onSaveOnboarding(name, grade, av)
+                            }
+                        )
+                    }
+
+                    Screen.Home -> {
+                        HomeScreen(
+                            name = studentName,
+                            grade = childGrade.coerceIn(1, 5),
+                            onStart = { scope.launch { loadNextLessonAndGo() } },
+                            isLoading = isLoading,
+                            errorText = errorText
+                        )
+                    }
+
+                    Screen.Profile -> {
+                        ProfileScreen(
+                            childId = childId,
+                            studentName = studentName,
+                            childGrade = childGrade.coerceIn(1, 5),
+                            onStudentNameChanged = onStudentNameChanged,
+                            onChildGradeChanged = onChildGradeChanged,
+                            avatarId = avatarId,
+                            onAvatarSelected = onAvatarSelected,
+                            onBack = { screen = Screen.Home }
+                        )
+                    }
+
+                    Screen.PrivacyPolicy -> {
+                        PrivacyPolicyScreen(
+                            onBack = { screen = Screen.Home }
+                        )
+                    }
+
+                    Screen.HowToUse -> {
+                        HowToUseScreen(
+                            onBack = { screen = Screen.Home }
+                        )
+                    }
+
+                    Screen.Lesson -> {
+                        LessonScreen(
+                            isLoading = isLoading,
+                            errorText = errorText,
+                            lesson = currentLesson,
+                            qIndex = qIndex,
+                            selectedChoice = selectedChoice,
+                            onSelectChoice = { selectedChoice = it },
+                            onNext = {
+                                val lesson = currentLesson ?: return@LessonScreen
+                                val q = lesson.questions.getOrNull(qIndex) ?: return@LessonScreen
+                                val sel = selectedChoice ?: return@LessonScreen
+
+                                answers.add(SubmitAnswerItem(question_id = q.id, selected_choice = sel))
+
+                                val isLast = qIndex == lesson.questions.lastIndex
+                                if (!isLast) {
+                                    qIndex += 1
+                                    selectedChoice = null
+                                } else {
+                                    scope.launch { submitLessonAndShowResult() }
+                                }
+                            }
+                        )
+                    }
+
+                    Screen.Result -> {
+                        ResultScreen(
+                            isLoading = isLoading,
+                            errorText = errorText,
+                            result = lastResult,
+                            onTryAgain = {
+                                resetForLessonStart(keepLesson = true)
+                                screen = Screen.Lesson
+                            },
+                            onNextPassage = {
+                                showInterstitialAfterResult {
+                                    scope.launch {
+                                        resetForLessonStart(keepLesson = false)
+                                        errorText = null
+                                        loadNextLessonAndGo()
+                                    }
+                                }
+                            },
+                            onEnd = {
+                                showInterstitialAfterResult {
+                                    scope.launch {
+                                        resetForLessonStart(keepLesson = false)
+                                        errorText = null
+                                        screen = Screen.Home
+                                    }
+                                }
+                            }
+                        )
+                    }
+                }
+
+                if (isLoading) {
+                    LinearProgressIndicator(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .align(Alignment.TopCenter)
+                    )
+                }
+            }
+        }
+    }
+
+    if (removeAdsDialogOpen) {
+        AlertDialog(
+            onDismissRequest = {
+                removeAdsDialogOpen = false
+                onRefreshEntitlement()
+            },
+            title = { Text("Remove ads") },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Text(if (isPro) "Remove Ads is active." else "Go ad-free.")
+                    Text("Product ID: $REMOVE_ADS_PRODUCT_ID")
+                }
+            },
+            confirmButton = {
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Button(
+                        onClick = { onBuyRemoveAds() },
+                        enabled = !isPro
+                    ) { Text(if (isPro) "Purchased" else "Buy") }
+
+                    Button(onClick = { onRestoreRemoveAds() }) { Text("Restore") }
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    removeAdsDialogOpen = false
+                    onRefreshEntitlement()
+                }) { Text("Close") }
+            }
+        )
+    }
+}
+
+// ---------------- SCREENS ----------------
+
+@Composable
+private fun OnboardingScreen(
+    initialName: String,
+    initialGrade: Int,
+    initialAvatarId: Int,
+    onContinue: (name: String, grade: Int, avatarId: Int) -> Unit
+) {
+    var name by remember { mutableStateOf(initialName.ifBlank { "Student" }) }
+    var grade by remember { mutableStateOf(initialGrade.coerceIn(1, 5)) }
+    var avatar by remember { mutableStateOf(initialAvatarId.coerceIn(1, 3)) }
+
+    val scroll = rememberScrollState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scroll)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
+    ) {
+        Text("Welcome", style = MaterialTheme.typography.headlineSmall)
+        Text("Let’s set up the student profile.")
+
+        OutlinedTextField(
+            value = name,
+            onValueChange = { name = it },
+            label = { Text("Student name") },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
+        )
+
+        Text("Choose grade")
+        GradePicker(
+            selected = grade,
+            onSelected = { grade = it }
+        )
+
+        Text("Choose an avatar")
+        AvatarPicker(
+            selected = avatar,
+            onSelected = { avatar = it }
+        )
+
+        Button(
+            onClick = {
+                val cleanName = name.trim().ifBlank { "Student" }
+                onContinue(cleanName, grade, avatar)
+            },
+            modifier = Modifier.fillMaxWidth(),
+            enabled = name.trim().isNotBlank()
+        ) {
+            Text("Continue")
+        }
+    }
+}
+
+@Composable
+private fun HomeScreen(
+    name: String,
+    grade: Int,
+    onStart: () -> Unit,
+    isLoading: Boolean,
+    errorText: String?
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
+    ) {
+        Text("Ready for a reading quiz?", style = MaterialTheme.typography.headlineSmall)
+        Text("Student: $name")
+        Text("Grade: $grade")
+
+        if (errorText != null) {
+            Text("Error: $errorText")
+        }
+
+        Button(
+            onClick = onStart,
+            enabled = !isLoading,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Start")
+        }
+    }
+}
+
+@Composable
+private fun LessonScreen(
+    isLoading: Boolean,
+    errorText: String?,
+    lesson: LessonDto?,
+    qIndex: Int,
+    selectedChoice: String?,
+    onSelectChoice: (String) -> Unit,
+    onNext: () -> Unit
+) {
+    val scroll = rememberScrollState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scroll)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        if (errorText != null) {
+            Text("Error: $errorText")
+            return@Column
+        }
+        if (lesson == null) {
+            Text("No passage loaded yet.")
+            return@Column
+        }
+
+        Text("Grade ${lesson.grade}")
+        Text(lesson.title, style = MaterialTheme.typography.headlineSmall)
+        Text(lesson.text)
+
+        Spacer(Modifier.height(8.dp))
+
+        val q = lesson.questions.getOrNull(qIndex)
+        if (q == null) {
+            Text("No questions found.")
+            return@Column
+        }
+
+        Text("Question ${qIndex + 1} of ${lesson.questions.size}")
+        Text(q.prompt, style = MaterialTheme.typography.titleMedium)
+
+        ChoiceRow("A", q.choice_a, selectedChoice, onSelectChoice)
+        ChoiceRow("B", q.choice_b, selectedChoice, onSelectChoice)
+        ChoiceRow("C", q.choice_c, selectedChoice, onSelectChoice)
+        ChoiceRow("D", q.choice_d, selectedChoice, onSelectChoice)
+
+        val buttonText = if (qIndex == lesson.questions.lastIndex) "Submit" else "Next"
+
+        Button(
+            onClick = onNext,
+            enabled = !isLoading && selectedChoice != null,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(buttonText)
+        }
+    }
+}
+
+@Composable
+private fun ChoiceRow(
+    letter: String,
+    text: String,
+    selectedChoice: String?,
+    onSelectChoice: (String) -> Unit
+) {
+    val selected = selectedChoice == letter
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onSelectChoice(letter) },
+        colors = CardDefaults.cardColors(
+            containerColor = if (selected) MaterialTheme.colorScheme.primaryContainer
+            else MaterialTheme.colorScheme.surface
+        )
+    ) {
+        Row(
+            modifier = Modifier.padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text("$letter. ", style = MaterialTheme.typography.titleMedium)
+            Text(text)
+        }
+    }
+}
+
+@Composable
+private fun ResultScreen(
+    isLoading: Boolean,
+    errorText: String?,
+    result: SubmitResultDto?,
+    onTryAgain: () -> Unit,
+    onNextPassage: () -> Unit,
+    onEnd: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        if (errorText != null) {
+            Text("Error: $errorText")
+        }
+
+        if (result == null) {
+            Text("No result yet.")
+            return@Column
+        }
+
+        Text("Done!", style = MaterialTheme.typography.headlineMedium)
+        Text("Correct: ${result.correct} / ${result.total}")
+        Text("Score: ${result.score}%")
+
+        Button(
+            onClick = onNextPassage,
+            enabled = !isLoading,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Next passage")
+        }
+
+        OutlinedButton(
+            onClick = onTryAgain,
+            enabled = !isLoading,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Try again?")
+        }
+
+        OutlinedButton(
+            onClick = onEnd,
+            enabled = !isLoading,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("End")
+        }
+    }
+}
+
+@Composable
+private fun PrivacyPolicyScreen(onBack: () -> Unit) {
+    val scroll = rememberScrollState()
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scroll)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Text("Privacy Policy", style = MaterialTheme.typography.headlineSmall)
+
+        Text("What we store")
+        Text(
+            "This app stores only the information needed to run the reading quizzes:\n" +
+                    "• Student name\n" +
+                    "• Grade\n" +
+                    "• Avatar selection\n" +
+                    "• Quiz scores and progress (to show an average score/progress)\n\n" +
+                    "We do not ask for or store sensitive personal information."
+        )
+
+        Text("Network and backend")
+        Text(
+            "To load passages and questions and to calculate scores, the app sends the student profile (child ID) " +
+                    "and quiz answers to the backend server you configure. The backend returns lessons and score results."
+        )
+
+        Text("Ads and purchases")
+        Text(
+            "If ads are enabled, the app may show interstitial ads using Google AdMob. " +
+                    "If you purchase “Remove Ads”, ads are disabled on this device/account."
+        )
+
+        Text("No selling of data")
+        Text("We do not sell personal data to third parties.")
+
+        Text("Contact")
+        Text("If you have questions, contact us at $SUPPORT_EMAIL.")
+
+        Button(onClick = onBack, modifier = Modifier.fillMaxWidth()) {
+            Text("Back")
+        }
+    }
+}
+
+@Composable
+private fun HowToUseScreen(onBack: () -> Unit) {
+    val scroll = rememberScrollState()
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scroll)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Text("How to use this app", style = MaterialTheme.typography.headlineSmall)
+
+        Text("1) Create a child profile (parent)")
+        Text(
+            "On first launch, a parent should set up the student profile:\n" +
+                    "• Student name\n" +
+                    "• Grade (1–5)\n" +
+                    "• Avatar\n\n" +
+                    "This profile is used to load age-appropriate passages and questions."
+        )
+
+        Text("2) Start a quiz")
+        Text(
+            "From the “Ready for a reading quiz?” screen, press Start. " +
+                    "The app will load a passage and multiple-choice questions."
+        )
+
+        Text("3) Answer questions")
+        Text(
+            "Read the passage, then answer each question by selecting A, B, C, or D. " +
+                    "Press Next to move through questions, and Submit on the last question."
+        )
+
+        Text("4) Results screen options")
+        Text(
+            "After submitting, you’ll see the score and these options:\n" +
+                    "• Next passage: loads a new passage and questions\n" +
+                    "• Try again: repeats the same passage and questions\n" +
+                    "• End: returns to the “Ready for a reading quiz?” screen"
+        )
+
+        Button(onClick = onBack, modifier = Modifier.fillMaxWidth()) {
+            Text("Back")
+        }
+    }
+}
+
+@Composable
+private fun ProfileScreen(
+    childId: Int,
+    studentName: String,
+    childGrade: Int,
+    onStudentNameChanged: (String) -> Unit,
+    onChildGradeChanged: (Int) -> Unit,
+    avatarId: Int,
+    onAvatarSelected: (Int) -> Unit,
+    onBack: () -> Unit
+) {
+    var isLoading by remember { mutableStateOf(false) }
+    var errorText by remember { mutableStateOf<String?>(null) }
+    var summary by remember { mutableStateOf<ProgressSummaryDto?>(null) }
+
+    var nameValue by remember { mutableStateOf(TextFieldValue(studentName, selection = TextRange(studentName.length))) }
+    LaunchedEffect(studentName) {
+        if (studentName != nameValue.text) {
+            nameValue = TextFieldValue(studentName, selection = TextRange(studentName.length))
+        }
+    }
+
+    // Keep grade changes local on Profile screen until user presses Continue (or Back).
+    var pendingGrade by remember { mutableStateOf(childGrade.coerceIn(1, 5)) }
+    LaunchedEffect(childGrade) {
+        pendingGrade = childGrade.coerceIn(1, 5)
+    }
+
+    LaunchedEffect(childId) {
+        if (childId == 0) return@LaunchedEffect
+        isLoading = true
+        errorText = null
+        try {
+            summary = ApiClient.getProgressSummary(childId)
+        } catch (e: Exception) {
+            errorText = e.message
+        } finally {
+            isLoading = false
+        }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
+    ) {
+        Text("Student profile", style = MaterialTheme.typography.headlineSmall)
+
+        OutlinedTextField(
+            value = nameValue,
+            onValueChange = {
+                nameValue = it
+                onStudentNameChanged(it.text)
+            },
+            label = { Text("Student name") },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true
+        )
+
+        Text("Choose grade")
+        GradePicker(
+            selected = pendingGrade.coerceIn(1, 5),
+            onSelected = { pendingGrade = it }
+        )
+
+        Text("Choose an avatar")
+        AvatarPicker(
+            selected = avatarId.coerceIn(1, 3),
+            onSelected = onAvatarSelected
+        )
+
+        Spacer(Modifier.height(8.dp))
+
+        Text("Progress summary", style = MaterialTheme.typography.titleMedium)
+
+        if (isLoading) {
+            Text("Loading…")
+        } else if (errorText != null) {
+            Text("Error: $errorText")
+        } else if (summary == null) {
+            Text("No summary available.")
+        } else {
+            val s = summary!!
+            if (s.average_score != null) Text("Average score: ${s.average_score}%")
+            if (s.average_progress != null) Text("Average progress: ${s.average_progress}%")
+            if (s.completed_passages != null) Text("Completed passages: ${s.completed_passages}")
+        }
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            OutlinedButton(
+                onClick = onBack,
+                modifier = Modifier.weight(1f)
+            ) {
+                Text("Back")
+            }
+
+            Button(
+                onClick = {
+                    onChildGradeChanged(pendingGrade.coerceIn(1, 5))
+                    onBack()
+                },
+                modifier = Modifier.weight(1f)
+            ) {
+                Text("Continue")
+            }
+        }
+    }
+}
+
+// ---------------- SMALL UI PARTS ----------------
+
+@Composable
+private fun GradePicker(selected: Int, onSelected: (Int) -> Unit) {
+    val grades = listOf(1, 2, 3, 4, 5)
+    LazyRow(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+        items(grades.size) { idx ->
+            val g = grades[idx]
+            FilterChip(
+                selected = (g == selected),
+                onClick = { onSelected(g) },
+                label = { Text("Grade $g") }
+            )
+        }
+    }
+}
+
+@Composable
+private fun AvatarPicker(selected: Int, onSelected: (Int) -> Unit) {
+    LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+        item { AvatarOption(id = 1, isSelected = selected == 1, onClick = { onSelected(1) }) }
+        item { AvatarOption(id = 2, isSelected = selected == 2, onClick = { onSelected(2) }) }
+        item { AvatarOption(id = 3, isSelected = selected == 3, onClick = { onSelected(3) }) }
+    }
+}
+
+@Composable
+private fun TopRightWelcome(name: String, avatarId: Int, onAvatarClick: () -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
+        modifier = Modifier.padding(end = 8.dp)
+    ) {
+        Text(
+            text = "Welcome $name",
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
+        )
+        val res = when (avatarId) {
+            1 -> R.drawable.avatar1
+            2 -> R.drawable.avatar2
+            else -> R.drawable.avatar3
+        }
+        Image(
+            painter = painterResource(res),
+            contentDescription = "Avatar",
+            modifier = Modifier
+                .size(36.dp)
+                .clickable { onAvatarClick() }
+        )
+    }
+}
+
+@Composable
+private fun AvatarOption(id: Int, isSelected: Boolean, onClick: () -> Unit) {
+    val res = when (id) {
+        1 -> R.drawable.avatar1
+        2 -> R.drawable.avatar2
+        else -> R.drawable.avatar3
+    }
+    Card(
+        modifier = Modifier
+            .size(92.dp)
+            .clickable { onClick() },
+        colors = CardDefaults.cardColors(
+            containerColor = if (isSelected) MaterialTheme.colorScheme.primaryContainer
+            else MaterialTheme.colorScheme.surface
+        )
+    ) {
+        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Image(
+                painter = painterResource(res),
+                contentDescription = "Avatar $id",
+                modifier = Modifier.size(72.dp)
+            )
+        }
+    }
+}
+
+@Composable
+private fun DrawerHeader(studentName: String, avatarId: Int) {
+    val res = when (avatarId) {
+        1 -> R.drawable.avatar1
+        2 -> R.drawable.avatar2
+        else -> R.drawable.avatar3
+    }
+    Row(
+        modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Image(
+            painter = painterResource(res),
+            contentDescription = "Avatar",
+            modifier = Modifier.size(44.dp)
+        )
+        Spacer(Modifier.width(12.dp))
+        Column {
+            Text(studentName, style = MaterialTheme.typography.titleMedium)
+            Text("Student", style = MaterialTheme.typography.bodySmall)
+        }
+    }
+}
+
+@Composable
+private fun DrawerItem(title: String, onClick: () -> Unit) {
+    NavigationDrawerItem(
+        label = { Text(title) },
+        selected = false,
+        onClick = onClick,
+        modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
+    )
+}
+
+@Composable
+private fun DrawerFooter(isPro: Boolean) {
+    Column(Modifier.padding(16.dp)) {
+        Text("Ads: ${if (isPro) "Off" else "On"}", style = MaterialTheme.typography.bodySmall)
+    }
+}
+
+@Composable
+private fun AppTheme(darkTheme: Boolean, content: @Composable () -> Unit) {
+    val scheme = if (darkTheme) darkColorScheme() else lightColorScheme()
+    MaterialTheme(colorScheme = scheme, content = content)
+}
+
+// ---------------- API CLIENT ----------------
+
+private object ApiClient {
+    private val http = OkHttpClient()
+    private val jsonMedia = "application/json; charset=utf-8".toMediaType()
+
+    suspend fun createChild(name: String, grade: Int): CreateChildOut {
+        val url = "$API_BASE_URL/children/create"
+        val bodyJson = JSONObject()
+            .put("display_name", name)
+            .put("grade", grade)
+            .toString()
+
+        val req = Request.Builder()
+            .url(url)
+            .post(bodyJson.toRequestBody(jsonMedia))
+            .build()
+
+        val respStr = execute(req)
+        Log.d(TAG_API, "createChild resp=$respStr")
+        val obj = JSONObject(respStr)
+
+        val id = when {
+            obj.has("child_id") -> obj.getInt("child_id")
+            obj.has("id") -> obj.getInt("id")
+            else -> throw RuntimeException("Create child response missing id")
+        }
+
+        return CreateChildOut(child_id = id)
+    }
+
+    suspend fun getNextLesson(childId: Int): LessonDto {
+        val url = "$API_BASE_URL/lessons/next?child_id=$childId"
+        val req = Request.Builder().url(url).get().build()
+        val respStr = execute(req)
+        return parseLesson(respStr)
+    }
+
+    suspend fun submitAnswers(childId: Int, passageId: Int, answers: List<SubmitAnswerItem>): SubmitResultDto {
+        val url = "$API_BASE_URL/progress/submit"
+
+        val answersArr = JSONArray()
+        answers.forEach { a ->
+            answersArr.put(
+                JSONObject()
+                    .put("question_id", a.question_id)
+                    .put("selected_choice", a.selected_choice)
+            )
+        }
+
+        val bodyJson = JSONObject()
+            .put("child_id", childId)
+            .put("passage_id", passageId)
+            .put("answers", answersArr)
+            .toString()
+
+        val req = Request.Builder()
+            .url(url)
+            .post(bodyJson.toRequestBody(jsonMedia))
+            .build()
+
+        val respStr = execute(req)
+        val obj = JSONObject(respStr)
+        return SubmitResultDto(
+            status = obj.optString("status", "ok"),
+            correct = obj.getInt("correct"),
+            total = obj.getInt("total"),
+            score = obj.getInt("score")
+        )
+    }
+
+    suspend fun getProgressSummary(childId: Int): ProgressSummaryDto {
+        val url = "$API_BASE_URL/progress/summary?child_id=$childId"
+        val req = Request.Builder().url(url).get().build()
+        val respStr = execute(req)
+        val obj = JSONObject(respStr)
+
+        val avgScore = obj.optInt("average_score", obj.optInt("avg_score", -1)).takeIf { it >= 0 }
+        val avgProgress = obj.optInt("average_progress", obj.optInt("avg_progress", -1)).takeIf { it >= 0 }
+        val completed = obj.optInt("completed_passages", obj.optInt("completed", -1)).takeIf { it >= 0 }
+
+        return ProgressSummaryDto(
+            average_score = avgScore,
+            average_progress = avgProgress,
+            completed_passages = completed
+        )
+    }
+
+    private suspend fun execute(req: Request): String = withContext(Dispatchers.IO) {
+        http.newCall(req).execute().use { res ->
+            val body = res.body?.string() ?: ""
+            if (!res.isSuccessful) throw RuntimeException("HTTP ${res.code}: $body")
+            body
+        }
+    }
+
+    private fun parseLesson(json: String): LessonDto {
+        val obj = JSONObject(json)
+        val questionsArr = obj.getJSONArray("questions")
+        val questions = mutableListOf<QuestionDto>()
+        for (i in 0 until questionsArr.length()) {
+            val q = questionsArr.getJSONObject(i)
+            questions.add(
+                QuestionDto(
+                    id = q.getInt("id"),
+                    prompt = q.getString("prompt"),
+                    choice_a = q.getString("choice_a"),
+                    choice_b = q.getString("choice_b"),
+                    choice_c = q.getString("choice_c"),
+                    choice_d = q.getString("choice_d")
+                )
+            )
+        }
+        return LessonDto(
+            child_id = obj.getInt("child_id"),
+            passage_id = obj.getInt("passage_id"),
+            grade = obj.getInt("grade"),
+            title = obj.getString("title"),
+            text = obj.getString("text"),
+            questions = questions
+        )
+    }
+}
+
+// ---------------- DTOs ----------------
+
+private data class CreateChildOut(val child_id: Int)
+
+private data class LessonDto(
+    val child_id: Int,
+    val passage_id: Int,
+    val grade: Int,
+    val title: String,
+    val text: String,
+    val questions: List<QuestionDto>
+)
+
+private data class QuestionDto(
+    val id: Int,
+    val prompt: String,
+    val choice_a: String,
+    val choice_b: String,
+    val choice_c: String,
+    val choice_d: String
+)
+
+private data class SubmitAnswerItem(
+    val question_id: Int,
+    val selected_choice: String
+)
+
+private data class SubmitResultDto(
+    val status: String,
+    val correct: Int,
+    val total: Int,
+    val score: Int
+)
+
+private data class ProgressSummaryDto(
+    val average_score: Int?,
+    val average_progress: Int?,
+    val completed_passages: Int?
+)
+
+// ---------------- INTENTS ----------------
+
+private fun openRate(ctx: Context) {
+    val uri = Uri.parse("market://details?id=$PLAY_STORE_PACKAGE")
+    val goToMarket = Intent(Intent.ACTION_VIEW, uri).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+    try {
+        ctx.startActivity(goToMarket)
+    } catch (_: ActivityNotFoundException) {
+        try {
+            val webUri = Uri.parse("https://play.google.com/store/apps/details?id=$PLAY_STORE_PACKAGE")
+            ctx.startActivity(Intent(Intent.ACTION_VIEW, webUri).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+        } catch (e: Exception) {
+            Toast.makeText(ctx, "No app found to open Play Store / browser for rating.", Toast.LENGTH_LONG).show()
+            Log.e("Rate", "openRate failed: ${e.message}", e)
+        }
+    } catch (e: Exception) {
+        Toast.makeText(ctx, "Unable to open Rate screen.", Toast.LENGTH_LONG).show()
+        Log.e("Rate", "openRate failed: ${e.message}", e)
+    }
+}
+
+private fun openEmail(ctx: Context, email: String, subject: String) {
+    val intent = Intent(Intent.ACTION_SENDTO).apply {
+        data = Uri.parse("mailto:$email")
+        putExtra(Intent.EXTRA_SUBJECT, subject)
+    }
+    try {
+        ctx.startActivity(intent)
+    } catch (e: Exception) {
+        Toast.makeText(ctx, "No email app found.", Toast.LENGTH_LONG).show()
+        Log.e("Email", "openEmail failed: ${e.message}", e)
+    }
+}
+
+private fun shareApp(ctx: Context) {
+    val text = "Try this Reading Companion app!"
+    val intent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_TEXT, text)
+    }
+    ctx.startActivity(Intent.createChooser(intent, "Share"))
+}
