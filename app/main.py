@@ -1,31 +1,26 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from app.core.config import APP_NAME, API_PREFIX
 
 from app.api.lessons import router as lessons_router
 from app.api.progress import router as progress_router
 from app.api.children import router as children_router
 
-# --- DB init (creates tables if missing) ---
-from app.db.session import engine
-from app.db.base import Base
-from app.models import child  # ensure model is registered with Base metadata
+import os
+import json
+from pathlib import Path
 
 app = FastAPI(title=APP_NAME)
-
-@app.on_event("startup")
-def _create_tables():
-    Base.metadata.create_all(bind=engine)
-# ------------------------------------------
 
 app.include_router(lessons_router, prefix=API_PREFIX)
 app.include_router(progress_router, prefix=API_PREFIX)
 app.include_router(children_router, prefix=API_PREFIX)
 
+
 @app.get("/health")
 def health():
+    # build marker so we can confirm Render is running the latest code
     return {"status": "ok", "build": "debug-data-endpoint-1"}
-import os
-from pathlib import Path
+
 
 @app.get("/debug/data")
 def debug_data():
@@ -39,9 +34,7 @@ def debug_data():
         "passages_files": sorted([p.name for p in passages.glob("**/*") if p.is_file()])[:20],
         "questions_files": sorted([p.name for p in questions.glob("**/*") if p.is_file()])[:20],
     }
-import json
-from pathlib import Path
-from fastapi import HTTPException
+
 
 @app.get("/debug/grade/{grade}")
 def debug_grade(grade: int):
@@ -86,6 +79,9 @@ def debug_grade(grade: int):
         "questions_type": type(questions).__name__,
         "passages_count": len(passages_list),
         "questions_count": len(questions_list),
-        "group_keys_sample": list(by_key.items())[:10],_
-
+        "group_keys_sample": list(by_key.items())[:10],
+        "sample_passage_keys": sorted(list(sample_passage.keys())) if isinstance(sample_passage, dict) else str(type(sample_passage)),
+        "sample_question_keys": sorted(list(sample_question.keys())) if isinstance(sample_question, dict) else str(type(sample_question)),
+        "passages_file": p_path.name,
+        "questions_file": q_path.name,
     }
