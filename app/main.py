@@ -24,3 +24,19 @@ app.include_router(children_router, prefix=API_PREFIX)
 @app.get("/health")
 def health():
     return {"status": "ok"}
+import os
+from pathlib import Path
+
+@app.get("/debug/data")
+def debug_data():
+    root = Path(".").resolve()
+    passages = (root / "data" / "passages")
+    questions = (root / "data" / "questions")
+    return {
+        "cwd": str(root),
+        "passages_exists": passages.exists(),
+        "questions_exists": questions.exists(),
+        "passages_files": sorted([p.name for p in passages.glob("**/*") if p.is_file()])[:20],
+        "questions_files": sorted([p.name for p in questions.glob("**/*") if p.is_file()])[:20],
+    }
+
