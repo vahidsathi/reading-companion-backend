@@ -23,7 +23,7 @@ app.include_router(children_router, prefix=API_PREFIX)
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "ok", "build": "debug-data-endpoint-1"}
 import os
 from pathlib import Path
 
