@@ -16,7 +16,7 @@ app = FastAPI(title=APP_NAME)
 app.include_router(lessons_router, prefix=API_PREFIX)
 app.include_router(progress_router, prefix=API_PREFIX)
 app.include_router(children_router, prefix=API_PREFIX)
-app.include_router(admin_router, prefix=API_PREFIX)
+# app.include_router(admin_router, prefix=API_PREFIX)
 
 
 
