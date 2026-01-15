@@ -39,4 +39,52 @@ def debug_data():
         "passages_files": sorted([p.name for p in passages.glob("**/*") if p.is_file()])[:20],
         "questions_files": sorted([p.name for p in questions.glob("**/*") if p.is_file()])[:20],
     }
+import json
+from pathlib import Path
+from fastapi import HTTPException
+
+@app.get("/debug/grade/{grade}")
+def debug_grade(grade: int):
+    root = Path(".").resolve()
+    p_path = root / "data" / "passages" / f"grade{grade}.json"
+    q_path = root / "data" / "questions" / f"grade{grade}_questions.json"
+
+    if not p_path.exists():
+        raise HTTPException(status_code=404, detail=f"Missing {p_path}")
+    if not q_path.exists():
+        raise HTTPException(status_code=404, detail=f"Missing {q_path}")
+
+    passages = json.loads(p_path.read_text(encoding="utf-8"))
+    questions = json.loads(q_path.read_text(encoding="utf-8"))
+
+    # handle common shapes: list vs dict wrappers
+    if isinstance(passages, dict):
+        passages_list = passages.get("passages") or passages.get("items") or passages.get("data") or []
+    else:
+        passages_list = passages
+
+    if isinstance(questions, dict):
+        questions_list = questions.get("questions") or questions.get("items") or questions.get("data") or []
+    else:
+        questions_list = questions
+
+    # attempt to group questions by passage_code or passage_id (best-effort)
+    by_key = {}
+    for q in questions_list:
+        if not isinstance(q, dict):
+            continue
+        key = q.get("passage_id") or q.get("passage_code") or q.get("passage") or q.get("code")
+        by_key.setdefault(str(key), 0)
+        by_key[str(key)] += 1
+
+    sample_passage = passages_list[0] if passages_list else None
+    sample_question = questions_list[0] if questions_list else None
+
+    return {
+        "grade": grade,
+        "passages_type": type(passages).__name__,
+        "questions_type": type(questions).__name__,
+        "passages_count": len(passages_list),
+        "questions_count": len(questions_list),
+        "group_keys_sample": list(by_key.items())[:10],_
 
