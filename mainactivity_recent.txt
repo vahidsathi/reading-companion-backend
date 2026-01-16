@@ -79,7 +79,7 @@ private const val TAG_API = "Api"
 private const val TAG_AUDIO = "Audio"
 
 // ------------ CONFIG ------------
-private const val API_BASE_URL = "http://10.0.2.2:8000/api" // emulator -> localhost
+private const val API_BASE_URL = "https://reading-companion-backend.onrender.com/api" // emulator -> localhost
 
 // Interstitial TEST unit id
 private const val ADMOB_INTERSTITIAL_TEST_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
