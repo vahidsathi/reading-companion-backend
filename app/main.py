@@ -20,10 +20,11 @@ app.include_router(children_router, prefix=API_PREFIX)
 
 
 
-@app.get("/health")
+from fastapi import FastAPI
+
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
-    # build marker so we can confirm Render is running the latest code
-    return {"status": "ok", "build": "debug-data-endpoint-1"}
+    return {"status": "ok"}
 
 
 @app.get("/debug/data")
