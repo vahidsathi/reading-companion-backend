@@ -26,6 +26,10 @@ from fastapi import FastAPI
 def health():
     return {"status": "ok"}
 
+@app.api_route("/health-backup", methods=["GET", "HEAD"])
+def health_backup():
+    return {"status": "ok"}
+
 
 @app.get("/debug/data")
 def debug_data():
